@@ -1,0 +1,14 @@
+.gradle/
+build/
+composeApp/build/
+.kotlin/
+local.properties
+*.iml
+.idea/
+.DS_Store
+node_modules/
+.graphify/*.json
+.graphify/studio/
+.openspec/
+graphify-out/cache/
+graphify-out/202*/

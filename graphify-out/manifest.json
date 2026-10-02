@@ -1,0 +1,404 @@
+{
+  ".opencode/plugins/rtk.ts": {
+    "mtime": 1790922218.4301589,
+    "seen": 1790922240.8950112,
+    "ast_hash": "7d8ce47222703353f5fd20a0e8344b28",
+    "semantic_hash": ""
+  },
+  "build.gradle.kts": {
+    "mtime": 1790921198.7499418,
+    "seen": 1790922240.895015,
+    "ast_hash": "7a97d73740d1b1f20757cb670d29fcc4",
+    "semantic_hash": ""
+  },
+  "composeApp/build.gradle.kts": {
+    "mtime": 1790923222.9637084,
+    "seen": 1790923989.504006,
+    "ast_hash": "3973ce263074df3b4c1bdccb9ca01a5d",
+    "semantic_hash": ""
+  },
+  "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt": {
+    "mtime": 1790921366.2925816,
+    "seen": 1790922240.895017,
+    "ast_hash": "ffe91a1eb63ced3b7d638a8237a0a20b",
+    "semantic_hash": ""
+  },
+  "composeApp/src/androidMain/kotlin/com/binarydev/quran/core/data/remote/api/Engine.android.kt": {
+    "mtime": 1790923449.3875616,
+    "seen": 1790923989.504008,
+    "ast_hash": "42d93c3ac433c6af877788847137d400",
+    "semantic_hash": ""
+  },
+  "composeApp/src/androidMain/kotlin/com/binarydev/quran/platform/Platform.android.kt": {
+    "mtime": 1790921366.2926104,
+    "seen": 1790922240.895018,
+    "ast_hash": "7c7b5925edaa5c8204031ba8ecccf5b2",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/Di.kt": {
+    "mtime": 1790921253.3997455,
+    "seen": 1790922240.895018,
+    "ast_hash": "3b0a2bcaf9f334cd18a06c83ba60b79f",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/QuranApp.kt": {
+    "mtime": 1790923955.4010649,
+    "seen": 1790923989.50401,
+    "ast_hash": "79ddf01523494ac45469ffcc87ebc73b",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/AppResult.kt": {
+    "mtime": 1790921217.2833686,
+    "seen": 1790922240.89502,
+    "ast_hash": "f1bd384a1d1103a6a5f791d98e5d056b",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/MviContract.kt": {
+    "mtime": 1790921217.2833436,
+    "seen": 1790922240.89502,
+    "ast_hash": "3948496072715da2449d2957382e252b",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/LocalStore.kt": {
+    "mtime": 1790921239.93524,
+    "seen": 1790922240.895021,
+    "ast_hash": "8c795e6fe5729452384b87848ad0b62c",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/mapper/QuranMapper.kt": {
+    "mtime": 1790921239.9352186,
+    "seen": 1790922240.895021,
+    "ast_hash": "8ab01e8e4b578227b5d88d734ac95487",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/remote/api/Engine.kt": {
+    "mtime": 1790923434.3390508,
+    "seen": 1790923989.504014,
+    "ast_hash": "954a490af0db7d65922070c38c7c1b58",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/remote/api/QuranApi.kt": {
+    "mtime": 1790921239.935223,
+    "seen": 1790922240.895023,
+    "ast_hash": "fe7a96d126c711fae7e125cc823220ba",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/remote/dto/QuranDto.kt": {
+    "mtime": 1790921239.9352057,
+    "seen": 1790922240.895023,
+    "ast_hash": "dea62244290afb25e915c46eca65101a",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/repository/QuranRepositoryImpl.kt": {
+    "mtime": 1790921253.3997345,
+    "seen": 1790922240.895023,
+    "ast_hash": "efedda0a86728f290576dbcdf90786f1",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt": {
+    "mtime": 1790921253.3997543,
+    "seen": 1790922240.895024,
+    "ast_hash": "e7a0fa47553f83caff478e7e6fdf7deb",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt": {
+    "mtime": 1790923951.0372744,
+    "seen": 1790923989.5040169,
+    "ast_hash": "b70be9c90f637fa46f7507eed4d9182f",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Theme.kt": {
+    "mtime": 1790921253.3997371,
+    "seen": 1790922240.895025,
+    "ast_hash": "a0b3f15296a7da89080d36e8aa71ad76",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/model/Models.kt": {
+    "mtime": 1790921217.2833557,
+    "seen": 1790922240.895026,
+    "ast_hash": "5469922d61f96e841bb5dda1322da896",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/repository/Repositories.kt": {
+    "mtime": 1790921217.2833805,
+    "seen": 1790922240.895026,
+    "ast_hash": "5997007b0a04549c750696f277691f95",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/usecase/UseCases.kt": {
+    "mtime": 1790921217.2833786,
+    "seen": 1790922240.895027,
+    "ast_hash": "40c4ace0a7b5ce21537bf1c1c8de70ea",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt": {
+    "mtime": 1790921309.662545,
+    "seen": 1790922240.895027,
+    "ast_hash": "46868d353a64f492053b7a49ee3d7c70",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt": {
+    "mtime": 1790921270.642419,
+    "seen": 1790922240.8950279,
+    "ast_hash": "092fc186a80592ce39c63ffd3a70fc15",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeScreen.kt": {
+    "mtime": 1790921270.7553205,
+    "seen": 1790922240.8950279,
+    "ast_hash": "547816ab787d8089f54dea5252454d68",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeViewModel.kt": {
+    "mtime": 1790921270.6863704,
+    "seen": 1790922240.895029,
+    "ast_hash": "1191d6059a142b143eac31915acbebd8",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt": {
+    "mtime": 1790921270.7929945,
+    "seen": 1790922240.89503,
+    "ast_hash": "fbb616d80166e8cc7456b0f249cb014f",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt": {
+    "mtime": 1790921309.6625493,
+    "seen": 1790922240.89503,
+    "ast_hash": "20c17097480f129fcebd0f0b0834f554",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt": {
+    "mtime": 1790921270.7931128,
+    "seen": 1790922240.895031,
+    "ast_hash": "8a77c4a4d2379a10325f2cbe1e539d5e",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt": {
+    "mtime": 1790921309.6624467,
+    "seen": 1790922240.895031,
+    "ast_hash": "195c3ffcfaf9ab765ee39d034f270cf5",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchScreen.kt": {
+    "mtime": 1790921309.6625636,
+    "seen": 1790922240.8950322,
+    "ast_hash": "023f2e2fd54a9f1f559a95114c166489",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt": {
+    "mtime": 1790921309.6623645,
+    "seen": 1790922240.8950322,
+    "ast_hash": "cd0649256f2b41a215b582e783e6d554",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsScreen.kt": {
+    "mtime": 1790921331.5498407,
+    "seen": 1790922240.8950331,
+    "ast_hash": "bc1b0557676faba15c5c080bed700de8",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt": {
+    "mtime": 1790921331.549736,
+    "seen": 1790922240.8950331,
+    "ast_hash": "1d7c563c84df82c46e572e4520e257e5",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/platform/Platform.kt": {
+    "mtime": 1790921331.5515623,
+    "seen": 1790922240.895034,
+    "ast_hash": "2ed8dda7bf70d4273a00b1cc8f516c26",
+    "semantic_hash": ""
+  },
+  "composeApp/src/desktopMain/kotlin/com/binarydev/quran/Main.kt": {
+    "mtime": 1790921373.6166754,
+    "seen": 1790922240.895034,
+    "ast_hash": "87eadb4243eb56f38605eb5c0b8d207c",
+    "semantic_hash": ""
+  },
+  "composeApp/src/desktopMain/kotlin/com/binarydev/quran/core/data/remote/api/Engine.desktop.kt": {
+    "mtime": 1790923449.387549,
+    "seen": 1790923989.50403,
+    "ast_hash": "152c5ac834600e3fb882fb234b3727f6",
+    "semantic_hash": ""
+  },
+  "composeApp/src/desktopMain/kotlin/com/binarydev/quran/platform/Platform.desktop.kt": {
+    "mtime": 1790921373.6166713,
+    "seen": 1790922240.8950348,
+    "ast_hash": "682b27aa20094b904d17ac14346ce7a7",
+    "semantic_hash": ""
+  },
+  "composeApp/src/iosMain/kotlin/com/binarydev/quran/MainViewController.kt": {
+    "mtime": 1790921373.6166656,
+    "seen": 1790922240.895036,
+    "ast_hash": "e897dca4840bed7b99cda1506cf2cbc1",
+    "semantic_hash": ""
+  },
+  "composeApp/src/iosMain/kotlin/com/binarydev/quran/core/data/remote/api/Engine.ios.kt": {
+    "mtime": 1790923449.3875515,
+    "seen": 1790923989.504031,
+    "ast_hash": "179ac0da9230d1ae17b0b7db6527433a",
+    "semantic_hash": ""
+  },
+  "composeApp/src/iosMain/kotlin/com/binarydev/quran/platform/Platform.ios.kt": {
+    "mtime": 1790921366.2927203,
+    "seen": 1790922240.895037,
+    "ast_hash": "165bd6c5d49d0b14e0200f56907a5b13",
+    "semantic_hash": ""
+  },
+  "iosApp/QuranApp/ContentView.swift": {
+    "mtime": 1790921373.6166565,
+    "seen": 1790922240.895037,
+    "ast_hash": "4df29a174d9a1bcecc42b89aee636311",
+    "semantic_hash": ""
+  },
+  "opencode.json": {
+    "mtime": 1790922218.4301145,
+    "seen": 1790922240.895038,
+    "ast_hash": "cdc566ef4cde95053bc0fa0b2141fb81",
+    "semantic_hash": ""
+  },
+  "settings.gradle.kts": {
+    "mtime": 1790921198.7498367,
+    "seen": 1790922240.895039,
+    "ast_hash": "d93b4c3a9fd9d28d597bd293ff3d4233",
+    "semantic_hash": ""
+  },
+  ".opencode/commands/opsx-apply.md": {
+    "mtime": 1790921440.5223763,
+    "seen": 1790922240.895039,
+    "ast_hash": "bcf1f5836a6eca8a15074022807142b5",
+    "semantic_hash": ""
+  },
+  ".opencode/commands/opsx-archive.md": {
+    "mtime": 1790921440.5230527,
+    "seen": 1790922240.89504,
+    "ast_hash": "17c421daa6c8ce31d1e6a515231a7a14",
+    "semantic_hash": ""
+  },
+  ".opencode/commands/opsx-explore.md": {
+    "mtime": 1790921440.5221264,
+    "seen": 1790922240.89504,
+    "ast_hash": "03198a085822a2352ec64f7ac2eda652",
+    "semantic_hash": ""
+  },
+  ".opencode/commands/opsx-propose.md": {
+    "mtime": 1790921440.523275,
+    "seen": 1790922240.895041,
+    "ast_hash": "a41449c2cba31fdf122fb3f2195b4b59",
+    "semantic_hash": ""
+  },
+  ".opencode/commands/opsx-sync.md": {
+    "mtime": 1790921440.5228317,
+    "seen": 1790922240.895041,
+    "ast_hash": "a5299ae9948dbdc48dbc73761a042974",
+    "semantic_hash": ""
+  },
+  ".opencode/commands/opsx-update.md": {
+    "mtime": 1790921440.5225787,
+    "seen": 1790922240.895042,
+    "ast_hash": "7bba385698c112f2502ad1740bf26ff1",
+    "semantic_hash": ""
+  },
+  ".opencode/skills/openspec-apply-change/SKILL.md": {
+    "mtime": 1790921440.5195994,
+    "seen": 1790922240.895042,
+    "ast_hash": "f69bfbde9178ce223fffa5386ce47939",
+    "semantic_hash": ""
+  },
+  ".opencode/skills/openspec-archive-change/SKILL.md": {
+    "mtime": 1790921440.5208492,
+    "seen": 1790922240.8950431,
+    "ast_hash": "5c0dbc6c19197feb8b22869007045279",
+    "semantic_hash": ""
+  },
+  ".opencode/skills/openspec-explore/SKILL.md": {
+    "mtime": 1790921440.5189707,
+    "seen": 1790922240.8950431,
+    "ast_hash": "917f4131a7c6d30e81fc3ae01aef7b2e",
+    "semantic_hash": ""
+  },
+  ".opencode/skills/openspec-propose/SKILL.md": {
+    "mtime": 1790921440.5212345,
+    "seen": 1790922240.895044,
+    "ast_hash": "3936b86e0895491643a9defd6daace77",
+    "semantic_hash": ""
+  },
+  ".opencode/skills/openspec-sync-specs/SKILL.md": {
+    "mtime": 1790921440.5205102,
+    "seen": 1790922240.895044,
+    "ast_hash": "f3ca590e7c2eea80c3fae5353a10e471",
+    "semantic_hash": ""
+  },
+  ".opencode/skills/openspec-update-change/SKILL.md": {
+    "mtime": 1790921440.5201356,
+    "seen": 1790922240.895045,
+    "ast_hash": "f2c3a1bd1f37657ba08a3369bda58b2e",
+    "semantic_hash": ""
+  },
+  ".serena/memories/memory_maintenance.md": {
+    "mtime": 1790921574.7978504,
+    "seen": 1790922240.895045,
+    "ast_hash": "5a2422d8355cb91f16402415a54e3c66",
+    "semantic_hash": ""
+  },
+  ".serena/project.yml": {
+    "mtime": 1790921452.0971923,
+    "seen": 1790922240.895046,
+    "ast_hash": "bb8827b185023a77e64a78fdc1c78195",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1790921396.7034304,
+    "seen": 1790922240.895047,
+    "ast_hash": "2d06d2cebb83a465a51d95f3df1144d1",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790921396.7013478,
+    "seen": 1790922240.895047,
+    "ast_hash": "97a39f180b7cfe628683e40d7c5a2c07",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/composeResources/font/README.md": {
+    "mtime": 1790921396.703545,
+    "seen": 1790922240.895048,
+    "ast_hash": "85d65dcdebcba794c4592cc8498bf162",
+    "semantic_hash": ""
+  },
+  "openspec/changes/quran-kmp-init/proposal.md": {
+    "mtime": 1790921432.9490266,
+    "seen": 1790922240.895048,
+    "ast_hash": "eaa4f7c864a323de83a35498384ddcd9",
+    "semantic_hash": ""
+  },
+  "openspec/changes/quran-kmp-init/tasks.md": {
+    "mtime": 1790923988.603271,
+    "seen": 1790923989.504048,
+    "ast_hash": "37f892f987d8a454a0d36566690fb9b7",
+    "semantic_hash": ""
+  },
+  "openspec/config.yaml": {
+    "mtime": 1790921440.523733,
+    "seen": 1790922240.8950489,
+    "ast_hash": "a88f7d80935e1a432dc9b5affe49eb27",
+    "semantic_hash": ""
+  },
+  "openspec/specs/quran-mvp/spec.md": {
+    "mtime": 1790921432.9490323,
+    "seen": 1790922240.89505,
+    "ast_hash": "00cb567a8cafb74f3cfeef30ccfde555",
+    "semantic_hash": ""
+  },
+  "gradlew": {
+    "mtime": 1790922955.242728,
+    "seen": 1790923989.504033,
+    "ast_hash": "a43be8432bac3ffd05b3769aa42fe996",
+    "semantic_hash": ""
+  },
+  ".serena/memories/quran/architecture.md": {
+    "mtime": 1790922398.9252694,
+    "seen": 1790923989.504044,
+    "ast_hash": "f0d0ee01d8d72ffd402a193a7ad5a72b",
+    "semantic_hash": ""
+  }
+}
