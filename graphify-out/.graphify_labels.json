@@ -1,10 +1,10 @@
 {
   "0": "ReaderViewModel.kt",
   "1": "QuranApp.kt",
-  "2": "ReaderScreen.kt",
+  "2": "HomeScreen.kt",
   "3": "AudioPlayer.ios.kt",
-  "4": "SearchViewModel",
-  "5": "AppResult",
+  "4": "Quran Madinah — Kotlin Multiplatform (ringan, responsif, mudah digunakan)",
+  "5": "Ayah",
   "6": "QuranApi.kt",
   "7": "mcp",
   "8": "ReaderViewModel",
@@ -44,10 +44,12 @@
   "42": "windowwidthsizeclass",
   "43": "AudioPlayer",
   "44": "Proposal: Mushaf mirip buku + audio tilawah + font Utsmani",
-  "45": "AudioPlayer.android.kt",
-  "46": "IosAudioPlayer",
-  "47": "DesktopAudioPlayer",
-  "48": "AndroidAudioPlayer",
-  "49": "PlayerState",
-  "50": "Proposal: scaffold awal Quran KMP (MVVM+UDF + MCP)"
+  "45": "Di.kt",
+  "46": "MushafPageView.kt",
+  "47": "MushafText.kt",
+  "48": "ReaderScreen.kt",
+  "49": "PlatformLocal.ios.kt",
+  "50": "AudioBar.kt",
+  "51": "PlatformLocal.android.kt",
+  "52": "PlatformLocal.desktop.kt"
 }

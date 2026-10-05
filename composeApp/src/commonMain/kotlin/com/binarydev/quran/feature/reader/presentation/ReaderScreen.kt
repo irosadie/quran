@@ -1,5 +1,6 @@
 package com.binarydev.quran.feature.reader.presentation
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -27,12 +28,18 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.binarydev.quran.core.data.local.SurahData
 import com.binarydev.quran.core.designsystem.MushafText
 import com.binarydev.quran.core.designsystem.ScreenClass
 import com.binarydev.quran.core.designsystem.rememberIsLandscape
 import com.binarydev.quran.core.designsystem.rememberScreenClass
+import com.binarydev.quran.core.domain.model.Bookmark
+import com.binarydev.quran.feature.bookmark.presentation.BookmarkEvent
+import com.binarydev.quran.feature.bookmark.presentation.BookmarkViewModel
+import kotlinx.datetime.Clock
 import org.koin.compose.viewmodel.koinViewModel
 
 /**
@@ -43,9 +50,12 @@ import org.koin.compose.viewmodel.koinViewModel
 fun ReaderScreen(
     surah: Int = 1,
     page: Int? = null,
+    onBack: () -> Unit = {},
     vm: ReaderViewModel = koinViewModel(),
+    bookmarkVm: BookmarkViewModel = koinViewModel(),
 ) {
     val state by vm.state.collectAsStateWithLifecycle()
+    val bookmarkState by bookmarkVm.state.collectAsStateWithLifecycle()
     val snackbar = remember { SnackbarHostState() }
     LaunchedEffect(surah, page) {
         if (page != null) vm.onEvent(ReaderEvent.LoadPage(page)) else vm.onEvent(ReaderEvent.LoadSurah(surah))
@@ -57,17 +67,28 @@ fun ReaderScreen(
     }
     Scaffold(snackbarHost = { SnackbarHost(snackbar) }) { inner ->
         Column(Modifier.fillMaxSize().padding(inner)) {
-            Row(Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                OutlinedButton(onClick = { vm.onEvent(ReaderEvent.ToggleMode(ReadMode.SURAH)) }) { Text("Surah") }
-                OutlinedButton(onClick = { vm.onEvent(ReaderEvent.LoadPage(state.page)) }) { Text("Mushaf") }
-                if (state.mode == ReadMode.MUSHAF && !isSpread()) {
-                    TextButton(onClick = { vm.onEvent(ReaderEvent.NextPage(-1)) }) { Text("‹") }
-                    Text(
-                        "Hlm ${state.page}/604",
-                        style = MaterialTheme.typography.bodySmall,
-                        modifier = Modifier.align(Alignment.CenterVertically),
-                    )
-                    TextButton(onClick = { vm.onEvent(ReaderEvent.NextPage(1)) }) { Text("›") }
+            if (state.mode == ReadMode.MUSHAF) {
+                val first = state.ayahs.firstOrNull()
+                MushafTopBar(
+                    surahLatin = first?.let { SurahData.latin.getOrElse(it.surah - 1) { "" } } ?: "",
+                    page = state.page,
+                    juz = first?.juz ?: 0,
+                    bookmarked = first?.let { a -> bookmarkState.items.any { it.key == a.key } } == true,
+                    onBack = onBack,
+                    onBookmark = {
+                        first?.let {
+                            bookmarkVm.onEvent(
+                                BookmarkEvent.Toggle(
+                                    Bookmark(it.key, it.surah, it.ayah, createdAt = Clock.System.now().toEpochMilliseconds()),
+                                ),
+                            )
+                        }
+                    },
+                )
+            } else {
+                Row(Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    OutlinedButton(onClick = { vm.onEvent(ReaderEvent.ToggleMode(ReadMode.SURAH)) }) { Text("Surah") }
+                    OutlinedButton(onClick = { vm.onEvent(ReaderEvent.LoadPage(state.page)) }) { Text("Mushaf") }
                 }
             }
             Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
@@ -94,6 +115,41 @@ fun ReaderScreen(
                     if (isSpread()) SpreadBook(state, onEvent = vm::onEvent) else MushafPager(state, onEvent = vm::onEvent)
                 }
             }
+        }
+    }
+}
+
+/** Bilah navy ala mushaf: kembali, judul surah, info Page/Juz, bookmark. */
+@Composable
+private fun MushafTopBar(
+    surahLatin: String,
+    page: Int,
+    juz: Int,
+    bookmarked: Boolean,
+    onBack: () -> Unit,
+    onBookmark: () -> Unit,
+) {
+    Row(
+        Modifier.fillMaxWidth().background(Color(0xFF143A5A)).padding(horizontal = 4.dp, vertical = 6.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        TextButton(onClick = onBack) {
+            Text("‹", style = MaterialTheme.typography.titleLarge, color = Color.White)
+        }
+        Column(Modifier.weight(1f).padding(start = 4.dp)) {
+            Text(
+                if (surahLatin.isNotBlank()) "Surah $surahLatin" else "Mushaf",
+                style = MaterialTheme.typography.titleMedium,
+                color = Color.White,
+            )
+            Text(
+                "Page $page, Juz $juz",
+                style = MaterialTheme.typography.bodySmall,
+                color = Color.White.copy(alpha = 0.8f),
+            )
+        }
+        TextButton(onClick = onBookmark) {
+            Text("🔖", color = if (bookmarked) Color(0xFFFFD54F) else Color.White.copy(alpha = 0.5f))
         }
     }
 }

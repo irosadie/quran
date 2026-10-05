@@ -12,15 +12,15 @@
     "semantic_hash": ""
   },
   "composeApp/build.gradle.kts": {
-    "mtime": 1790923222.9637084,
-    "seen": 1790923989.504006,
-    "ast_hash": "3973ce263074df3b4c1bdccb9ca01a5d",
+    "mtime": 1791224698.6531813,
+    "seen": 1791225178.755218,
+    "ast_hash": "69d5b8a3f1c8399a6bd1e574bc92b68e",
     "semantic_hash": ""
   },
   "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt": {
-    "mtime": 1790921366.2925816,
-    "seen": 1790922240.895017,
-    "ast_hash": "ffe91a1eb63ced3b7d638a8237a0a20b",
+    "mtime": 1791224245.6161637,
+    "seen": 1791225178.755219,
+    "ast_hash": "dd98e0ceaa7dc0b023d44ae88bcd1e47",
     "semantic_hash": ""
   },
   "composeApp/src/androidMain/kotlin/com/binarydev/quran/core/data/remote/api/Engine.android.kt": {
@@ -36,9 +36,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/Di.kt": {
-    "mtime": 1791220555.33531,
-    "seen": 1791221441.2573671,
-    "ast_hash": "ba2c83e2e96d98f186fe62d1f18a9e04",
+    "mtime": 1791224323.9082317,
+    "seen": 1791225178.755224,
+    "ast_hash": "764202495ca7853050c4160781bd3c0a",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/QuranApp.kt": {
@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/LocalStore.kt": {
-    "mtime": 1791220469.1031163,
-    "seen": 1791221441.257371,
-    "ast_hash": "cc12fc69beeabe54bed330f63e1ef4dc",
+    "mtime": 1791224296.5435963,
+    "seen": 1791225178.755229,
+    "ast_hash": "111cf7074bb022219f40308978867bb7",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/mapper/QuranMapper.kt": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/repository/QuranRepositoryImpl.kt": {
-    "mtime": 1791223052.1342015,
-    "seen": 1791223276.0747058,
-    "ast_hash": "5887795b2008fcb7b9de4f4fce277e04",
+    "mtime": 1791224601.9723127,
+    "seen": 1791225178.755235,
+    "ast_hash": "044792d7786ca1523444daa1de310968",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt": {
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt": {
-    "mtime": 1790921309.662545,
-    "seen": 1790922240.895027,
-    "ast_hash": "46868d353a64f492053b7a49ee3d7c70",
+    "mtime": 1791224698.660821,
+    "seen": 1791225178.75524,
+    "ast_hash": "ef65702ecd8dcfe22137d057e0056d76",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt": {
@@ -150,9 +150,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeViewModel.kt": {
-    "mtime": 1790921270.6863704,
-    "seen": 1790922240.895029,
-    "ast_hash": "1191d6059a142b143eac31915acbebd8",
+    "mtime": 1791224698.6644065,
+    "seen": 1791225178.755241,
+    "ast_hash": "41c91d42547b53d94d69667f16373f60",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt": {
@@ -168,9 +168,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt": {
-    "mtime": 1791222477.9591646,
-    "seen": 1791222560.9436958,
-    "ast_hash": "e223a67db6a4b2b19a8b5cdccc12d9ed",
+    "mtime": 1791224271.7937782,
+    "seen": 1791225178.755245,
+    "ast_hash": "6329b24e27b1323c603bb00183d4dd20",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt": {
@@ -198,9 +198,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt": {
-    "mtime": 1790921331.549736,
-    "seen": 1790922240.8950331,
-    "ast_hash": "1d7c563c84df82c46e572e4520e257e5",
+    "mtime": 1791224349.665027,
+    "seen": 1791225178.755248,
+    "ast_hash": "ecd525629ae5ff0af99fe1430f3e1359",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/platform/Platform.kt": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "openspec/specs/quran-mvp/spec.md": {
-    "mtime": 1791223130.0125077,
-    "seen": 1791223276.074743,
-    "ast_hash": "1be9c396ea417c58c8f12ccb0167bad4",
+    "mtime": 1791225175.3041017,
+    "seen": 1791225178.7552772,
+    "ast_hash": "2efe60fe1069d8207f0e3fa62a59c253",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -459,6 +459,54 @@
     "mtime": 1791221439.7399757,
     "seen": 1791221441.25741,
     "ast_hash": "80a0a141ec2044976b2da8c6502b2f43",
+    "semantic_hash": ""
+  },
+  "composeApp/src/androidMain/kotlin/com/binarydev/quran/core/data/local/PlatformLocal.android.kt": {
+    "mtime": 1791224165.821751,
+    "seen": 1791225178.755221,
+    "ast_hash": "ed3180b4dff55cf6fd876d1d0b4bc42a",
+    "semantic_hash": ""
+  },
+  "composeApp/src/androidMain/kotlin/com/binarydev/quran/platform/AppContext.kt": {
+    "mtime": 1791224165.8175664,
+    "seen": 1791225178.755223,
+    "ast_hash": "1508166578ab26107300a857607559a6",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/Database.kt": {
+    "mtime": 1791224147.987443,
+    "seen": 1791225178.7552278,
+    "ast_hash": "cf139f5e811a4db7d9db2d6c5a359eca",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/Paths.kt": {
+    "mtime": 1791224165.8175669,
+    "seen": 1791225178.755229,
+    "ast_hash": "ea43702d07bedc1fb0a8aa637156a2f8",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/SettingsStore.kt": {
+    "mtime": 1791224737.6611927,
+    "seen": 1791225178.75523,
+    "ast_hash": "032618e0f309f47fa9cc4dfc82f119dc",
+    "semantic_hash": ""
+  },
+  "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/repository/BookmarkRepositoryImpl.kt": {
+    "mtime": 1791224698.6825724,
+    "seen": 1791225178.755234,
+    "ast_hash": "f4eb49186baaedba688393380178174e",
+    "semantic_hash": ""
+  },
+  "composeApp/src/desktopMain/kotlin/com/binarydev/quran/core/data/local/PlatformLocal.desktop.kt": {
+    "mtime": 1791224165.8218284,
+    "seen": 1791225178.755254,
+    "ast_hash": "c9425fb91340400ebfac4bbf10ecf886",
+    "semantic_hash": ""
+  },
+  "composeApp/src/iosMain/kotlin/com/binarydev/quran/core/data/local/PlatformLocal.ios.kt": {
+    "mtime": 1791224165.821814,
+    "seen": 1791225178.7552571,
+    "ast_hash": "7b844420646fe60207150045ae46f992",
     "semantic_hash": ""
   }
 }

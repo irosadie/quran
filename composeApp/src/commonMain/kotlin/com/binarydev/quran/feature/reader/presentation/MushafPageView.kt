@@ -4,10 +4,16 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
@@ -15,9 +21,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import com.binarydev.quran.core.data.local.SurahData
@@ -25,7 +33,10 @@ import com.binarydev.quran.core.designsystem.uthmaniStyle
 import com.binarydev.quran.core.domain.model.Ayah
 
 private val MushafCream = Color(0xFFFCF7E8)
-private val MushafFrame = Color(0xFF8A6D3B)
+private val MushafGold = Color(0xFF8A6D3B)
+private val MushafInk = Color(0xFF232323)
+private val MushafNavy = Color(0xFF143A5A)
+private val MushafMaroon = Color(0xFF8B1A1A)
 private val PlayingHighlight = Color(0xFFFFE9A8)
 private const val BASMALA = "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
 
@@ -47,14 +58,17 @@ fun MushafPageView(
     Box(
         modifier
             .padding(8.dp)
+            .border(3.dp, MushafInk, RoundedCornerShape(10.dp))
+            .padding(5.dp)
+            .clip(RoundedCornerShape(5.dp))
             .background(MushafCream)
-            .border(2.dp, MushafFrame)
+            .border(2.dp, MushafGold)
             .padding(3.dp)
-            .border(1.dp, MushafFrame.copy(alpha = 0.6f)),
+            .border(1.dp, MushafGold.copy(alpha = 0.6f)),
     ) {
         if (ayahs.isEmpty()) {
             Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                Text("Memuat halaman $pageNumber…", color = MushafFrame)
+                Text("Memuat halaman $pageNumber…", color = MushafGold)
             }
         } else {
             Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(10.dp)) {
@@ -73,7 +87,7 @@ fun MushafPageView(
                 Text(
                     text = "$pageNumber",
                     style = MaterialTheme.typography.labelSmall,
-                    color = MushafFrame,
+                    color = MushafGold,
                     modifier = Modifier.align(Alignment.CenterHorizontally).padding(top = 6.dp),
                 )
             }
@@ -81,26 +95,47 @@ fun MushafPageView(
     }
 }
 
-/** Kepala surah ala mushaf + Basmalah (kecuali Al-Fatihah & At-Taubah). */
+/** Pita kepala surah ala cetakan Madinah + Basmalah marun (kecuali Al-Fatihah & At-Taubah). */
 @Composable
 private fun SurahHeader(surah: Int) {
     val name = SurahData.arabic.getOrElse(surah - 1) { "" }
-    Box(
-        Modifier.fillMaxWidth().padding(vertical = 6.dp)
-            .border(1.dp, MushafFrame)
-            .background(Color(0xFFF6ECD2))
-            .padding(vertical = 8.dp),
-        contentAlignment = Alignment.Center,
+    Row(
+        Modifier.fillMaxWidth().padding(vertical = 6.dp).height(56.dp),
+        verticalAlignment = Alignment.CenterVertically,
     ) {
-        Text("سُورَةُ $name", style = uthmaniStyle(1.1f), color = Color(0xFF5D4A1F))
+        OrnamentPanel(Modifier.weight(0.24f).fillMaxHeight())
+        Box(
+            Modifier.weight(0.52f).fillMaxHeight()
+                .border(2.dp, MushafGold)
+                .background(Color(0xFFF6ECD2))
+                .padding(horizontal = 4.dp),
+            contentAlignment = Alignment.Center,
+        ) {
+            Text(
+                "سُورَةُ $name",
+                style = uthmaniStyle(1.05f),
+                color = Color(0xFF5D4A1F),
+                textAlign = TextAlign.Center,
+            )
+        }
+        OrnamentPanel(Modifier.weight(0.24f).fillMaxHeight())
     }
     if (surah != 1 && surah != 9) {
         Text(
             BASMALA,
-            style = uthmaniStyle(1f),
-            color = Color(0xFF5D4A1F),
+            style = uthmaniStyle(1f).copy(color = MushafMaroon, textAlign = TextAlign.Center),
             modifier = Modifier.fillMaxWidth().padding(bottom = 4.dp),
         )
+    }
+}
+
+/** Panel hias gelap di kiri-kanan nama surah: bingkai emas + medali lingkaran. */
+@Composable
+private fun OrnamentPanel(modifier: Modifier = Modifier) {
+    Box(modifier.background(MushafNavy).padding(5.dp)) {
+        Box(Modifier.fillMaxSize().border(1.dp, MushafGold), contentAlignment = Alignment.Center) {
+            Box(Modifier.size(20.dp).border(1.dp, MushafGold, CircleShape))
+        }
     }
 }
 

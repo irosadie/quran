@@ -58,10 +58,10 @@ fun QuranApp() {
                         )
                     }
                     composable<SurahReader> { backStack ->
-                        ReaderScreen(surah = backStack.toRoute<SurahReader>().number)
+                        ReaderScreen(surah = backStack.toRoute<SurahReader>().number, onBack = { nav.popBackStack() })
                     }
                     composable<PageReader> { backStack ->
-                        ReaderScreen(page = backStack.toRoute<PageReader>().page)
+                        ReaderScreen(page = backStack.toRoute<PageReader>().page, onBack = { nav.popBackStack() })
                     }
                     composable<Search> {
                         SearchScreen(onAyah = { key, page ->
