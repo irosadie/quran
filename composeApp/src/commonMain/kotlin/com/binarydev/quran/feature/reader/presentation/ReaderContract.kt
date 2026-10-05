@@ -20,6 +20,8 @@ data class ReaderState(
     val loading: Boolean = true,
     val error: String? = null,
     val fontScale: Float = 1f,
+    /** Mode fokus mengaji: semua chrome (header, audio bar) disembunyikan. */
+    val focusMode: Boolean = false,
     // Audio tilawah
     val reciter: Reciter = Reciters.default,
     val audioKey: String? = null, // "surah:ayah" yang sedang berbunyi
@@ -33,6 +35,7 @@ sealed interface ReaderEvent {
     data class NextPage(val step: Int = 1) : ReaderEvent
     data class OpenMushafForSurah(val number: Int) : ReaderEvent
     data class SetFontScale(val scale: Float) : ReaderEvent
+    data object ToggleFocus : ReaderEvent
     object Retry : ReaderEvent
     // Audio tilawah
     data class PlayAyah(val key: String) : ReaderEvent

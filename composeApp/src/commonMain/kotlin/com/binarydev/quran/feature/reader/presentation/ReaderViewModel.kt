@@ -76,6 +76,7 @@ class ReaderViewModel(
             }
             is ReaderEvent.OpenMushafForSurah -> openMushafForSurah(event.number)
             is ReaderEvent.SetFontScale -> _state.update { it.copy(fontScale = event.scale.coerceIn(0.8f, 2f)) }
+            ReaderEvent.ToggleFocus -> _state.update { it.copy(focusMode = !it.focusMode) }
             ReaderEvent.Retry -> {
                 val s = _state.value
                 if (s.mode == ReadMode.MUSHAF) loadPage(s.page) else loadSurah(s.surah)

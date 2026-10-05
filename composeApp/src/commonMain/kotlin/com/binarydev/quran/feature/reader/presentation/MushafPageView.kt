@@ -2,6 +2,8 @@ package com.binarydev.quran.feature.reader.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -70,6 +72,8 @@ fun MushafPageView(
     playingKey: String?,
     onAyahTap: (String) -> Unit,
     modifier: Modifier = Modifier,
+    /** Tap area kosong (bingkai/sela baris) — dipakai untuk mode fokus. */
+    onBackgroundTap: () -> Unit = {},
 ) {
     Box(
         modifier
@@ -80,7 +84,12 @@ fun MushafPageView(
             .background(MushafCream)
             .border(2.dp, MushafGold)
             .padding(3.dp)
-            .border(1.dp, MushafGold.copy(alpha = 0.6f)),
+            .border(1.dp, MushafGold.copy(alpha = 0.6f))
+            .clickable(
+                indication = null,
+                interactionSource = remember { MutableInteractionSource() },
+                onClick = onBackgroundTap,
+            ),
     ) {
         if (lines.isEmpty() && ayahs.isEmpty()) {
             Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {

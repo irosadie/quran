@@ -23,6 +23,8 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
    medali ۝ + digit Arab, bingkai gelap + krem, pita header surah + Basmalah
    marun, nomor halaman Arab; geser horizontal (pager RTL 604);
    landscape lebar = bentangan 2 halaman (ganjil kanan).
+   **Mode fokus mengaji**: tombol ⛶ / tap area kosong menyembunyikan header &
+   audio bar (tap teks tetap putar audio); halaman penuh tanpa chrome.
 4. **Audio tilawah**: putar per halaman berurutan / tap ayat untuk mulai dari situ,
    sorot kuning ayat berbunyi, pilihan qari (Misyari, Husari, Minsyawi via everyayah);
    berhenti otomatis saat pindah halaman; Desktop menampilkan pesan belum tersedia.

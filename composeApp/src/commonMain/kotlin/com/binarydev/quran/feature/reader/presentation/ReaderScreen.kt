@@ -75,22 +75,25 @@ fun ReaderScreen(
         Column(Modifier.fillMaxSize().padding(inner)) {
             if (state.mode == ReadMode.MUSHAF) {
                 val first = state.ayahs.firstOrNull()
-                MushafTopBar(
-                    surahLatin = first?.let { SurahData.latin.getOrElse(it.surah - 1) { "" } } ?: "",
-                    page = state.page,
-                    juz = first?.juz ?: 0,
-                    bookmarked = first?.let { a -> bookmarkState.items.any { it.key == a.key } } == true,
-                    onBack = onBack,
-                    onBookmark = {
-                        first?.let {
-                            bookmarkVm.onEvent(
-                                BookmarkEvent.Toggle(
-                                    Bookmark(it.key, it.surah, it.ayah, createdAt = Clock.System.now().toEpochMilliseconds()),
-                                ),
-                            )
-                        }
-                    },
-                )
+                if (!state.focusMode) {
+                    MushafTopBar(
+                        surahLatin = first?.let { SurahData.latin.getOrElse(it.surah - 1) { "" } } ?: "",
+                        page = state.page,
+                        juz = first?.juz ?: 0,
+                        bookmarked = first?.let { a -> bookmarkState.items.any { it.key == a.key } } == true,
+                        onBack = onBack,
+                        onFocus = { vm.onEvent(ReaderEvent.ToggleFocus) },
+                        onBookmark = {
+                            first?.let {
+                                bookmarkVm.onEvent(
+                                    BookmarkEvent.Toggle(
+                                        Bookmark(it.key, it.surah, it.ayah, createdAt = Clock.System.now().toEpochMilliseconds()),
+                                    ),
+                                )
+                            }
+                        },
+                    )
+                }
             } else {
                 // Mode Surah: satu tombol ke Mushaf (halaman pertama surah ini).
                 Row(Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -121,7 +124,7 @@ fun ReaderScreen(
                     }
                 }
                 else -> {
-                    AudioBar(state, vm::onEvent)
+                    if (!state.focusMode) AudioBar(state, vm::onEvent)
                     if (isSpread()) SpreadBook(state, onEvent = vm::onEvent) else MushafPager(state, onEvent = vm::onEvent)
                 }
             }
@@ -129,7 +132,7 @@ fun ReaderScreen(
     }
 }
 
-/** Bilah navy ala mushaf: kembali, judul surah, info Page/Juz, bookmark. */
+/** Bilah navy ala mushaf: kembali, judul surah, info Page/Juz, fokus, bookmark. */
 @Composable
 private fun MushafTopBar(
     surahLatin: String,
@@ -137,6 +140,7 @@ private fun MushafTopBar(
     juz: Int,
     bookmarked: Boolean,
     onBack: () -> Unit,
+    onFocus: () -> Unit,
     onBookmark: () -> Unit,
 ) {
     Row(
@@ -158,6 +162,7 @@ private fun MushafTopBar(
                 color = Color.White.copy(alpha = 0.8f),
             )
         }
+        TextButton(onClick = onFocus) { Text("⛶", color = Color.White.copy(alpha = 0.85f)) }
         TextButton(onClick = onBookmark) {
             Text("🔖", color = if (bookmarked) Color(0xFFFFD54F) else Color.White.copy(alpha = 0.5f))
         }
@@ -190,6 +195,7 @@ private fun MushafPager(state: ReaderState, onEvent: (ReaderEvent) -> Unit) {
                 playingKey = state.audioKey,
                 onAyahTap = { onEvent(ReaderEvent.PlayAyah(it)) },
                 modifier = Modifier.fillMaxSize(),
+                onBackgroundTap = { onEvent(ReaderEvent.ToggleFocus) },
             )
         } else {
             Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -223,6 +229,7 @@ private fun SpreadBook(state: ReaderState, onEvent: (ReaderEvent) -> Unit) {
                 playingKey = state.audioKey,
                 onAyahTap = { onEvent(ReaderEvent.PlayAyah(it)) },
                 modifier = Modifier.weight(1f).fillMaxSize(),
+                onBackgroundTap = { onEvent(ReaderEvent.ToggleFocus) },
             )
             MushafPageView(
                 pageNumber = pairStart,
@@ -232,6 +239,7 @@ private fun SpreadBook(state: ReaderState, onEvent: (ReaderEvent) -> Unit) {
                 playingKey = state.audioKey,
                 onAyahTap = { onEvent(ReaderEvent.PlayAyah(it)) },
                 modifier = Modifier.weight(1f).fillMaxSize(),
+                onBackgroundTap = { onEvent(ReaderEvent.ToggleFocus) },
             )
         }
     }
