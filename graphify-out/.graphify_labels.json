@@ -3,7 +3,7 @@
   "1": "QuranApp.kt",
   "2": "ReaderScreen.kt",
   "3": "AudioPlayer.ios.kt",
-  "4": "HomeViewModel",
+  "4": "SearchViewModel",
   "5": "AppResult",
   "6": "QuranApi.kt",
   "7": "mcp",
@@ -43,5 +43,11 @@
   "41": "windowheightsizeclass",
   "42": "windowwidthsizeclass",
   "43": "AudioPlayer",
-  "44": "Proposal: Mushaf mirip buku + audio tilawah + font Utsmani"
+  "44": "Proposal: Mushaf mirip buku + audio tilawah + font Utsmani",
+  "45": "AudioPlayer.android.kt",
+  "46": "IosAudioPlayer",
+  "47": "DesktopAudioPlayer",
+  "48": "AndroidAudioPlayer",
+  "49": "PlayerState",
+  "50": "Proposal: scaffold awal Quran KMP (MVVM+UDF + MCP)"
 }

@@ -3,7 +3,7 @@ package com.binarydev.quran.feature.home.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.binarydev.quran.core.common.MviContract
-import com.binarydev.quran.core.data.local.InMemoryStore
+import com.binarydev.quran.core.domain.repository.BookmarkRepository
 import com.binarydev.quran.core.domain.repository.QuranRepository
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
 /** MVVM+UDF: satu StateFlow, event -> reduce, effect sekali-pakai. */
 class HomeViewModel(
     private val repo: QuranRepository,
-    private val store: InMemoryStore,
+    private val bookmarks: BookmarkRepository,
 ) : ViewModel(), MviContract<HomeState, HomeEvent, HomeEffect> {
     private val _state = MutableStateFlow(HomeState())
     override val state: StateFlow<HomeState> = _state.asStateFlow()
@@ -31,7 +31,7 @@ class HomeViewModel(
             }
         }
         viewModelScope.launch {
-            store.lastRead.collect { b -> _state.update { it.copy(lastRead = b) } }
+            bookmarks.lastRead().collect { b -> _state.update { it.copy(lastRead = b) } }
         }
     }
 

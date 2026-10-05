@@ -46,8 +46,12 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
   - `GET /verses/by_chapter/{n}?per_page=300&fields=text_uthmani` (satu request per surah).
   - `GET /verses/by_page/{1..604}?fields=text_uthmani` (halaman Mushaf Madinah).
   - `GET /search?q=&size=20` (respons `search.results`: `verse_key` + `text`).
-- Catatan: endpoint `apis.quran.foundation` butuh header `x-auth-token`/`x-client-id`
-  (HTTP 400 tanpa itu) — jangan dipakai langsung dari app.
+- **Offline-first SQLite (SQLDelight)**: DB dulu, network hanya saat miss; tulis sekali
+  (`INSERT OR IGNORE` + pertahankan `page` terkecil untuk ayat sambungan).
+  Tabel: `ayah` (indeks page & surah), `bookmark`, `kv` (`last_read`).
+- **Pengaturan (DataStore)**: skala huruf Arab + tampil latin; bookmark & terakhir-baca
+  persisten lintas restart (Flow reaktif).
+- Jangan pakai `apis.quran.foundation` langsung dari app (butuh `x-auth-token`, HTTP 400).
 - Fallback: bundel `SurahMetadata` offline + file QPC (https://qurancomplex.gov.sa/quran-dev).
 - Validasi teks: via MCP `quran-api` (Quran.com v4).
 

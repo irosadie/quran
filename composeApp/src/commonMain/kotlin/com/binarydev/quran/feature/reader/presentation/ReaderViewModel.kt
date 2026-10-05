@@ -8,9 +8,9 @@ import com.binarydev.quran.core.data.audio.AudioPlayer
 import com.binarydev.quran.core.data.audio.PlayerEvent
 import com.binarydev.quran.core.data.audio.PlayerState
 import com.binarydev.quran.core.data.audio.audioUrl
-import com.binarydev.quran.core.data.local.InMemoryStore
 import com.binarydev.quran.core.domain.model.Ayah
 import com.binarydev.quran.core.domain.model.Bookmark
+import com.binarydev.quran.core.domain.repository.BookmarkRepository
 import com.binarydev.quran.core.domain.repository.QuranRepository
 import com.binarydev.quran.core.domain.usecase.GetMushafPageUseCase
 import kotlinx.coroutines.Job
@@ -28,7 +28,7 @@ import kotlinx.datetime.Clock
 class ReaderViewModel(
     private val repo: QuranRepository,
     private val pageUseCase: GetMushafPageUseCase,
-    private val store: InMemoryStore,
+    private val bookmarks: BookmarkRepository,
     private val player: AudioPlayer,
 ) : ViewModel(), MviContract<ReaderState, ReaderEvent, ReaderEffect> {
     private val _state = MutableStateFlow(ReaderState())
@@ -97,7 +97,7 @@ class ReaderViewModel(
                 is AppResult.Ok -> {
                     _state.update { st -> st.copy(ayahs = r.data, loading = false) }
                     r.data.firstOrNull()?.let {
-                        store.saveLastRead(Bookmark(it.key, it.surah, it.ayah, createdAt = Clock.System.now().toEpochMilliseconds()))
+                        bookmarks.setLastRead(Bookmark(it.key, it.surah, it.ayah, createdAt = Clock.System.now().toEpochMilliseconds()))
                     }
                 }
                 is AppResult.Err -> _state.update { it.copy(loading = false, error = r.message) }

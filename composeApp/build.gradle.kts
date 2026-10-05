@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.androidApplication)
+    alias(libs.plugins.sqldelight)
 }
 
 kotlin {
@@ -50,17 +51,23 @@ kotlin {
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
+            implementation(libs.sqldelight.runtime)
+            implementation(libs.sqldelight.coroutines)
+            implementation(libs.okio)
         }
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
             implementation(libs.androidx.lifecycle.viewmodel)
+            implementation(libs.sqldelight.android.driver)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
+            implementation(libs.sqldelight.native.driver)
         }
         getByName("desktopMain").dependencies {
             implementation(libs.ktor.client.java)
             implementation(compose.desktop.currentOs)
+            implementation(libs.sqldelight.sqlite.driver)
         }
     }
 }
@@ -88,6 +95,14 @@ compose.desktop {
             targetFormats(TargetFormat.Dmg, TargetFormat.Deb)
             packageName = "com.binarydev.quran"
             packageVersion = "1.0.0"
+        }
+    }
+}
+
+sqldelight {
+    databases {
+        create("QuranDatabase") {
+            packageName.set("com.binarydev.quran.db")
         }
     }
 }

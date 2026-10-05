@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/QuranApp.kt": {
-    "mtime": 1790923955.4010649,
-    "seen": 1790923989.50401,
-    "ast_hash": "79ddf01523494ac45469ffcc87ebc73b",
+    "mtime": 1791223116.0007954,
+    "seen": 1791223276.074697,
+    "ast_hash": "d78f22ad245657d3007c363687b7227c",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/AppResult.kt": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/repository/QuranRepositoryImpl.kt": {
-    "mtime": 1791220070.9216022,
-    "seen": 1791221441.257376,
-    "ast_hash": "53988b80e9beb27f5ec0973e6bb48288",
+    "mtime": 1791223052.1342015,
+    "seen": 1791223276.0747058,
+    "ast_hash": "5887795b2008fcb7b9de4f4fce277e04",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt": {
@@ -120,9 +120,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/repository/Repositories.kt": {
-    "mtime": 1790921217.2833805,
-    "seen": 1790922240.895026,
-    "ast_hash": "5997007b0a04549c750696f277691f95",
+    "mtime": 1791223052.1393936,
+    "seen": 1791223276.074709,
+    "ast_hash": "9e6a1feb83077e5396aa47e1780821af",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/usecase/UseCases.kt": {
@@ -174,21 +174,21 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt": {
-    "mtime": 1790921309.6624467,
-    "seen": 1790922240.895031,
-    "ast_hash": "195c3ffcfaf9ab765ee39d034f270cf5",
+    "mtime": 1791223064.9220123,
+    "seen": 1791223276.074717,
+    "ast_hash": "4ac9b328ea17d507d28dd84179d27eaf",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchScreen.kt": {
-    "mtime": 1790921309.6625636,
-    "seen": 1790922240.8950322,
-    "ast_hash": "023f2e2fd54a9f1f559a95114c166489",
+    "mtime": 1791223115.996763,
+    "seen": 1791223276.074717,
+    "ast_hash": "ed076b170d73852022443e045bd05810",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt": {
-    "mtime": 1790921309.6623645,
-    "seen": 1790922240.8950322,
-    "ast_hash": "cd0649256f2b41a215b582e783e6d554",
+    "mtime": 1791223076.5506485,
+    "seen": 1791223276.074718,
+    "ast_hash": "58788f7cca9cc20a90722005d29ba2b1",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsScreen.kt": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "openspec/specs/quran-mvp/spec.md": {
-    "mtime": 1791222453.0237331,
-    "seen": 1791222560.943725,
-    "ast_hash": "489d14c0d7c090c22c1401b5aaa6d0ce",
+    "mtime": 1791223130.0125077,
+    "seen": 1791223276.074743,
+    "ast_hash": "1be9c396ea417c58c8f12ccb0167bad4",
     "semantic_hash": ""
   },
   "gradlew": {

@@ -4,48 +4,71 @@ import com.binarydev.quran.core.common.AppResult
 import com.binarydev.quran.core.data.local.SurahMetadata
 import com.binarydev.quran.core.data.mapper.toDomain
 import com.binarydev.quran.core.data.remote.api.QuranApi
+import com.binarydev.quran.core.domain.model.Ayah
 import com.binarydev.quran.core.domain.model.MushafPage
 import com.binarydev.quran.core.domain.model.Surah
 import com.binarydev.quran.core.domain.repository.QuranRepository
+import com.binarydev.quran.db.Ayah as AyahRow
+import com.binarydev.quran.db.QuranDatabase
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.withContext
 
-/** Offline-first ringan: surah dari bundel, ayat/page dari API + cache memori. */
-class QuranRepositoryImpl(private val api: QuranApi) : QuranRepository {
-    private val pageCache = mutableMapOf<Int, MushafPage>()
-    private val surahCache = mutableMapOf<Int, List<com.binarydev.quran.core.domain.model.Ayah>>()
+/**
+ * Offline-first: surah dari bundel, ayat dari SQLite dulu (tulis-sekali-baca-selamanya),
+ * network hanya saat miss. Menggantikan cache memori.
+ */
+class QuranRepositoryImpl(
+    private val api: QuranApi,
+    db: QuranDatabase,
+) : QuranRepository {
+    private val q = db.quranQueries
 
     override fun surahs(): Flow<List<Surah>> = flow { emit(SurahMetadata.all()) }
 
-    override suspend fun ayahsBySurah(surah: Int): AppResult<List<com.binarydev.quran.core.domain.model.Ayah>> =
-        surahCache[surah]?.let { AppResult.Ok(it) } ?: runCatching {
+    override suspend fun ayahsBySurah(surah: Int): AppResult<List<Ayah>> {
+        val cached = withContext(Dispatchers.IO) {
+            q.ayahsBySurah(surah.toLong()).executeAsList().map { it.toDomain() }
+        }
+        if (cached.isNotEmpty()) return AppResult.Ok(cached)
+        return runCatching {
             api.versesByChapter(surah).verses.map { it.toDomain() }
         }.fold(
-            onSuccess = { list -> surahCache[surah] = list; AppResult.Ok(list) },
+            onSuccess = { list -> list.forEach { insert(it) }; AppResult.Ok(list) },
             onFailure = { AppResult.Err("Gagal memuat surah $surah. Cek koneksi.", it) },
         )
+    }
 
     override suspend fun page(pageNumber: Int): AppResult<MushafPage> {
         val p = pageNumber.coerceIn(1, 604)
-        pageCache[p]?.let { return AppResult.Ok(it) }
-        return runCatching { api.versesByPage(p).verses.map { it.toDomain() } }.fold(
+        val cached = withContext(Dispatchers.IO) {
+            q.ayahsByPage(p.toLong()).executeAsList().map { it.toDomain() }
+        }
+        if (cached.isNotEmpty()) return AppResult.Ok(MushafPage(p, cached))
+        return runCatching {
+            api.versesByPage(p).verses.map { it.toDomain() }
+        }.fold(
             onSuccess = { list ->
-                val m = MushafPage(p, list)
-                if (list.isNotEmpty()) pageCache[p] = m
-                AppResult.Ok(m)
+                list.forEach { insert(it) }
+                AppResult.Ok(MushafPage(p, list))
             },
             onFailure = { AppResult.Err("Gagal memuat halaman $p.", it) },
         )
     }
 
-    override suspend fun search(query: String): AppResult<List<com.binarydev.quran.core.domain.model.Ayah>> =
+    override suspend fun search(query: String): AppResult<List<Ayah>> =
         runCatching { api.search(query).search.results.map { it.toDomain() } }.fold(
             onSuccess = { AppResult.Ok(it) },
             onFailure = { AppResult.Err("Pencarian gagal.", it) },
         )
 
-    override suspend fun firstPageOf(surah: Int, ayah: Int): AppResult<Int> =
-        when (val r = ayahsBySurah(surah)) {
+    override suspend fun firstPageOf(surah: Int, ayah: Int): AppResult<Int> {
+        withContext(Dispatchers.IO) {
+            q.firstPageOf(surah.toLong(), ayah.toLong()).executeAsOneOrNull()?.toInt()
+        }?.takeIf { it in 1..604 }?.let { return AppResult.Ok(it) }
+        return when (val r = ayahsBySurah(surah)) {
             is AppResult.Ok -> r.data.firstOrNull { it.ayah == ayah }?.page
                 ?.takeIf { it in 1..604 }
                 ?.let { AppResult.Ok(it) }
@@ -53,4 +76,15 @@ class QuranRepositoryImpl(private val api: QuranApi) : QuranRepository {
             is AppResult.Err -> r
             AppResult.Loading -> AppResult.Loading
         }
+    }
+
+    private suspend fun insert(a: Ayah) = withContext(Dispatchers.IO) {
+        q.insertAyah(a.surah.toLong(), a.ayah.toLong(), a.key, a.textUthmani, a.juz.toLong(), a.page.toLong())
+        q.keepFirstPage(a.page.toLong(), a.key)
+    }
+
+    private fun AyahRow.toDomain() = Ayah(
+        surah = surah.toInt(), ayah = ayah.toInt(), key = key,
+        textUthmani = text_uthmani, juz = juz.toInt(), page = page.toInt(),
+    )
 }

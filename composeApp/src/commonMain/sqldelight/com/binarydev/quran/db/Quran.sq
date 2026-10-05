@@ -1,0 +1,63 @@
+-- Cache offline seluruh teks Utsmani + bookmark + terakhir dibaca.
+-- Teks Quran tidak berubah: tulis sekali, baca selamanya (tanpa expiry).
+
+CREATE TABLE ayah (
+  surah INTEGER NOT NULL,
+  ayah INTEGER NOT NULL,
+  key TEXT NOT NULL PRIMARY KEY, -- "2:255"
+  text_uthmani TEXT NOT NULL,
+  juz INTEGER NOT NULL DEFAULT 0,
+  page INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX ayah_page_idx ON ayah(page);
+CREATE INDEX ayah_surah_idx ON ayah(surah, ayah);
+
+insertAyah:
+INSERT OR IGNORE INTO ayah(surah, ayah, key, text_uthmani, juz, page)
+VALUES (?, ?, ?, ?, ?, ?);
+
+-- Ayat sambungan tercatat di dua halaman: pertahankan yang terkecil (pertama).
+keepFirstPage:
+UPDATE ayah SET page = min(page, ?) WHERE key = ?;
+
+ayahsBySurah:
+SELECT * FROM ayah WHERE surah = ? ORDER BY ayah;
+
+ayahsByPage:
+SELECT * FROM ayah WHERE page = ? ORDER BY surah, ayah;
+
+firstPageOf:
+SELECT page FROM ayah WHERE surah = ? AND ayah = ?;
+
+CREATE TABLE bookmark (
+  key TEXT NOT NULL PRIMARY KEY,
+  surah INTEGER NOT NULL,
+  ayah INTEGER NOT NULL,
+  note TEXT NOT NULL DEFAULT '',
+  created_at INTEGER NOT NULL DEFAULT 0
+);
+
+allBookmarks:
+SELECT * FROM bookmark ORDER BY created_at DESC;
+
+bookmarkByKey:
+SELECT * FROM bookmark WHERE key = ?;
+
+insertBookmark:
+INSERT OR REPLACE INTO bookmark(key, surah, ayah, note, created_at)
+VALUES (?, ?, ?, ?, ?);
+
+deleteBookmark:
+DELETE FROM bookmark WHERE key = ?;
+
+-- KV kecil: 'last_read' = "surah:ayah".
+CREATE TABLE kv (
+  key TEXT NOT NULL PRIMARY KEY,
+  value TEXT NOT NULL DEFAULT ''
+);
+
+getKv:
+SELECT value FROM kv WHERE key = ?;
+
+putKv:
+INSERT OR REPLACE INTO kv(key, value) VALUES (?, ?);
