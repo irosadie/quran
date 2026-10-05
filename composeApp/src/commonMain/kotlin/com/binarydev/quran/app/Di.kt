@@ -1,5 +1,7 @@
 package com.binarydev.quran.app
 
+import com.binarydev.quran.core.data.audio.AudioPlayer
+import com.binarydev.quran.core.data.audio.createAudioPlayer
 import com.binarydev.quran.core.data.local.InMemoryStore
 import com.binarydev.quran.core.data.remote.api.QuranApi
 import com.binarydev.quran.core.data.repository.QuranRepositoryImpl
@@ -19,6 +21,7 @@ val appModule = module {
     single { QuranApi() }
     single<QuranRepository> { QuranRepositoryImpl(get()) }
     single { InMemoryStore() }
+    single<AudioPlayer> { createAudioPlayer() }
     single { GetMushafPageUseCase(get()) }
     single { SearchAyahUseCase(get()) }
     viewModelOf(::HomeViewModel)

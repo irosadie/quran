@@ -2,13 +2,13 @@
   "0": "ReaderViewModel.kt",
   "1": "QuranApp.kt",
   "2": "ReaderScreen.kt",
-  "3": "AppResult",
-  "4": "MviContract",
-  "5": "Bookmark",
+  "3": "AudioPlayer.ios.kt",
+  "4": "SearchViewModel",
+  "5": "AppResult",
   "6": "QuranApi.kt",
   "7": "mcp",
   "8": "ReaderViewModel",
-  "9": "Responsive.kt",
+  "9": "rememberScreenClass",
   "10": "Quran MVP — KMP ringan, Mushaf Utsmani Madinah",
   "11": "openspec-explore/SKILL.md",
   "12": "opsx-explore.md",
@@ -41,5 +41,7 @@
   "39": "currentwindowadaptiveinfo",
   "40": "navigationsuitescaffolddefaults",
   "41": "windowheightsizeclass",
-  "42": "windowwidthsizeclass"
+  "42": "windowwidthsizeclass",
+  "43": "AudioPlayer",
+  "44": "Proposal: Mushaf mirip buku + audio tilawah + font Utsmani"
 }

@@ -1,26 +1,31 @@
-# Graph Report - quran  (2026-10-02)
+# Graph Report - quran  (2026-10-06)
 
 ## Corpus Check
-- 65 files · ~28,012 words
+- 75 files · ~31,150 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 9 file(s) not represented in the graph (top: (none) 3, .properties 2, .xml 1)
+- Unclassified: 10 file(s) not represented in the graph (top: (none) 3, .properties 2, .xml 1)
 
 ## Summary
-- 393 nodes · 626 edges · 43 communities (15 shown, 28 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.94)
+- 531 nodes · 897 edges · 45 communities (18 shown, 27 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `adbc2f8e`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - ReaderViewModel.kt
 - QuranApp.kt
 - ReaderScreen.kt
+- AudioPlayer.ios.kt
+- SearchViewModel
 - AppResult
-- MviContract
-- Bookmark
 - QuranApi.kt
 - mcp
 - ReaderViewModel
-- Responsive.kt
+- rememberScreenClass
 - Quran MVP — KMP ringan, Mushaf Utsmani Madinah
 - openspec-explore/SKILL.md
 - opsx-explore.md
@@ -35,18 +40,20 @@
 - Platform.desktop.kt
 - Platform.ios.kt
 - tasks.md
+- AudioPlayer
+- Proposal: Mushaf mirip buku + audio tilawah + font Utsmani
 
 ## God Nodes (most connected - your core abstractions)
-1. `AppResult` - 18 edges
-2. `QuranApp()` - 16 edges
-3. `QuranRepository` - 15 edges
-4. `ReaderViewModel` - 15 edges
-5. `MviContract` - 14 edges
-6. `Bookmark` - 14 edges
-7. `SearchViewModel` - 13 edges
-8. `Ayah` - 12 edges
-9. `HomeViewModel` - 12 edges
-10. `InMemoryStore` - 11 edges
+1. `ReaderViewModel` - 25 edges
+2. `AudioPlayer` - 21 edges
+3. `AppResult` - 18 edges
+4. `Ayah` - 17 edges
+5. `QuranApp()` - 16 edges
+6. `QuranRepository` - 15 edges
+7. `MviContract` - 14 edges
+8. `Bookmark` - 14 edges
+9. `ReaderEvent` - 14 edges
+10. `SearchViewModel` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Alur spec (OpenSpec)` --references--> `QuranApi`  [INFERRED]
@@ -63,43 +70,47 @@
 ## Import Cycles
 - None detected.
 
-## Communities (43 total, 28 thin omitted)
+## Communities (45 total, 27 thin omitted)
 
 ### Community 0 - "ReaderViewModel.kt"
-Cohesion: 0.07
-Nodes (18): InMemoryStore, BookmarkEvent, BookmarkState, BookmarkViewModel, Toggle, HomeEffect, HomeEvent, NavigatePage (+10 more)
+Cohesion: 0.08
+Nodes (17): MviContract, InMemoryStore, BookmarkEvent, BookmarkState, BookmarkViewModel, Toggle, HomeEvent, OpenPage (+9 more)
 
 ### Community 1 - "QuranApp.kt"
 Cohesion: 0.07
 Nodes (10): MainActivity, PageReader, QuranApp(), SurahReader, QuranTheme(), HomeScreen(), SearchScreen(), SettingsScreen() (+2 more)
 
-### Community 3 - "AppResult"
-Cohesion: 0.13
-Nodes (9): AppResult, Err, Loading, map(), Ok, QuranRepositoryImpl, QuranRepository, GetMushafPageUseCase (+1 more)
+### Community 2 - "ReaderScreen.kt"
+Cohesion: 0.06
+Nodes (6): SurahData, MushafText(), uthmaniStyle(), MushafPageView(), MushafParagraph(), SurahHeader()
 
-### Community 4 - "MviContract"
+### Community 3 - "AudioPlayer.ios.kt"
+Cohesion: 0.08
+Nodes (5): AndroidAudioPlayer, createAudioPlayer(), createAudioPlayer(), FinishDelegate, IosAudioPlayer
+
+### Community 4 - "SearchViewModel"
 Cohesion: 0.10
-Nodes (16): MviContract, UiEffect, NavigateAyah, SearchEffect, SearchState, ArabScale, Dark, Latin (+8 more)
+Nodes (17): UiEffect, HomeEffect, NavigatePage, NavigateSurah, Go, NavigateAyah, OpenAyah, Query (+9 more)
 
-### Community 5 - "Bookmark"
-Cohesion: 0.09
-Nodes (17): SurahMetadata, toDomain(), Ayah, Bookmark, MushafPage, Revelation, MADANIYAH, MAKKIYAH (+9 more)
+### Community 5 - "AppResult"
+Cohesion: 0.06
+Nodes (26): AppResult, Err, Loading, map(), Ok, SurahMetadata, toDomain(), QuranRepositoryImpl (+18 more)
 
 ### Community 6 - "QuranApi.kt"
 Cohesion: 0.14
-Nodes (5): engine(), QuranApi, PaginationDto, VerseDto, VersesResponse
+Nodes (8): engine(), QuranApi, PaginationDto, SearchBodyDto, SearchResponse, SearchResultDto, VerseDto, VersesResponse
 
 ### Community 7 - "mcp"
 Cohesion: 0.09
 Nodes (22): command, enabled, timeout, type, command, enabled, timeout, type (+14 more)
 
 ### Community 8 - "ReaderViewModel"
-Cohesion: 0.15
-Nodes (14): LoadPage, LoadSurah, NextPage, ReaderEffect, ReaderEvent, ReaderState, ReadMode, MUSHAF (+6 more)
+Cohesion: 0.08
+Nodes (27): audioUrl(), Reciter, Reciters, AudioBar(), AudioError, LoadPage, LoadSurah, NextPage (+19 more)
 
-### Community 9 - "Responsive.kt"
+### Community 9 - "rememberScreenClass"
 Cohesion: 0.13
-Nodes (12): AGENTS.md — cara kerja AI di repo ini, Alur spec (OpenSpec), Aturan arsitektur (wajib), MCP, Perintah cepat, rememberIsLandscape(), rememberScreenClass(), ScreenClass (+4 more)
+Nodes (13): AGENTS.md — cara kerja AI di repo ini, Alur spec (OpenSpec), Aturan arsitektur (wajib), MCP, Perintah cepat, rememberIsLandscape(), rememberScreenClass(), ScreenClass (+5 more)
 
 ### Community 10 - "Quran MVP — KMP ringan, Mushaf Utsmani Madinah"
 Cohesion: 0.20
@@ -125,25 +136,33 @@ Nodes (4): Font Mushaf Madinah (KFGQPC / QCF V2), Lisensi, Pasang, Unduh (pilih 
 Cohesion: 0.40
 Nodes (3): ContentView, .body, SwiftUI
 
+### Community 43 - "AudioPlayer"
+Cohesion: 0.09
+Nodes (13): AudioPlayer, createAudioPlayer(), Error, Finished, Idle, Loading, Paused, PlayerEvent (+5 more)
+
+### Community 44 - "Proposal: Mushaf mirip buku + audio tilawah + font Utsmani"
+Cohesion: 0.33
+Nodes (5): Di luar cakupan, Masalah, Proposal: Mushaf mirip buku + audio tilawah + font Utsmani, Sumber terverifikasi (curl, Okt 2026), Usulan
+
 ## Knowledge Gaps
-- **91 isolated node(s):** `PlatformCaps`, `Err`, `Loading`, `COMPACT`, `MEDIUM` (+86 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 172 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **106 isolated node(s):** `PlatformCaps`, `Err`, `Loading`, `Idle`, `Loading` (+101 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 233 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **27 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ReaderViewModel` connect `ReaderViewModel` to `ReaderViewModel.kt`, `ReaderScreen.kt`, `AppResult`, `MviContract`?**
-  _High betweenness centrality (0.116) - this node is a cross-community bridge._
-- **Why does `ReaderScreen()` connect `ReaderScreen.kt` to `ReaderViewModel`, `QuranApp.kt`?**
-  _High betweenness centrality (0.089) - this node is a cross-community bridge._
-- **Why does `QuranApi` connect `QuranApi.kt` to `Responsive.kt`, `AppResult`, `Bookmark`?**
-  _High betweenness centrality (0.078) - this node is a cross-community bridge._
+- **Why does `ReaderViewModel` connect `ReaderViewModel` to `ReaderViewModel.kt`, `AudioPlayer`, `AppResult`?**
+  _High betweenness centrality (0.144) - this node is a cross-community bridge._
+- **Why does `Ayah` connect `AppResult` to `ReaderViewModel`, `ReaderViewModel.kt`, `ReaderScreen.kt`, `SearchViewModel`?**
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
+- **Why does `AudioPlayer` connect `AudioPlayer` to `ReaderViewModel.kt`, `ReaderViewModel`, `AudioPlayer.ios.kt`, `AppResult`?**
+  _High betweenness centrality (0.104) - this node is a cross-community bridge._
 - **What connects `PlatformCaps`, `Err`, `Loading` to the rest of the system?**
-  _91 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _106 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ReaderViewModel.kt` be split into smaller, more focused modules?**
-  _Cohesion score 0.07446808510638298 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0783673469387755 - nodes in this community are weakly interconnected._
 - **Should `QuranApp.kt` be split into smaller, more focused modules?**
   _Cohesion score 0.07152496626180836 - nodes in this community are weakly interconnected._
 - **Should `ReaderScreen.kt` be split into smaller, more focused modules?**
-  _Cohesion score 0.12375533428165007 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.059154929577464786 - nodes in this community are weakly interconnected._

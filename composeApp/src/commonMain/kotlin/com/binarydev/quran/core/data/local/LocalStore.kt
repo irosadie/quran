@@ -7,35 +7,19 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 /**
- * Metadata 114 surah dibundel offline (tanpa network, <10KB).
- * Sumber angka: Tanzil / QuranComplex; arti ringkas Indonesia.
- * TODO(openspec): ganti dengan files/surah_metadata.json + terjemahan Kemenag bila lisensi OK.
+ * Metadata 114 surah dibundel offline (tanpa network, belasan KB).
+ * Angka & nama dari [SurahData]; arti Indonesia menyusul (fase terjemahan).
  */
 object SurahMetadata {
-    // number, latin, ayatCount, makkiyah(true)/madaniyah(false) — subset ringkas, dilengkapi bertahap
-    private val rows: List<Triple<String, Int, Boolean>> = listOf(
-        Triple("Al-Fatihah", 7, true), Triple("Al-Baqarah", 286, false),
-        Triple("Ali 'Imran", 200, false), Triple("An-Nisa'", 176, false),
-        Triple("Al-Ma'idah", 120, false),
-    )
-
-    fun all(): List<Surah> = buildList {
-        // 5 pertama akurat; sisanya placeholder agar UI/scroll 114 teruji ringan.
-        rows.forEachIndexed { i, (latin, count, makki) ->
-            add(
-                Surah(
-                    number = i + 1,
-                    arabicName = "",
-                    latinName = latin,
-                    arti = "",
-                    ayatCount = count,
-                    revelation = if (makki) Revelation.MAKKIYAH else Revelation.MADANIYAH,
-                ),
-            )
-        }
-        for (n in 6..114) {
-            add(Surah(n, "", "Surah $n", "", 0, Revelation.MAKKIYAH))
-        }
+    fun all(): List<Surah> = (1..114).map { n ->
+        Surah(
+            number = n,
+            arabicName = SurahData.arabic[n - 1],
+            latinName = SurahData.latin[n - 1],
+            arti = "",
+            ayatCount = SurahData.ayatCount[n - 1],
+            revelation = if (n in SurahData.madani) Revelation.MADANIYAH else Revelation.MAKKIYAH,
+        )
     }
 }
 

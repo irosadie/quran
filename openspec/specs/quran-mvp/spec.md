@@ -17,7 +17,12 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
 ### Fungsional
 1. **Home 114 surah offline**: daftar + cari surah instan tanpa network.
 2. **Mode Surah**: scroll ayat Utsmani per surah, tandai terakhir dibaca otomatis.
-3. **Mode Mushaf**: navigasi halaman **1..604** (‹ ›), tiap halaman = ayat-ayatnya (QCF V2, mushaf=1).
+3. **Mode Mushaf ala buku**: teks mengalir kontinu RTL + penanda ayat, bingkai krem,
+   header surah + Basmalah, nomor halaman; geser horizontal (pager RTL 604);
+   landscape lebar = bentangan 2 halaman (ganjil kanan).
+4. **Audio tilawah**: putar per halaman berurutan / tap ayat untuk mulai dari situ,
+   sorot kuning ayat berbunyi, pilihan qari (Misyari, Husari, Minsyawi via everyayah);
+   berhenti otomatis saat pindah halaman; Desktop menampilkan pesan belum tersedia.
 4. **Pencarian**: min 2 huruf, debounce 500ms, hasil max 20.
 5. **Pengaturan**: mode malam, skala huruf Arab 80–200%, toggle latin/arti.
 6. **Bookmark**: terakhir dibaca persisten (MVP: memori → DataStore; Room bila perlu).
@@ -26,7 +31,7 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
 - Lazy loading per surah/halaman + cache memori; **jangan preload 604 halaman**.
 - Ktor Logging **mati** di rilis; timeout 15 dtk; pesan error Indonesia ringkas.
 - Adaptif: `NavigationSuiteScaffold` — bottom-bar (compact) / rail (expanded).
-- Arab selalu RTL, `text_uthmani`, hormati `fontScale`.
+- Arab selalu RTL, `text_uthmani`, font Amiri Quran, hormati `fontScale`.
 
 ## Arsitektur (MVVM + UDF — wajib)
 - Tiap fitur: `*Contract.kt` (UiState/Event/Effect) + `*ViewModel.kt` (satu StateFlow + `onEvent`) + `*Screen.kt` (stateless).
