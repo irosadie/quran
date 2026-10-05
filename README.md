@@ -32,8 +32,8 @@ composeApp/src/commonMain/kotlin/com/binarydev/quran/
 
 ## Mushaf Utsmani (Madinah)
 
-- Layout: **QCF V2 / Mushaf Madinah 604 halaman**, `mushaf=1` di Quran Foundation API.
-- Teks: `text_uthmani` + `page_number`/`juz_number` per ayat.
+- Layout: **halaman Mushaf Madinah 604 halaman** via `GET /verses/by_page/{1..604}`.
+- Teks: `fields=text_uthmani` + `page_number`/`juz_number` per ayat (Quran.com API v4 publik, tanpa auth).
 - Font: unduh **KFGQPC Hafs** di https://fonts.qurancomplex.gov.sa (atau mirror https://github.com/thetruetruth/quran-data-kfgqpc), taruh TTF/WOFF2 di `composeApp/src/commonMain/composeResources/font/` lalu daftarkan di `MushafText.kt`.
 - Data dev resmi: https://qurancomplex.gov.sa/quran-dev (JSON/SQL/CSV).
 - Referensi page-layout: https://api-docs.quran.foundation/docs/tutorials/fonts/page-layout/

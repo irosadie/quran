@@ -4,8 +4,9 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 /**
- * DTO Quran Foundation API v4 (https://apis.quran.foundation/content/api/v4).
- * Mushaf Madinah = mushaf=1 (QCF V2, 604 halaman).
+ * DTO Quran.com API v4 publik (https://api.quran.com/api/v4, tanpa auth).
+ * Mushaf Madinah = default untuk by_page (604 halaman).
+ * Teks Utsmani diminta eksplisit via `fields=text_uthmani`.
  */
 @Serializable
 data class VersesResponse(
@@ -27,4 +28,18 @@ data class VerseDto(
     @SerialName("juz_number") val juzNumber: Int = 0,
     @SerialName("chapter_id") val chapterId: Int = 0,
     @SerialName("verse_number") val verseNumber: Int = 0,
+)
+
+/** Respons /search: bentuknya beda — bungkus `search.results`. */
+@Serializable
+data class SearchResponse(val search: SearchBodyDto = SearchBodyDto())
+
+@Serializable
+data class SearchBodyDto(val results: List<SearchResultDto> = emptyList())
+
+@Serializable
+data class SearchResultDto(
+    @SerialName("verse_key") val verseKey: String = "",
+    @SerialName("verse_id") val verseId: Int = 0,
+    @SerialName("text") val text: String = "",
 )

@@ -39,7 +39,7 @@ class QuranRepositoryImpl(private val api: QuranApi) : QuranRepository {
     }
 
     override suspend fun search(query: String): AppResult<List<com.binarydev.quran.core.domain.model.Ayah>> =
-        runCatching { api.search(query).verses.map { it.toDomain() } }.fold(
+        runCatching { api.search(query).search.results.map { it.toDomain() } }.fold(
             onSuccess = { AppResult.Ok(it) },
             onFailure = { AppResult.Err("Pencarian gagal.", it) },
         )

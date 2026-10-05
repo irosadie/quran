@@ -1,5 +1,6 @@
 package com.binarydev.quran.core.data.remote.api
 
+import com.binarydev.quran.core.data.remote.dto.SearchResponse
 import com.binarydev.quran.core.data.remote.dto.VersesResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -12,13 +13,12 @@ import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
 /**
- * Client Mushaf Madinah (QCF V2).
- * Catatan: endpoint foundation butuh x-auth-token + x-client-id untuk skala produksi.
- * Untuk MVP ringan: baseUrl dapat diganti proxy sendiri / file bundel offline.
- * Lihat: https://api-docs.quran.foundation/docs/tutorials/fonts/page-layout/
+ * Client Mushaf Madinah via Quran.com API v4 publik (tanpa auth).
+ * by_page = halaman Mushaf Madinah 1..604 (default).
+ * Teks Utsmani via `fields=text_uthmani`.
  */
 class QuranApi(
-    private val baseUrl: String = "https://apis.quran.foundation/content/api/v4",
+    private val baseUrl: String = "https://api.quran.com/api/v4",
 ) {
     private val json = Json { ignoreUnknownKeys = true; isLenient = true }
     private val client = HttpClient(engine()) {
@@ -26,24 +26,22 @@ class QuranApi(
         install(Logging) { level = LogLevel.NONE } // ringan: matikan log di rilis
     }
 
-    /** Ayat per surah, script Utsmani. words=true agar dapat page_number per kata bila perlu. */
-    suspend fun versesByChapter(chapter: Int, perPage: Int = 50): VersesResponse =
+    /** Ayat per surah — per_page=300 agar surah terpanjang (286 ayat) cukup 1 request. */
+    suspend fun versesByChapter(chapter: Int): VersesResponse =
         client.get("$baseUrl/verses/by_chapter/$chapter") {
             parameter("words", false)
-            parameter("text_uthmani", true)
-            parameter("per_page", perPage)
-            parameter("mushaf", 1) // 1 = QCF V2 (Mushaf Madinah)
+            parameter("fields", "text_uthmani")
+            parameter("per_page", 300)
         }.body()
 
     /** Ayat per halaman Mushaf Madinah 1..604 — inti mode "Mushaf". */
     suspend fun versesByPage(page: Int): VersesResponse =
         client.get("$baseUrl/verses/by_page/$page") {
             parameter("words", false)
-            parameter("text_uthmani", true)
-            parameter("mushaf", 1)
+            parameter("fields", "text_uthmani")
         }.body()
 
-    suspend fun search(query: String): VersesResponse =
+    suspend fun search(query: String): SearchResponse =
         client.get("$baseUrl/search") {
             parameter("q", query)
             parameter("size", 20)

@@ -34,9 +34,12 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
 - Lapisan: `core/domain` (model, repository interface, usecase) ← `core/data` (Ktor, DTO, mapper, repo impl) ← `feature/*/presentation`.
 
 ## Data (Madinah)
-- Primer: Quran Foundation v4 `text_uthmani`, `mushaf=1` (QCF V2).
-  - `GET /verses/by_chapter/{n}`, `/verses/by_page/{1..604}`, `/search`.
-  - Produksi: pakai proxy sendiri + header `x-auth-token`/`x-client-id` (jangan hardcode di repo).
+- Primer: **Quran.com API v4 publik** (`https://api.quran.com/api/v4`, tanpa auth).
+  - `GET /verses/by_chapter/{n}?per_page=300&fields=text_uthmani` (satu request per surah).
+  - `GET /verses/by_page/{1..604}?fields=text_uthmani` (halaman Mushaf Madinah).
+  - `GET /search?q=&size=20` (respons `search.results`: `verse_key` + `text`).
+- Catatan: endpoint `apis.quran.foundation` butuh header `x-auth-token`/`x-client-id`
+  (HTTP 400 tanpa itu) — jangan dipakai langsung dari app.
 - Fallback: bundel `SurahMetadata` offline + file QPC (https://qurancomplex.gov.sa/quran-dev).
 - Validasi teks: via MCP `quran-api` (Quran.com v4).
 
