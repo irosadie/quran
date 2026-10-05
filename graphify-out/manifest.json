@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/QuranApp.kt": {
-    "mtime": 1791223116.0007954,
-    "seen": 1791223276.074697,
-    "ast_hash": "d78f22ad245657d3007c363687b7227c",
+    "mtime": 1791226555.1381094,
+    "seen": 1791227210.418794,
+    "ast_hash": "ddab163ed98eaf720ce171ace6d98334",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/AppResult.kt": {
@@ -162,9 +162,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt": {
-    "mtime": 1791220595.133762,
-    "seen": 1791221441.257385,
-    "ast_hash": "e393573876502e275517e69604854a10",
+    "mtime": 1791226555.1381357,
+    "seen": 1791227210.418813,
+    "ast_hash": "f8cc25fb469395f0303e4d8bc2131fb5",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "openspec/specs/quran-mvp/spec.md": {
-    "mtime": 1791225175.3041017,
-    "seen": 1791225178.7552772,
-    "ast_hash": "2efe60fe1069d8207f0e3fa62a59c253",
+    "mtime": 1791226569.619709,
+    "seen": 1791227210.4188428,
+    "ast_hash": "e6a3eaaf6f308b9606611d07ded72bf3",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt": {
-    "mtime": 1791220573.1236033,
-    "seen": 1791221441.2573829,
-    "ast_hash": "f71a3d90a1c5c15fabd838d8f6b1e5fe",
+    "mtime": 1791226505.2990794,
+    "seen": 1791227210.4188118,
+    "ast_hash": "acb1ba51098ea5e4a4974ba1387e3827",
     "semantic_hash": ""
   },
   "composeApp/src/desktopMain/kotlin/com/binarydev/quran/core/data/audio/AudioPlayer.desktop.kt": {

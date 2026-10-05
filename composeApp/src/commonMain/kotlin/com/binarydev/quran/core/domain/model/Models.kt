@@ -32,6 +32,25 @@ data class MushafPage(
     val ayahs: List<Ayah>,
 )
 
+/** Satu segmen kata dalam baris + kunci ayat pemiliknya (untuk tap & sorotan). */
+@Serializable
+data class LineSeg(val t: String, val k: String)
+
+/** Satu baris cetakan (mis. baris 3..8 di halaman bersurah-header). */
+data class MushafLine(val number: Int, val segs: List<LineSeg>)
+
+/** Isi halaman dalam tata baris eksak + daftar ayat (untuk audio & info). */
+data class PageLines(
+    val page: Int,
+    val juz: Int,
+    val lines: List<MushafLine>,
+    val ayahs: List<Ayah>,
+) {
+    /** Kunci ayat berurutan kemunculan (untuk antrean audio). */
+    val keysInOrder: List<String>
+        get() = lines.flatMap { it.segs }.map { it.k }.distinct()
+}
+
 /** Bookmark / terakhir dibaca. */
 @Serializable
 data class Bookmark(

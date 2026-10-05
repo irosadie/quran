@@ -51,6 +51,7 @@ fun ReaderScreen(
     surah: Int = 1,
     page: Int? = null,
     onBack: () -> Unit = {},
+    onOpenMushaf: (Int) -> Unit = {},
     vm: ReaderViewModel = koinViewModel(),
     bookmarkVm: BookmarkViewModel = koinViewModel(),
 ) {
@@ -62,7 +63,12 @@ fun ReaderScreen(
     }
     LaunchedEffect(vm) {
         vm.effect.collect { e ->
-            if (e is ReaderEffect.AudioError) snackbar.showSnackbar(e.message)
+            when (e) {
+                is ReaderEffect.AudioError -> snackbar.showSnackbar(e.message)
+                is ReaderEffect.Message -> snackbar.showSnackbar(e.text)
+                is ReaderEffect.NavigatePage -> onOpenMushaf(e.page)
+                else -> Unit
+            }
         }
     }
     Scaffold(snackbarHost = { SnackbarHost(snackbar) }) { inner ->
@@ -86,19 +92,23 @@ fun ReaderScreen(
                     },
                 )
             } else {
+                // Mode Surah: satu tombol ke Mushaf (halaman pertama surah ini).
                 Row(Modifier.fillMaxWidth().padding(8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    OutlinedButton(onClick = { vm.onEvent(ReaderEvent.ToggleMode(ReadMode.SURAH)) }) { Text("Surah") }
-                    OutlinedButton(onClick = { vm.onEvent(ReaderEvent.LoadPage(state.page)) }) { Text("Mushaf") }
+                    OutlinedButton(onClick = { vm.onEvent(ReaderEvent.OpenMushafForSurah(surah)) }) { Text("Mushaf") }
                 }
             }
-            Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
-                Text("Ukuran huruf", style = MaterialTheme.typography.bodySmall)
-                Text("${(state.fontScale * 100).toInt()}%", style = MaterialTheme.typography.bodySmall)
+            // Tata cetakan eksak butuh ukuran tetap: slider hanya di mode Surah
+            // (pengaturan permanen ada di Pengaturan).
+            if (state.mode == ReadMode.SURAH) {
+                Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                    Text("Ukuran huruf", style = MaterialTheme.typography.bodySmall)
+                    Text("${(state.fontScale * 100).toInt()}%", style = MaterialTheme.typography.bodySmall)
+                }
+                Slider(
+                    value = state.fontScale, onValueChange = { vm.onEvent(ReaderEvent.SetFontScale(it)) },
+                    valueRange = 0.8f..2f, modifier = Modifier.padding(horizontal = 16.dp),
+                )
             }
-            Slider(
-                value = state.fontScale, onValueChange = { vm.onEvent(ReaderEvent.SetFontScale(it)) },
-                valueRange = 0.8f..2f, modifier = Modifier.padding(horizontal = 16.dp),
-            )
             when {
                 state.loading -> CircularProgressIndicator(Modifier.padding(24.dp))
                 state.error != null -> Column(Modifier.padding(24.dp)) {
@@ -107,7 +117,7 @@ fun ReaderScreen(
                 }
                 state.mode == ReadMode.SURAH -> LazyColumn(Modifier.fillMaxSize()) {
                     items(state.ayahs, key = { it.key }) { ayah ->
-                        MushafText("﴿${ayah.ayah}﴾ ${ayah.textUthmani}", fontScale = state.fontScale)
+                        MushafText("﴿${toArabicDigits(ayah.ayah)}﴾ ${ayah.textUthmani}", fontScale = state.fontScale)
                     }
                 }
                 else -> {
@@ -174,6 +184,7 @@ private fun MushafPager(state: ReaderState, onEvent: (ReaderEvent) -> Unit) {
         if (index + 1 == state.page) {
             MushafPageView(
                 pageNumber = state.page,
+                lines = state.lines,
                 ayahs = state.ayahs,
                 fontScale = state.fontScale,
                 playingKey = state.audioKey,
@@ -194,6 +205,8 @@ private fun SpreadBook(state: ReaderState, onEvent: (ReaderEvent) -> Unit) {
     val pairStart = ((state.page - 1) / 2 * 2 + 1).coerceIn(1, 603)
     val rightAyahs = if (pairStart == state.page) state.ayahs else state.nextAyahs
     val leftAyahs = if (pairStart == state.page) state.nextAyahs else state.ayahs
+    val rightLines = if (pairStart == state.page) state.lines else state.nextLines
+    val leftLines = if (pairStart == state.page) state.nextLines else state.lines
     Column(Modifier.fillMaxSize()) {
         Row(Modifier.fillMaxWidth().padding(horizontal = 8.dp), horizontalArrangement = Arrangement.SpaceBetween) {
             TextButton(onClick = { onEvent(ReaderEvent.LoadPage((pairStart + 2).coerceIn(1, 604))) }) { Text("‹ Berikutnya") }
@@ -204,6 +217,7 @@ private fun SpreadBook(state: ReaderState, onEvent: (ReaderEvent) -> Unit) {
             // Kiri = halaman genap (berikutnya), Kanan = halaman ganjil — seperti buku Arab.
             MushafPageView(
                 pageNumber = pairStart + 1,
+                lines = leftLines,
                 ayahs = leftAyahs,
                 fontScale = state.fontScale,
                 playingKey = state.audioKey,
@@ -212,6 +226,7 @@ private fun SpreadBook(state: ReaderState, onEvent: (ReaderEvent) -> Unit) {
             )
             MushafPageView(
                 pageNumber = pairStart,
+                lines = rightLines,
                 ayahs = rightAyahs,
                 fontScale = state.fontScale,
                 playingKey = state.audioKey,

@@ -28,6 +28,19 @@ data class VerseDto(
     @SerialName("juz_number") val juzNumber: Int = 0,
     @SerialName("chapter_id") val chapterId: Int = 0,
     @SerialName("verse_number") val verseNumber: Int = 0,
+    @SerialName("words") val words: List<WordDto> = emptyList(),
+)
+
+/** Satu kata + posisi baris cetakan (line_number) — kunci tata 15 baris eksak. */
+@Serializable
+data class WordDto(
+    @SerialName("id") val id: Int = 0,
+    @SerialName("position") val position: Int = 0,
+    @SerialName("char_type_name") val charType: String = "word", // word | end | pause
+    @SerialName("text_uthmani") val textUthmani: String = "",
+    @SerialName("page_number") val pageNumber: Int = 0,
+    @SerialName("line_number") val lineNumber: Int = 0,
+    @SerialName("v2_page") val v2Page: Int = 0,
 )
 
 /** Respons /search: bentuknya beda — bungkus `search.results`. */

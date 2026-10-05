@@ -7,12 +7,12 @@ import com.binarydev.quran.core.common.MviContract
 import com.binarydev.quran.core.data.audio.AudioPlayer
 import com.binarydev.quran.core.data.audio.PlayerEvent
 import com.binarydev.quran.core.data.audio.PlayerState
+import com.binarydev.quran.core.data.audio.Reciter
 import com.binarydev.quran.core.data.audio.audioUrl
-import com.binarydev.quran.core.domain.model.Ayah
 import com.binarydev.quran.core.domain.model.Bookmark
+import com.binarydev.quran.core.domain.model.MushafLine
 import com.binarydev.quran.core.domain.repository.BookmarkRepository
 import com.binarydev.quran.core.domain.repository.QuranRepository
-import com.binarydev.quran.core.domain.usecase.GetMushafPageUseCase
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -27,7 +27,6 @@ import kotlinx.datetime.Clock
 
 class ReaderViewModel(
     private val repo: QuranRepository,
-    private val pageUseCase: GetMushafPageUseCase,
     private val bookmarks: BookmarkRepository,
     private val player: AudioPlayer,
 ) : ViewModel(), MviContract<ReaderState, ReaderEvent, ReaderEffect> {
@@ -36,8 +35,8 @@ class ReaderViewModel(
     private val _effect = Channel<ReaderEffect>(Channel.BUFFERED)
     val effect = _effect.receiveAsFlow()
 
-    // Antrean putar: daftar ayat + indeks posisi
-    private var queue: List<Ayah> = emptyList()
+    // Antrean putar: kunci "surah:ayah" berurutan + indeks posisi
+    private var queue: List<String> = emptyList()
     private var queueIndex = -1
 
     // Prefetch: halaman yang sudah dihangatkan (repo meng-cache permanen)
@@ -75,7 +74,7 @@ class ReaderViewModel(
                 val p = (_state.value.page + event.step).coerceIn(1, 604)
                 loadPage(p)
             }
-            is ReaderEvent.ToggleMode -> _state.update { it.copy(mode = event.mode) }
+            is ReaderEvent.OpenMushafForSurah -> openMushafForSurah(event.number)
             is ReaderEvent.SetFontScale -> _state.update { it.copy(fontScale = event.scale.coerceIn(0.8f, 2f)) }
             ReaderEvent.Retry -> {
                 val s = _state.value
@@ -106,20 +105,41 @@ class ReaderViewModel(
         }
     }
 
-    private fun loadPage(page: Int) {
-        val p = page.coerceIn(1, 604)
+    private fun loadPage(page: Int) {        val p = page.coerceIn(1, 604)
         stopAudio()
         _state.update { it.copy(page = p, mode = ReadMode.MUSHAF, loading = true, error = null) }
         viewModelScope.launch {
-            // Halaman saat ini + halaman berikut (untuk bentangan buku), repo meng-cache.
-            val cur = pageUseCase(p)
-            val nxt = if (p < 604) pageUseCase(p + 1) else null
+            // Halaman saat ini + berikut (bentangan buku) dalam tata baris eksak.
+            val cur = repo.pageLines(p)
+            val nxt = if (p < 604) repo.pageLines(p + 1) else null
             if (cur is AppResult.Ok) {
-                val nextAyahs = (nxt as? AppResult.Ok)?.data?.ayahs.orEmpty()
-                _state.update { st -> st.copy(ayahs = cur.data.ayahs, nextAyahs = nextAyahs, page = cur.data.pageNumber, loading = false) }
+                val next = (nxt as? AppResult.Ok)?.data
+                _state.update { st ->
+                    st.copy(
+                        ayahs = cur.data.ayahs,
+                        lines = cur.data.lines,
+                        nextAyahs = next?.ayahs.orEmpty(),
+                        nextLines = next?.lines.orEmpty(),
+                        page = cur.data.page,
+                        loading = false,
+                    )
+                }
                 prefetchWindow(p)
             } else if (cur is AppResult.Err) {
                 _state.update { it.copy(loading = false, error = cur.message) }
+            }
+        }
+    }
+
+    /**
+     * Buka mode Mushaf di halaman PERTAMA surah (navigasi imersif PageReader).
+     */
+    private fun openMushafForSurah(number: Int) {
+        viewModelScope.launch {
+            when (val r = repo.firstPageOf(number, 1)) {
+                is AppResult.Ok -> _effect.send(ReaderEffect.NavigatePage(r.data))
+                is AppResult.Err -> _effect.send(ReaderEffect.Message(r.message))
+                AppResult.Loading -> Unit
             }
         }
     }
@@ -135,45 +155,48 @@ class ReaderViewModel(
         prefetchJob = viewModelScope.launch {
             ((center - radius)..(center + radius))
                 .filter { it in 1..604 && it != center && it !in prefetched }
-                .map { n -> async { if (pageUseCase(n) is AppResult.Ok) prefetched.add(n) } }
+                .map { n -> async { if (repo.pageLines(n) is AppResult.Ok) prefetched.add(n) } }
                 .awaitAll()
         }
     }
 
-    // ---- Audio tilawah ----
+    // ---- Audio tilawah (antrean = kunci ayat dari baris halaman) ----
 
     private fun playPage() {
-        val list = _state.value.ayahs
-        if (list.isEmpty()) return
-        queue = list
+        val keys = _state.value.lines.flatMap { it.segs }.map { it.k }.distinct()
+        if (keys.isEmpty()) return
+        queue = keys
         playIndex(0)
     }
 
     private fun playFromKey(key: String) {
-        val current = _state.value.ayahs
-        val idx = current.indexOfFirst { it.key == key }
+        val current = _state.value.lines.flatMap { it.segs }.map { it.k }.distinct()
+        val idx = current.indexOf(key)
         if (idx >= 0) {
             queue = current
             playIndex(idx)
             return
         }
         // Ayat di halaman sebelah (bentangan buku)
-        val idxNext = _state.value.nextAyahs.indexOfFirst { it.key == key }
+        val next = _state.value.nextLines.flatMap { it.segs }.map { it.k }.distinct()
+        val idxNext = next.indexOf(key)
         if (idxNext >= 0) {
-            queue = _state.value.nextAyahs
+            queue = next
             playIndex(idxNext)
         }
     }
 
     private fun playIndex(i: Int) {
         queueIndex = i
-        val a = queue.getOrNull(i) ?: return
-        val url = audioUrl(_state.value.reciter, a.surah, a.ayah)
-        viewModelScope.launch { player.play(url, a.key) }
+        val key = queue.getOrNull(i) ?: return
+        val (s, a) = key.split(":").mapNotNull { it.toIntOrNull() }
+            .let { it.getOrElse(0) { 0 } to it.getOrElse(1) { 0 } }
+        if (s <= 0 || a <= 0) return
+        viewModelScope.launch { player.play(audioUrl(_state.value.reciter, s, a), key) }
     }
 
     private fun onTrackFinished(key: String) {
-        if (queue.getOrNull(queueIndex)?.key == key && queueIndex + 1 < queue.size) {
+        if (queue.getOrNull(queueIndex) == key && queueIndex + 1 < queue.size) {
             playIndex(queueIndex + 1) // lanjut otomatis ke ayat berikut
         } else {
             stopAudio()
@@ -193,7 +216,7 @@ class ReaderViewModel(
         viewModelScope.launch { player.stop() }
     }
 
-    private fun selectReciter(reciter: com.binarydev.quran.core.data.audio.Reciter) {
+    private fun selectReciter(reciter: Reciter) {
         val currentKey = _state.value.audioKey
         _state.update { it.copy(reciter = reciter) }
         // Ganti qari sambil jalan: ulangi ayat yang sedang berbunyi dengan suara baru.

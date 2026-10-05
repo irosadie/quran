@@ -18,8 +18,10 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
 1. **Home 114 surah offline**: daftar + cari surah instan tanpa network.
 2. **Mode Surah**: scroll ayat Utsmani per surah, tandai terakhir dibaca otomatis.
 3. **Mode Mushaf ala buku**: header navy (kembali, nama surah, Page/Juz, bookmark),
-   teks mengalir kontinu RTL + penanda ayat, bingkai gelap + krem, pita header surah
-   + Basmalah marun, nomor halaman; geser horizontal (pager RTL 604);
+   imersif penuh (tanpa bottom-bar); **tata 15 baris cetakan eksak** dari
+   `line_number` per kata (justify penuh, tiap baris berakhir di penanda ayat),
+   medali ۝ + digit Arab, bingkai gelap + krem, pita header surah + Basmalah
+   marun, nomor halaman Arab; geser horizontal (pager RTL 604);
    landscape lebar = bentangan 2 halaman (ganjil kanan).
 4. **Audio tilawah**: putar per halaman berurutan / tap ayat untuk mulai dari situ,
    sorot kuning ayat berbunyi, pilihan qari (Misyari, Husari, Minsyawi via everyayah);

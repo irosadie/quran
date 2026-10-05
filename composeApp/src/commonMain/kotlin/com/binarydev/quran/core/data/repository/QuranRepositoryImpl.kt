@@ -3,9 +3,13 @@ package com.binarydev.quran.core.data.repository
 import com.binarydev.quran.core.common.AppResult
 import com.binarydev.quran.core.data.local.SurahMetadata
 import com.binarydev.quran.core.data.mapper.toDomain
+import com.binarydev.quran.core.data.mapper.toPageLines
 import com.binarydev.quran.core.data.remote.api.QuranApi
 import com.binarydev.quran.core.domain.model.Ayah
+import com.binarydev.quran.core.domain.model.LineSeg
+import com.binarydev.quran.core.domain.model.MushafLine
 import com.binarydev.quran.core.domain.model.MushafPage
+import com.binarydev.quran.core.domain.model.PageLines
 import com.binarydev.quran.core.domain.model.Surah
 import com.binarydev.quran.core.domain.repository.QuranRepository
 import com.binarydev.quran.db.Ayah as AyahRow
@@ -15,6 +19,8 @@ import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.withContext
+import kotlinx.serialization.builtins.ListSerializer
+import kotlinx.serialization.json.Json
 
 /**
  * Offline-first: surah dari bundel, ayat dari SQLite dulu (tulis-sekali-baca-selamanya),
@@ -64,6 +70,32 @@ class QuranRepositoryImpl(
             onFailure = { AppResult.Err("Pencarian gagal.", it) },
         )
 
+    override suspend fun pageLines(pageNumber: Int): AppResult<PageLines> {
+        val p = pageNumber.coerceIn(1, 604)
+        val (cachedLines, cachedAyahs) = withContext(Dispatchers.IO) {
+            val lines = q.linesByPage(p.toLong()).executeAsList().map {
+                MushafLine(it.line.toInt(), segJson.decodeFromString(ListSerializer(LineSeg.serializer()), it.segs))
+            }
+            val ayahs = q.ayahsByPage(p.toLong()).executeAsList().map { it.toDomain() }
+            lines to ayahs
+        }
+        if (cachedLines.isNotEmpty() && cachedAyahs.isNotEmpty()) {
+            return AppResult.Ok(PageLines(p, cachedAyahs.first().juz, cachedLines, cachedAyahs))
+        }
+        return runCatching { api.versesByPageWords(p).toPageLines(p) }.fold(
+            onSuccess = { pl ->
+                withContext(Dispatchers.IO) {
+                    pl.ayahs.forEach { insert(it) }
+                    pl.lines.forEach { line ->
+                        q.insertLine(p.toLong(), line.number.toLong(), segJson.encodeToString(ListSerializer(LineSeg.serializer()), line.segs))
+                    }
+                }
+                AppResult.Ok(pl)
+            },
+            onFailure = { AppResult.Err("Gagal memuat halaman $p.", it) },
+        )
+    }
+
     override suspend fun firstPageOf(surah: Int, ayah: Int): AppResult<Int> {
         withContext(Dispatchers.IO) {
             q.firstPageOf(surah.toLong(), ayah.toLong()).executeAsOneOrNull()?.toInt()
@@ -87,4 +119,8 @@ class QuranRepositoryImpl(
         surah = surah.toInt(), ayah = ayah.toInt(), key = key,
         textUthmani = text_uthmani, juz = juz.toInt(), page = page.toInt(),
     )
+
+    companion object {
+        private val segJson = Json { ignoreUnknownKeys = true }
+    }
 }

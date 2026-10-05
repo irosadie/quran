@@ -4,6 +4,7 @@ import com.binarydev.quran.core.common.UiEffect
 import com.binarydev.quran.core.data.audio.Reciter
 import com.binarydev.quran.core.data.audio.Reciters
 import com.binarydev.quran.core.domain.model.Ayah
+import com.binarydev.quran.core.domain.model.MushafLine
 
 /** Dua mode baca: Surah (scroll) & Mushaf (halaman Madinah 1..604). */
 enum class ReadMode { SURAH, MUSHAF }
@@ -14,6 +15,8 @@ data class ReaderState(
     val page: Int = 1,
     val ayahs: List<Ayah> = emptyList(),
     val nextAyahs: List<Ayah> = emptyList(), // halaman berikut (bentangan buku)
+    val lines: List<MushafLine> = emptyList(), // tata baris cetakan eksak
+    val nextLines: List<MushafLine> = emptyList(),
     val loading: Boolean = true,
     val error: String? = null,
     val fontScale: Float = 1f,
@@ -28,7 +31,7 @@ sealed interface ReaderEvent {
     data class LoadSurah(val number: Int) : ReaderEvent
     data class LoadPage(val page: Int) : ReaderEvent
     data class NextPage(val step: Int = 1) : ReaderEvent
-    data class ToggleMode(val mode: ReadMode) : ReaderEvent
+    data class OpenMushafForSurah(val number: Int) : ReaderEvent
     data class SetFontScale(val scale: Float) : ReaderEvent
     object Retry : ReaderEvent
     // Audio tilawah
@@ -42,4 +45,6 @@ sealed interface ReaderEvent {
 sealed interface ReaderEffect : UiEffect {
     data class Saved(val key: String) : ReaderEffect
     data class AudioError(val message: String) : ReaderEffect
+    data class NavigatePage(val page: Int) : ReaderEffect
+    data class Message(val text: String) : ReaderEffect
 }

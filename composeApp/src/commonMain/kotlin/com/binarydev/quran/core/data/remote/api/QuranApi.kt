@@ -41,6 +41,17 @@ class QuranApi(
             parameter("fields", "text_uthmani")
         }.body()
 
+    /**
+     * Halaman + kata per kata (line_number, v2_page) — untuk merekonstruksi
+     * tata 15 baris cetakan secara eksak.
+     */
+    suspend fun versesByPageWords(page: Int): VersesResponse =
+        client.get("$baseUrl/verses/by_page/$page") {
+            parameter("words", true)
+            parameter("word_fields", "v2_page,text_uthmani")
+            parameter("fields", "text_uthmani")
+        }.body()
+
     suspend fun search(query: String): SearchResponse =
         client.get("$baseUrl/search") {
             parameter("q", query)

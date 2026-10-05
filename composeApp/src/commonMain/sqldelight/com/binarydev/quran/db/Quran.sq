@@ -20,6 +20,25 @@ VALUES (?, ?, ?, ?, ?, ?);
 keepFirstPage:
 UPDATE ayah SET page = min(page, ?) WHERE key = ?;
 
+-- Baris cetakan eksak per halaman (dari word line_number): 604 x ~15 baris.
+CREATE TABLE mushaf_line (
+  page INTEGER NOT NULL,
+  line INTEGER NOT NULL,
+  segs TEXT NOT NULL, -- JSON [{"t":"...","k":"2:1"}]
+  PRIMARY KEY (page, line)
+);
+
+linesByPage:
+SELECT * FROM mushaf_line WHERE page = ? ORDER BY line;
+
+insertLine:
+INSERT OR REPLACE INTO mushaf_line(page, line, segs) VALUES (?, ?, ?);
+
+-- Versioning format baris (lines_v di kv): naikkan bila render berubah agar
+-- cache lama (tanpa medali ۝ dsb.) dibangun ulang otomatis.
+deleteAllLines:
+DELETE FROM mushaf_line;
+
 ayahsBySurah:
 SELECT * FROM ayah WHERE surah = ? ORDER BY ayah;
 

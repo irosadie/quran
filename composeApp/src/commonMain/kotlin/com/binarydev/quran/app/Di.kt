@@ -15,7 +15,6 @@ import com.binarydev.quran.core.data.local.SettingsRepositoryImpl
 import com.binarydev.quran.core.domain.repository.BookmarkRepository
 import com.binarydev.quran.core.domain.repository.QuranRepository
 import com.binarydev.quran.core.domain.repository.SettingsRepository
-import com.binarydev.quran.core.domain.usecase.GetMushafPageUseCase
 import com.binarydev.quran.core.domain.usecase.SearchAyahUseCase
 import com.binarydev.quran.db.QuranDatabase
 import com.binarydev.quran.feature.bookmark.presentation.BookmarkViewModel
@@ -36,7 +35,6 @@ val appModule = module {
     single<SettingsRepository> { SettingsRepositoryImpl(get()) }
     single<BookmarkRepository> { BookmarkRepositoryImpl(get()) }
     single<AudioPlayer> { createAudioPlayer() }
-    single { GetMushafPageUseCase(get()) }
     single { SearchAyahUseCase(get()) }
     viewModelOf(::HomeViewModel)
     viewModelOf(::ReaderViewModel)
