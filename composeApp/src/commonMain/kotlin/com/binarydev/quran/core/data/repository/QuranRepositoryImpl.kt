@@ -43,4 +43,14 @@ class QuranRepositoryImpl(private val api: QuranApi) : QuranRepository {
             onSuccess = { AppResult.Ok(it) },
             onFailure = { AppResult.Err("Pencarian gagal.", it) },
         )
+
+    override suspend fun firstPageOf(surah: Int, ayah: Int): AppResult<Int> =
+        when (val r = ayahsBySurah(surah)) {
+            is AppResult.Ok -> r.data.firstOrNull { it.ayah == ayah }?.page
+                ?.takeIf { it in 1..604 }
+                ?.let { AppResult.Ok(it) }
+                ?: AppResult.Err("Ayat $surah:$ayah tidak ketemu.")
+            is AppResult.Err -> r
+            AppResult.Loading -> AppResult.Loading
+        }
 }

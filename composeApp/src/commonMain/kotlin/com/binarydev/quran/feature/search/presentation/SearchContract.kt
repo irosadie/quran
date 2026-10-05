@@ -17,5 +17,6 @@ sealed interface SearchEvent {
 }
 
 sealed interface SearchEffect : UiEffect {
-    data class NavigateAyah(val key: String) : SearchEffect
+    /** Buka ayat di halaman PERTAMA kemunculannya (null = fallback mode Surah). */
+    data class NavigateAyah(val key: String, val page: Int?) : SearchEffect
 }

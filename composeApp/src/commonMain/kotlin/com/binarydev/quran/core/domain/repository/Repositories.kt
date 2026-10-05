@@ -12,6 +12,12 @@ interface QuranRepository {
     suspend fun ayahsBySurah(surah: Int): AppResult<List<Ayah>>
     suspend fun page(pageNumber: Int): AppResult<MushafPage>
     suspend fun search(query: String): AppResult<List<Ayah>>
+    /**
+     * Halaman PERTAMA kemunculan ayat (ayat panjang bersambung ke halaman
+     * berikut; by_chapter mengembalikan page_number awal). Untuk navigasi
+     * tepat dari hasil cari/bookmark.
+     */
+    suspend fun firstPageOf(surah: Int, ayah: Int): AppResult<Int>
 }
 
 interface BookmarkRepository {

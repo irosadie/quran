@@ -168,9 +168,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt": {
-    "mtime": 1791220544.903031,
-    "seen": 1791221441.257385,
-    "ast_hash": "c7149d8e2d00d4ffbd30f21def821654",
+    "mtime": 1791222477.9591646,
+    "seen": 1791222560.9436958,
+    "ast_hash": "e223a67db6a4b2b19a8b5cdccc12d9ed",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "openspec/specs/quran-mvp/spec.md": {
-    "mtime": 1791220603.7703261,
-    "seen": 1791221441.2574122,
-    "ast_hash": "6203f85b4ccda54f95501c0109cbe91d",
+    "mtime": 1791222453.0237331,
+    "seen": 1791222560.943725,
+    "ast_hash": "489d14c0d7c090c22c1401b5aaa6d0ce",
     "semantic_hash": ""
   },
   "gradlew": {

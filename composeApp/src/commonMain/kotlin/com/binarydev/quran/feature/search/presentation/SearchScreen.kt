@@ -12,6 +12,7 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -19,8 +20,13 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
-fun SearchScreen(onAyah: (String) -> Unit, vm: SearchViewModel = koinViewModel()) {
+fun SearchScreen(onAyah: (key: String, page: Int?) -> Unit, vm: SearchViewModel = koinViewModel()) {
     val state by vm.state.collectAsStateWithLifecycle()
+    LaunchedEffect(vm) {
+        vm.effect.collect { e ->
+            if (e is SearchEffect.NavigateAyah) onAyah(e.key, e.page)
+        }
+    }
     Column(Modifier.fillMaxSize()) {
         TextField(
             value = state.query,
@@ -33,7 +39,7 @@ fun SearchScreen(onAyah: (String) -> Unit, vm: SearchViewModel = koinViewModel()
         state.error?.let { Text(it, Modifier.padding(16.dp)) }
         LazyColumn(Modifier.fillMaxSize()) {
             items(state.results, key = { it.key }) { a ->
-                Card(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 4.dp).clickable { onAyah(a.key) }) {
+                Card(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 4.dp).clickable { vm.onEvent(SearchEvent.OpenAyah(a.key)) }) {
                     Text("${a.key} • Juz ${a.juz}", Modifier.padding(top = 12.dp, start = 12.dp))
                     Text(a.textUthmani, Modifier.padding(12.dp))
                 }

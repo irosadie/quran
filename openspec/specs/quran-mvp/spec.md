@@ -23,7 +23,8 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
 4. **Audio tilawah**: putar per halaman berurutan / tap ayat untuk mulai dari situ,
    sorot kuning ayat berbunyi, pilihan qari (Misyari, Husari, Minsyawi via everyayah);
    berhenti otomatis saat pindah halaman; Desktop menampilkan pesan belum tersedia.
-4. **Pencarian**: min 2 huruf, debounce 500ms, hasil max 20.
+4. **Pencarian**: min 2 huruf, debounce 500ms, hasil max 20; tap hasil membuka
+   **halaman pertama** kemunculan ayat (ayat bersambung tetap mulai dari awal).
 5. **Pengaturan**: mode malam, skala huruf Arab 80–200%, toggle latin/arti.
 6. **Bookmark**: terakhir dibaca persisten (MVP: memori → DataStore; Room bila perlu).
 

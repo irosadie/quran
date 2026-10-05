@@ -63,7 +63,13 @@ fun QuranApp() {
                     composable<PageReader> { backStack ->
                         ReaderScreen(page = backStack.toRoute<PageReader>().page)
                     }
-                    composable<Search> { SearchScreen(onAyah = {}) }
+                    composable<Search> {
+                        SearchScreen(onAyah = { key, page ->
+                            // Selalu ke halaman PERTAMA ayat; fallback mode Surah bila tak ketemu.
+                            if (page != null) nav.navigate(PageReader(page))
+                            else key.split(":").firstOrNull()?.toIntOrNull()?.let { nav.navigate(SurahReader(it)) }
+                        })
+                    }
                     composable<Settings> { SettingsScreen() }
                 }
             }

@@ -1,17 +1,17 @@
 # Graph Report - quran  (2026-10-06)
 
 ## Corpus Check
-- 75 files · ~31,150 words
+- 75 files · ~31,308 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 10 file(s) not represented in the graph (top: (none) 3, .properties 2, .xml 1)
 
 ## Summary
-- 531 nodes · 897 edges · 45 communities (18 shown, 27 thin omitted)
+- 535 nodes · 903 edges · 45 communities (18 shown, 27 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `adbc2f8e`
+- Built from commit: `39a6d511`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,7 +20,7 @@
 - QuranApp.kt
 - ReaderScreen.kt
 - AudioPlayer.ios.kt
-- SearchViewModel
+- HomeViewModel
 - AppResult
 - QuranApi.kt
 - mcp
@@ -44,7 +44,7 @@
 - Proposal: Mushaf mirip buku + audio tilawah + font Utsmani
 
 ## God Nodes (most connected - your core abstractions)
-1. `ReaderViewModel` - 25 edges
+1. `ReaderViewModel` - 27 edges
 2. `AudioPlayer` - 21 edges
 3. `AppResult` - 18 edges
 4. `Ayah` - 17 edges
@@ -73,8 +73,8 @@
 ## Communities (45 total, 27 thin omitted)
 
 ### Community 0 - "ReaderViewModel.kt"
-Cohesion: 0.08
-Nodes (17): MviContract, InMemoryStore, BookmarkEvent, BookmarkState, BookmarkViewModel, Toggle, HomeEvent, OpenPage (+9 more)
+Cohesion: 0.07
+Nodes (14): MviContract, InMemoryStore, BookmarkEvent, BookmarkState, BookmarkViewModel, Toggle, Go, NavigateAyah (+6 more)
 
 ### Community 1 - "QuranApp.kt"
 Cohesion: 0.07
@@ -88,13 +88,13 @@ Nodes (6): SurahData, MushafText(), uthmaniStyle(), MushafPageView(), MushafPara
 Cohesion: 0.08
 Nodes (5): AndroidAudioPlayer, createAudioPlayer(), createAudioPlayer(), FinishDelegate, IosAudioPlayer
 
-### Community 4 - "SearchViewModel"
-Cohesion: 0.10
-Nodes (17): UiEffect, HomeEffect, NavigatePage, NavigateSurah, Go, NavigateAyah, OpenAyah, Query (+9 more)
+### Community 4 - "HomeViewModel"
+Cohesion: 0.09
+Nodes (21): UiEffect, HomeEffect, HomeEvent, HomeState, NavigatePage, NavigateSurah, OpenPage, OpenSurah (+13 more)
 
 ### Community 5 - "AppResult"
 Cohesion: 0.06
-Nodes (26): AppResult, Err, Loading, map(), Ok, SurahMetadata, toDomain(), QuranRepositoryImpl (+18 more)
+Nodes (25): AppResult, Err, Loading, map(), Ok, SurahMetadata, toDomain(), QuranRepositoryImpl (+17 more)
 
 ### Community 6 - "QuranApi.kt"
 Cohesion: 0.14
@@ -146,22 +146,22 @@ Nodes (5): Di luar cakupan, Masalah, Proposal: Mushaf mirip buku + audio tilawah
 
 ## Knowledge Gaps
 - **106 isolated node(s):** `PlatformCaps`, `Err`, `Loading`, `Idle`, `Loading` (+101 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 233 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 235 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **27 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ReaderViewModel` connect `ReaderViewModel` to `ReaderViewModel.kt`, `AudioPlayer`, `AppResult`?**
-  _High betweenness centrality (0.144) - this node is a cross-community bridge._
-- **Why does `Ayah` connect `AppResult` to `ReaderViewModel`, `ReaderViewModel.kt`, `ReaderScreen.kt`, `SearchViewModel`?**
+  _High betweenness centrality (0.148) - this node is a cross-community bridge._
+- **Why does `Ayah` connect `AppResult` to `ReaderViewModel`, `ReaderViewModel.kt`, `ReaderScreen.kt`?**
   _High betweenness centrality (0.106) - this node is a cross-community bridge._
 - **Why does `AudioPlayer` connect `AudioPlayer` to `ReaderViewModel.kt`, `ReaderViewModel`, `AudioPlayer.ios.kt`, `AppResult`?**
   _High betweenness centrality (0.104) - this node is a cross-community bridge._
 - **What connects `PlatformCaps`, `Err`, `Loading` to the rest of the system?**
   _106 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ReaderViewModel.kt` be split into smaller, more focused modules?**
-  _Cohesion score 0.0783673469387755 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06638714185883997 - nodes in this community are weakly interconnected._
 - **Should `QuranApp.kt` be split into smaller, more focused modules?**
   _Cohesion score 0.07152496626180836 - nodes in this community are weakly interconnected._
 - **Should `ReaderScreen.kt` be split into smaller, more focused modules?**
