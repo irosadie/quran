@@ -13,6 +13,9 @@ import com.binarydev.quran.core.domain.model.Ayah
 import com.binarydev.quran.core.domain.model.Bookmark
 import com.binarydev.quran.core.domain.repository.QuranRepository
 import com.binarydev.quran.core.domain.usecase.GetMushafPageUseCase
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -36,6 +39,10 @@ class ReaderViewModel(
     // Antrean putar: daftar ayat + indeks posisi
     private var queue: List<Ayah> = emptyList()
     private var queueIndex = -1
+
+    // Prefetch: halaman yang sudah dihangatkan (repo meng-cache permanen)
+    private var prefetchJob: Job? = null
+    private val prefetched = mutableSetOf<Int>()
 
     init {
         // Cerminkan status pemutar ke UiState (UDF: satu sumber kebenaran di state)
@@ -110,9 +117,26 @@ class ReaderViewModel(
             if (cur is AppResult.Ok) {
                 val nextAyahs = (nxt as? AppResult.Ok)?.data?.ayahs.orEmpty()
                 _state.update { st -> st.copy(ayahs = cur.data.ayahs, nextAyahs = nextAyahs, page = cur.data.pageNumber, loading = false) }
+                prefetchWindow(p)
             } else if (cur is AppResult.Err) {
                 _state.update { it.copy(loading = false, error = cur.message) }
             }
+        }
+    }
+
+    /**
+     * Hangatkan a-4..a+4 (di luar halaman aktif) secara async paralel.
+     * Hasil masuk cache repo → geser halaman terasa instan, tanpa memblokir UI.
+     * Job lama dibatalkan tiap pindah halaman; yang gagal tidak ditandai
+     * agar dicoba lagi saat jendela berikutnya mencakupnya.
+     */
+    private fun prefetchWindow(center: Int, radius: Int = PREFETCH_RADIUS) {
+        prefetchJob?.cancel()
+        prefetchJob = viewModelScope.launch {
+            ((center - radius)..(center + radius))
+                .filter { it in 1..604 && it != center && it !in prefetched }
+                .map { n -> async { if (pageUseCase(n) is AppResult.Ok) prefetched.add(n) } }
+                .awaitAll()
         }
     }
 
@@ -178,5 +202,10 @@ class ReaderViewModel(
 
     override fun onCleared() {
         player.release()
+    }
+
+    companion object {
+        /** Radius prefetch: a-4..a+4 di sekitar halaman terbuka. */
+        const val PREFETCH_RADIUS = 4
     }
 }

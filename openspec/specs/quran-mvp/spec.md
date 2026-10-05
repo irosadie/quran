@@ -29,6 +29,8 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
 
 ### Non-fungsional (ringan & responsif)
 - Lazy loading per surah/halaman + cache memori; **jangan preload 604 halaman**.
+- Prefetch async: saat halaman A terbuka, hangatkan A±4 paralel di background
+  (batalkan saat pindah halaman, hanya tandai yang sukses).
 - Ktor Logging **mati** di rilis; timeout 15 dtk; pesan error Indonesia ringkas.
 - Adaptif: `NavigationSuiteScaffold` — bottom-bar (compact) / rail (expanded).
 - Arab selalu RTL, `text_uthmani`, font Amiri Quran, hormati `fontScale`.
