@@ -5,6 +5,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -29,6 +30,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextAlign
@@ -112,36 +114,57 @@ private fun ExactLinesPage(
     playingKey: String?,
     onAyahTap: (String) -> Unit,
 ) {
-    // Selalu boleh scroll (pengaman); rapat seperti cetakan, footer di ujung konten.
-    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(10.dp)) {
-        val firstKey = lines.firstOrNull()?.segs?.firstOrNull()?.k
-        val parts = firstKey?.split(":")?.mapNotNull { it.toIntOrNull() }.orEmpty()
-        val firstSurah = parts.getOrElse(0) { 0 }
-        val firstAyah = parts.getOrElse(1) { 0 }
-        if (firstAyah == 1 && firstSurah > 0) SurahHeader(firstSurah)
-        for (line in lines) {
-            FitLine(line.segs, fontScale, playingKey, onAyahTap)
+    val firstKey = lines.firstOrNull()?.segs?.firstOrNull()?.k
+    val parts = firstKey?.split(":")?.mapNotNull { it.toIntOrNull() }.orEmpty()
+    val firstSurah = parts.getOrElse(0) { 0 }
+    val firstAyah = parts.getOrElse(1) { 0 }
+    val hasHeader = firstAyah == 1 && firstSurah > 0
+    // Ukuran SERAGAM sehalaman seperti cetakan: muat 15 baris x tinggi-baris 2x
+    // dalam viewport (dikurangi header+footer), lalu susut bersama bila ada
+    // baris yang meluber. Selalu boleh scroll sebagai pengaman.
+    BoxWithConstraints(Modifier.fillMaxSize().padding(10.dp)) {
+        val density = LocalDensity.current
+        val reserved = (if (hasHeader) 170.dp else 30.dp) + 44.dp // pita+basmalah & footer+padding
+        val fitSp = with(density) { ((maxHeight - reserved).coerceAtLeast(0.dp) / 30f).toSp().value }
+        var size by remember(lines, fontScale, maxHeight, hasHeader) {
+            mutableStateOf(minOf(20f * fontScale, maxOf(11f, fitSp)))
         }
-        Text(
-            text = toArabicDigits(pageNumber),
-            style = MaterialTheme.typography.labelSmall,
-            color = MushafGold,
-            modifier = Modifier.align(Alignment.CenterHorizontally).padding(top = 10.dp, bottom = 4.dp),
-        )
+        // Cukup muat? Sebar seperti cetakan. Kepanjangan? Rapat atas + scroll.
+        val lineH = with(density) { (size * 2.0f).sp.toDp() }
+        val estH = (if (hasHeader) 170.dp else 30.dp) + lineH * lines.size + 44.dp
+        val spread = estH <= maxHeight
+        val colMod = if (spread) {
+            Modifier.fillMaxSize()
+        } else {
+            Modifier.fillMaxSize().verticalScroll(rememberScrollState())
+        }
+        Column(colMod, verticalArrangement = androidx.compose.foundation.layout.Arrangement.SpaceBetween) {
+            if (hasHeader) SurahHeader(firstSurah)
+            for (line in lines) {
+                FitLine(line.segs, size, playingKey, onAyahTap) { if (size > 11f) size -= 0.5f }
+            }
+            Text(
+                text = toArabicDigits(pageNumber),
+                style = MaterialTheme.typography.labelSmall,
+                color = MushafGold,
+                modifier = Modifier.align(Alignment.CenterHorizontally).padding(top = 10.dp, bottom = 4.dp),
+            )
+        }
     }
 }
 
 /**
- * Satu baris: tidak wrap; mengecil otomatis sampai muat.
- * Ukuran dasar 20sp (rapat seperti khat cetakan), lantai 11sp.
+ * Satu baris: tidak wrap; ukuran DIWARISI seragam dari halaman (lapor meluber
+ * agar seluruh halaman susut bersama — seperti satu ukuran khat cetakan).
  */
 @Suppress("DEPRECATION")
 @Composable
 private fun FitLine(
     segs: List<LineSeg>,
-    fontScale: Float,
+    size: Float,
     playingKey: String?,
     onAyahTap: (String) -> Unit,
+    onOverflow: () -> Unit,
 ) {
     val annotated = remember(segs, playingKey) {
         buildAnnotatedString {
@@ -153,7 +176,6 @@ private fun FitLine(
             }
         }
     }
-    var size by remember(segs, fontScale) { mutableStateOf(20f * fontScale) }
     ClickableText(
         text = annotated,
         style = uthmaniStyle(1f).copy(fontSize = size.sp, lineHeight = (size * 2.0f).sp, color = MushafInk),
@@ -161,7 +183,7 @@ private fun FitLine(
         softWrap = false,
         overflow = TextOverflow.Clip,
         onTextLayout = { layout ->
-            if (layout.hasVisualOverflow && size > 11f) size -= 0.5f
+            if (layout.hasVisualOverflow) onOverflow()
         },
         onClick = { offset ->
             annotated.getStringAnnotations("ayah", offset, offset).firstOrNull()?.let { onAyahTap(it.item) }

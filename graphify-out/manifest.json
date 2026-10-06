@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/mapper/QuranMapper.kt": {
-    "mtime": 1791229118.367779,
-    "seen": 1791229381.6504781,
-    "ast_hash": "78d9e6876d9f4ea729eda8a716b9479b",
+    "mtime": 1791259255.6675556,
+    "seen": 1791259460.002267,
+    "ast_hash": "f6bd803afb9866f52051fc3995e7a1f2",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/remote/api/Engine.kt": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt": {
-    "mtime": 1791220638.9871104,
-    "seen": 1791221441.257376,
-    "ast_hash": "e7b4732c35e9f3e16ddc22d1d52852ef",
+    "mtime": 1791258727.0783179,
+    "seen": 1791259460.002271,
+    "ast_hash": "def1a29fcfed3fb9e8d11d8e70fc57c0",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsScreen.kt": {
-    "mtime": 1791220603.7393403,
-    "seen": 1791221441.257388,
-    "ast_hash": "23eb59a2e6359586323b6f4fd811d490",
+    "mtime": 1791258778.2865567,
+    "seen": 1791259460.002283,
+    "ast_hash": "bf7b6cd0894a90b6feb2c3dcefe6af99",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt": {
@@ -360,9 +360,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/composeResources/font/README.md": {
-    "mtime": 1790921396.703545,
-    "seen": 1790922240.895048,
-    "ast_hash": "85d65dcdebcba794c4592cc8498bf162",
+    "mtime": 1791258778.28656,
+    "seen": 1791259460.002305,
+    "ast_hash": "e24aad1893fa6ee15097c28afc675d33",
     "semantic_hash": ""
   },
   "openspec/changes/quran-kmp-init/proposal.md": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "openspec/specs/quran-mvp/spec.md": {
-    "mtime": 1791229761.510737,
-    "seen": 1791229977.192239,
-    "ast_hash": "83158c012cff0435737f3d1d2106e4ff",
+    "mtime": 1791258807.9166498,
+    "seen": 1791259460.002311,
+    "ast_hash": "e095d306a9a5a2a2767301ae146c1ae7",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -474,9 +474,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/Database.kt": {
-    "mtime": 1791229142.8911533,
-    "seen": 1791229381.650474,
-    "ast_hash": "e1f9dee145cd2fcda775b8d44d095de4",
+    "mtime": 1791259255.6674898,
+    "seen": 1791259460.002263,
+    "ast_hash": "36e928458086b0c89d4a82a1e55b4165",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/Paths.kt": {
@@ -507,6 +507,12 @@
     "mtime": 1791224165.821814,
     "seen": 1791225178.7552571,
     "ast_hash": "7b844420646fe60207150045ae46f992",
+    "semantic_hash": ""
+  },
+  "openspec/changes/qcf-per-page/proposal.md": {
+    "mtime": 1791259456.4693792,
+    "seen": 1791259460.0023072,
+    "ast_hash": "0ee1b738bb6073fc87d9d29662af9675",
     "semantic_hash": ""
   }
 }
