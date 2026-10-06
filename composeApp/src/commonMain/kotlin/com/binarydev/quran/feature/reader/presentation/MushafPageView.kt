@@ -39,6 +39,8 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.dp
 import com.binarydev.quran.core.data.local.SurahData
+import com.binarydev.quran.core.designsystem.MarkFont
+import com.binarydev.quran.core.designsystem.appendUthmani
 import com.binarydev.quran.core.designsystem.uthmaniStyle
 import com.binarydev.quran.core.domain.model.Ayah
 import com.binarydev.quran.core.domain.model.LineSeg
@@ -166,12 +168,13 @@ private fun FitLine(
     onAyahTap: (String) -> Unit,
     onOverflow: () -> Unit,
 ) {
-    val annotated = remember(segs, playingKey) {
+    val markFont = MarkFont
+    val annotated = remember(segs, playingKey, markFont) {
         buildAnnotatedString {
             for (s in segs) {
                 pushStringAnnotation("ayah", s.k)
                 val bg = if (s.k == playingKey) PlayingHighlight else Color.Transparent
-                withStyle(SpanStyle(background = bg)) { append(s.t + " ") }
+                appendUthmani(s.t + " ", bg, markFont)
                 pop()
             }
         }
@@ -276,13 +279,16 @@ private fun MushafParagraph(
     onAyahTap: (String) -> Unit,
 ) {
     if (ayahs.isEmpty()) return
-    val text = buildAnnotatedString {
-        for (a in ayahs) {
-            pushStringAnnotation("ayah", a.key)
-            val bg = if (a.key == playingKey) PlayingHighlight else Color.Transparent
-            withStyle(SpanStyle(background = bg)) { append(a.textUthmani + " ") }
-            append("﴿${toArabicDigits(a.ayah)}﴾ ")
-            pop()
+    val markFont = MarkFont
+    val text = remember(ayahs, playingKey, markFont) {
+        buildAnnotatedString {
+            for (a in ayahs) {
+                pushStringAnnotation("ayah", a.key)
+                val bg = if (a.key == playingKey) PlayingHighlight else Color.Transparent
+                appendUthmani(a.textUthmani + " ", bg, markFont)
+                withStyle(SpanStyle(color = Color(0xFF1A1A1A))) { append("﴿${toArabicDigits(a.ayah)}﴾ ") }
+                pop()
+            }
         }
     }
     ClickableText(
