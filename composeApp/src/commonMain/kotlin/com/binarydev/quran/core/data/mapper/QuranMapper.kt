@@ -39,11 +39,11 @@ fun VersesResponse.toPageLines(page: Int): PageLines {
     for (v in verses) {
         for (w in v.words) {
             if (w.textUthmani.isBlank() || w.lineNumber <= 0) continue
-            // Kata penutup ayat (char_type=end, digit ١٢٣): bungkus kurung
-            // ornamen ﴿﴾ — gaya KFGQPC/Tanzil yang benar untuk font ini.
-            val text = if (w.charType == "end") "﴿${w.textUthmani}﴾" else w.textUthmani
+            // Penanda akhir ayat: digit Arab polos (١٢٣) — tanpa kurung/medali.
+            // (KFGQPC tak punya ﴿﴾ = fallback jelek; medali ۝ tak bisa
+            // menampung digit dalam teks biasa.)
             byLine.getOrPut(w.lineNumber) { mutableListOf() }
-                .add(LineSeg(text, v.verseKey))
+                .add(LineSeg(w.textUthmani, v.verseKey))
         }
     }
     val lines = byLine.keys.sorted().map { n -> MushafLine(n, byLine.getValue(n)) }

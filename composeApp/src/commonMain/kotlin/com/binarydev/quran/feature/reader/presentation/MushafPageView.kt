@@ -33,6 +33,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.withStyle
@@ -60,6 +61,10 @@ private const val ARABIC_DIGITS = "٠١٢٣٤٥٦٧٨٩"
 /** Nomor ayat gaya cetakan (١٢٣), bukan Latin. */
 fun toArabicDigits(n: Int): String =
     n.toString().map { c -> ARABIC_DIGITS.getOrElse(LATIN_DIGITS.indexOf(c)) { c } }.joinToString("")
+
+/** True bila segmen murni digit penanda akhir ayat (bukan kata). */
+private fun isMarkerDigit(t: String): Boolean =
+    t.isNotEmpty() && t.all { it in ARABIC_DIGITS }
 
 /**
  * Satu halaman mushaf dalam tata baris cetakan eksak (15 baris, justify penuh).
@@ -174,7 +179,14 @@ private fun FitLine(
             for (s in segs) {
                 pushStringAnnotation("ayah", s.k)
                 val bg = if (s.k == playingKey) PlayingHighlight else Color.Transparent
-                appendUthmani(s.t + " ", bg, markFont)
+                if (isMarkerDigit(s.t)) {
+                    // Digit penanda: font sistem polos (kebal ornamen font apa pun).
+                    withStyle(SpanStyle(background = bg, fontFamily = FontFamily.Default)) {
+                        append(s.t + " ")
+                    }
+                } else {
+                    appendUthmani(s.t + " ", bg, markFont)
+                }
                 pop()
             }
         }
@@ -286,7 +298,7 @@ private fun MushafParagraph(
                 pushStringAnnotation("ayah", a.key)
                 val bg = if (a.key == playingKey) PlayingHighlight else Color.Transparent
                 appendUthmani(a.textUthmani + " ", bg, markFont)
-                withStyle(SpanStyle(color = Color(0xFF1A1A1A))) { append("﴿${toArabicDigits(a.ayah)}﴾ ") }
+                withStyle(SpanStyle(color = MushafInk)) { append("${toArabicDigits(a.ayah)} ") }
                 pop()
             }
         }

@@ -22,8 +22,9 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
    `line_number` per kata (justify penuh, tiap baris berakhir di penanda ayat),
    **ukuran huruf SERAGAM sehalaman** dari viewport agar 15 baris pas
    (susut bersama, lantai 11sp); halaman pendek disebar penuh,
-   medali ۝ + digit Arab, bingkai gelap + krem, pita header surah + Basmalah
-   marun, nomor halaman Arab; geser horizontal (pager RTL 604);
+   penanda akhir ayat = digit Arab polos tanpa kurung
+   (KFGQPC tak punya ﴿﴾; medali ۝ tak menampung digit dalam teks),
+   bingkai gelap + krem, pita header surah + Basmalah marun, nomor halaman Arab; geser horizontal (pager RTL 604);
    landscape lebar = bentangan 2 halaman (ganjil kanan).
    **Mode fokus mengaji**: tombol ⛶ / tap area kosong menyembunyikan header &
    audio bar (tap teks tetap putar audio); halaman penuh tanpa chrome.

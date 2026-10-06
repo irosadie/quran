@@ -43,4 +43,4 @@ fun createDatabase(driver: SqlDriver = createDbDriver()): QuranDatabase {
 }
 
 private const val LINES_V = "lines_v"
-private const val LAYOUT_VERSION = "3" // naikkan tiap format segmen berubah
+private const val LAYOUT_VERSION = "4" // naikkan tiap format segmen berubah

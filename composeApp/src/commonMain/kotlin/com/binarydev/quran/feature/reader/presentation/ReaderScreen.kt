@@ -120,7 +120,7 @@ fun ReaderScreen(
                 }
                 state.mode == ReadMode.SURAH -> LazyColumn(Modifier.fillMaxSize()) {
                     items(state.ayahs, key = { it.key }) { ayah ->
-                        MushafText("﴿${toArabicDigits(ayah.ayah)}﴾ ${ayah.textUthmani}", fontScale = state.fontScale)
+                        MushafText("${ayah.textUthmani} ${toArabicDigits(ayah.ayah)}", fontScale = state.fontScale)
                     }
                 }
                 else -> {
