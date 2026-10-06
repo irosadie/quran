@@ -156,21 +156,21 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt": {
-    "mtime": 1791228790.6577992,
-    "seen": 1791229381.65049,
-    "ast_hash": "1e44119605f9d6568fc8cb2d33a53273",
+    "mtime": 1791229669.1873908,
+    "seen": 1791229977.1922078,
+    "ast_hash": "27cf110eb9a2f286b135b98bf21e6695",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt": {
-    "mtime": 1791228895.4509199,
-    "seen": 1791229381.65049,
-    "ast_hash": "1383dffff86e25ccb8a3b99fc59a4c04",
+    "mtime": 1791229761.5107677,
+    "seen": 1791229977.192209,
+    "ast_hash": "c372c6df10bc98f86a8d3c00877977ae",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt": {
-    "mtime": 1791228851.479967,
-    "seen": 1791229381.6504908,
-    "ast_hash": "59403d9abc521d276bfda1e80df96080",
+    "mtime": 1791229669.1795874,
+    "seen": 1791229977.192209,
+    "ast_hash": "3cd6bd37289055b0a6ebdf5ec8849982",
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "openspec/specs/quran-mvp/spec.md": {
-    "mtime": 1791229377.9833424,
-    "seen": 1791229381.65052,
-    "ast_hash": "45cd1366b6ae27ca1ef264a1280ed175",
+    "mtime": 1791229761.510737,
+    "seen": 1791229977.192239,
+    "ast_hash": "83158c012cff0435737f3d1d2106e4ff",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt": {
-    "mtime": 1791228873.779146,
-    "seen": 1791229381.650489,
-    "ast_hash": "2cd8c0b54c14faf976603acdfbae21fb",
+    "mtime": 1791229691.9625144,
+    "seen": 1791229977.192207,
+    "ast_hash": "b7c50479c0b3d7880de2f2176063ef10",
     "semantic_hash": ""
   },
   "composeApp/src/desktopMain/kotlin/com/binarydev/quran/core/data/audio/AudioPlayer.desktop.kt": {

@@ -10,7 +10,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "mvicontract",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/MviContract.kt",
@@ -23,7 +23,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "uieffect",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/MviContract.kt",
@@ -36,7 +36,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "bookmarkevent",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt",
@@ -49,7 +49,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "bookmarkstate",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt",
@@ -62,7 +62,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "bookmarkviewmodel",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt",
@@ -75,7 +75,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "toggle",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt",
@@ -88,7 +88,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "homeeffect",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -101,7 +101,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "homeevent",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -114,7 +114,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "homestate",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -127,7 +127,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "navigatepage",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -140,7 +140,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "navigatesurah",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -153,7 +153,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "openpage",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -166,7 +166,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "opensurah",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -179,7 +179,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "search",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -192,11 +192,115 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "homeviewmodel",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeViewModel.kt",
       "source_location": "L17"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_go",
+      "label": "Go",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "go",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L15"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_navigateayah",
+      "label": "NavigateAyah",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "navigateayah",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L21"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_openayah",
+      "label": "OpenAyah",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "openayah",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L16"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_query",
+      "label": "Query",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "query",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L14"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_searcheffect",
+      "label": "SearchEffect",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "searcheffect",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L19"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_searchevent",
+      "label": "SearchEvent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "searchevent",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L13"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_searchstate",
+      "label": "SearchState",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "searchstate",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L6"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel",
+      "label": "SearchViewModel",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "searchviewmodel",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
+      "source_location": "L19"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_settings_presentation_settingsviewmodel_arabscale",
@@ -205,7 +309,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "arabscale",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
@@ -218,7 +322,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "dark",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
@@ -231,7 +335,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "latin",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
@@ -244,7 +348,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "settingsevent",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
@@ -257,7 +361,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "settingsstate",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
@@ -270,11 +374,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "settingsviewmodel",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
       "source_location": "L22"
+    },
+    {
+      "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_mainactivity_mainactivity",
+      "label": "MainActivity",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "mainactivity",
+      "source_file": "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt",
+      "source_location": "L9"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_app_quranapp_pagereader",
@@ -316,17 +433,17 @@
       "source_location": "L5"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass",
-      "label": "ScreenClass",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_data_local_surahdata_surahdata",
+      "label": "SurahData",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "file_type": "code",
-      "norm_label": "screenclass",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
-      "source_location": "L13"
+      "norm_label": "surahdata",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/SurahData.kt",
+      "source_location": "L4"
     },
     {
       "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_platform_platform_android_platformcaps",
@@ -628,17 +745,17 @@
       "source_location": "L33"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_data_local_surahdata_surahdata",
-      "label": "SurahData",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass",
+      "label": "ScreenClass",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
-      "norm_label": "surahdata",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/SurahData.kt",
-      "source_location": "L4"
+      "norm_label": "screenclass",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
+      "source_location": "L13"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_common_appresult_appresult",
@@ -836,123 +953,6 @@
       "source_location": "L8"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_go",
-      "label": "Go",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "go",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L15"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_navigateayah",
-      "label": "NavigateAyah",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "navigateayah",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L21"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_openayah",
-      "label": "OpenAyah",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "openayah",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L16"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_query",
-      "label": "Query",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "query",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L14"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_searcheffect",
-      "label": "SearchEffect",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "searcheffect",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L19"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_searchevent",
-      "label": "SearchEvent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "searchevent",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L13"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract_searchstate",
-      "label": "SearchState",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "searchstate",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L6"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel",
-      "label": "SearchViewModel",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "searchviewmodel",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
-      "source_location": "L19"
-    },
-    {
-      "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_mainactivity_mainactivity",
-      "label": "MainActivity",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "PlatformLocal.android.kt",
-      "file_type": "code",
-      "norm_label": "mainactivity",
-      "source_file": "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt",
-      "source_location": "L9"
-    },
-    {
       "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_platform_appcontext_appcontext",
       "label": "AppContext",
       "_callable": true,
@@ -1106,7 +1106,7 @@
       "file_type": "code",
       "norm_label": "audioerror",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L47"
+      "source_location": "L50"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_loadpage",
@@ -1119,7 +1119,7 @@
       "file_type": "code",
       "norm_label": "loadpage",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L32"
+      "source_location": "L34"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_loadsurah",
@@ -1132,7 +1132,7 @@
       "file_type": "code",
       "norm_label": "loadsurah",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L31"
+      "source_location": "L33"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_message",
@@ -1145,7 +1145,7 @@
       "file_type": "code",
       "norm_label": "message",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L49"
+      "source_location": "L52"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_navigatepage",
@@ -1158,7 +1158,7 @@
       "file_type": "code",
       "norm_label": "navigatepage",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L48"
+      "source_location": "L51"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_nextpage",
@@ -1171,7 +1171,7 @@
       "file_type": "code",
       "norm_label": "nextpage",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L33"
+      "source_location": "L35"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_openmushafforsurah",
@@ -1184,7 +1184,7 @@
       "file_type": "code",
       "norm_label": "openmushafforsurah",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L34"
+      "source_location": "L36"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_pauseresume",
@@ -1197,7 +1197,7 @@
       "file_type": "code",
       "norm_label": "pauseresume",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L40"
+      "source_location": "L43"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_playayah",
@@ -1210,7 +1210,7 @@
       "file_type": "code",
       "norm_label": "playayah",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L38"
+      "source_location": "L41"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_playpage",
@@ -1223,7 +1223,7 @@
       "file_type": "code",
       "norm_label": "playpage",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L39"
+      "source_location": "L42"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_readereffect",
@@ -1236,7 +1236,7 @@
       "file_type": "code",
       "norm_label": "readereffect",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L45"
+      "source_location": "L48"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_readerevent",
@@ -1249,7 +1249,7 @@
       "file_type": "code",
       "norm_label": "readerevent",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L30"
+      "source_location": "L32"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_readerstate",
@@ -1288,7 +1288,7 @@
       "file_type": "code",
       "norm_label": "retry",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L36"
+      "source_location": "L39"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_saved",
@@ -1301,7 +1301,7 @@
       "file_type": "code",
       "norm_label": "saved",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L46"
+      "source_location": "L49"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_selectreciter",
@@ -1314,7 +1314,7 @@
       "file_type": "code",
       "norm_label": "selectreciter",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L42"
+      "source_location": "L45"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_setfontscale",
@@ -1327,7 +1327,7 @@
       "file_type": "code",
       "norm_label": "setfontscale",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L35"
+      "source_location": "L37"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_stopaudio",
@@ -1340,7 +1340,20 @@
       "file_type": "code",
       "norm_label": "stopaudio",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L41"
+      "source_location": "L44"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_togglefocus",
+      "label": "ToggleFocus",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "ReaderViewModel",
+      "file_type": "code",
+      "norm_label": "togglefocus",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
+      "source_location": "L38"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel",
@@ -1361,7 +1374,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": ".onevent()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/MviContract.kt",
@@ -1373,7 +1386,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": ".onevent()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt",
@@ -1385,11 +1398,47 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": ".onevent()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeViewModel.kt",
       "source_location": "L38"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel_onevent",
+      "label": ".onEvent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": ".onevent()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
+      "source_location": "L29"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel_openayah",
+      "label": ".openAyah()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": ".openayah()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
+      "source_location": "L45"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel_runsearch",
+      "label": ".runSearch()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": ".runsearch()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
+      "source_location": "L52"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_settings_presentation_settingsviewmodel_settingsviewmodel_onevent",
@@ -1397,11 +1446,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": ".onevent()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
       "source_location": "L35"
+    },
+    {
+      "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_mainactivity_mainactivity_oncreate",
+      "label": ".onCreate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": ".oncreate()",
+      "source_file": "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt",
+      "source_location": "L10"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_app_quranapp_quranapp",
+      "label": "QuranApp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "quranapp()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/QuranApp.kt",
+      "source_location": "L36"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_app_quranapp_qurannavhost",
@@ -1416,6 +1489,18 @@
       "source_location": "L68"
     },
     {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_theme_qurantheme",
+      "label": "QuranTheme()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "qurantheme()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Theme.kt",
+      "source_location": "L12"
+    },
+    {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_home_presentation_homescreen_homescreen",
       "label": "HomeScreen()",
       "_callable": true,
@@ -1428,18 +1513,6 @@
       "source_location": "L26"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchscreen_searchscreen",
-      "label": "SearchScreen()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "QuranApp.kt",
-      "file_type": "code",
-      "norm_label": "searchscreen()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchScreen.kt",
-      "source_location": "L22"
-    },
-    {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_settings_presentation_settingsscreen_settingsscreen",
       "label": "SettingsScreen()",
       "_callable": true,
@@ -1450,6 +1523,30 @@
       "norm_label": "settingsscreen()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsScreen.kt",
       "source_location": "L17"
+    },
+    {
+      "id": "composeapp_src_desktopmain_kotlin_com_binarydev_quran_main_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "composeApp/src/desktopMain/kotlin/com/binarydev/quran/Main.kt",
+      "source_location": "L7"
+    },
+    {
+      "id": "composeapp_src_iosmain_kotlin_com_binarydev_quran_mainviewcontroller_mainviewcontroller",
+      "label": "MainViewController()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "mainviewcontroller()",
+      "source_file": "composeApp/src/iosMain/kotlin/com/binarydev/quran/MainViewController.kt",
+      "source_location": "L4"
     },
     {
       "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_core_data_remote_api_engine_android_engine",
@@ -1500,28 +1597,124 @@
       "source_location": "L8"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_rememberislandscape",
-      "label": "rememberIsLandscape()",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_mushaftext",
+      "label": "MushafText()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "file_type": "code",
-      "norm_label": "rememberislandscape()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
-      "source_location": "L26"
+      "norm_label": "mushaftext()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt",
+      "source_location": "L37"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_rememberscreenclass",
-      "label": "rememberScreenClass()",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_uthmanistyle",
+      "label": "uthmaniStyle()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "file_type": "code",
-      "norm_label": "rememberscreenclass()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
-      "source_location": "L15"
+      "norm_label": "uthmanistyle()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt",
+      "source_location": "L25"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_exactlinespage",
+      "label": "ExactLinesPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "exactlinespage()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L107"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_fitline",
+      "label": "FitLine()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "fitline()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L138"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_mushafpageview",
+      "label": "MushafPageView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "mushafpageview()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L65"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_mushafparagraph",
+      "label": "MushafParagraph()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "mushafparagraph()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L248"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_ornamentpanel",
+      "label": "OrnamentPanel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "ornamentpanel()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L239"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_paragraphfallback",
+      "label": "ParagraphFallback()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "paragraphfallback()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L174"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_surahheader",
+      "label": "SurahHeader()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "surahheader()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L205"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_toarabicdigits",
+      "label": "toArabicDigits()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "toarabicdigits()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L57"
     },
     {
       "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_core_data_audio_audioplayer_android_androidaudioplayer_pause",
@@ -2040,6 +2233,18 @@
       "source_location": "L28"
     },
     {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_repository_repositories_quranrepository_surahs",
+      "label": ".surahs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "Di.kt",
+      "file_type": "code",
+      "norm_label": ".surahs()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/repository/Repositories.kt",
+      "source_location": "L12"
+    },
+    {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_repository_repositories_settingsrepository_arabfontscale",
       "label": ".arabFontScale()",
       "_callable": true,
@@ -2088,28 +2293,28 @@
       "source_location": "L37"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_mushaftext",
-      "label": "MushafText()",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_rememberislandscape",
+      "label": "rememberIsLandscape()",
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
-      "norm_label": "mushaftext()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt",
-      "source_location": "L37"
+      "norm_label": "rememberislandscape()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
+      "source_location": "L26"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_uthmanistyle",
-      "label": "uthmaniStyle()",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_rememberscreenclass",
+      "label": "rememberScreenClass()",
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
-      "norm_label": "uthmanistyle()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt",
-      "source_location": "L25"
+      "norm_label": "rememberscreenclass()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
+      "source_location": "L15"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_audiobar_audiobar",
@@ -2117,107 +2322,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "audiobar()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/AudioBar.kt",
       "source_location": "L23"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_exactlinespage",
-      "label": "ExactLinesPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "exactlinespage()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L98"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_fitline",
-      "label": "FitLine()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "fitline()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L129"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_mushafpageview",
-      "label": "MushafPageView()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "mushafpageview()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L63"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_mushafparagraph",
-      "label": "MushafParagraph()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "mushafparagraph()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L239"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_ornamentpanel",
-      "label": "OrnamentPanel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "ornamentpanel()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L230"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_paragraphfallback",
-      "label": "ParagraphFallback()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "paragraphfallback()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L165"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_surahheader",
-      "label": "SurahHeader()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "surahheader()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L196"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_toarabicdigits",
-      "label": "toArabicDigits()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "toarabicdigits()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L55"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerscreen_isspread",
@@ -2225,11 +2334,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "isspread()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L167"
+      "source_location": "L172"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerscreen_mushafpager",
@@ -2237,11 +2346,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "mushafpager()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L172"
+      "source_location": "L177"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerscreen_mushaftopbar",
@@ -2249,11 +2358,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "mushaftopbar()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L133"
+      "source_location": "L136"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerscreen_readerscreen",
@@ -2261,7 +2370,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "readerscreen()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
@@ -2273,11 +2382,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "spreadbook()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L203"
+      "source_location": "L209"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchscreen_searchscreen",
+      "label": "SearchScreen()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "file_type": "code",
+      "norm_label": "searchscreen()",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchScreen.kt",
+      "source_location": "L22"
     },
     {
       "id": "composeapp_src_iosmain_kotlin_com_binarydev_quran_core_data_local_platformlocal_ios_createdbdriver",
@@ -2508,18 +2629,6 @@
       "source_location": "L17"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_repository_repositories_quranrepository_surahs",
-      "label": ".surahs()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": ".surahs()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/repository/Repositories.kt",
-      "source_location": "L12"
-    },
-    {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_usecase_usecases_searchayahusecase_invoke",
       "label": ".invoke()",
       "_callable": true,
@@ -2530,54 +2639,6 @@
       "norm_label": ".invoke()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/usecase/UseCases.kt",
       "source_location": "L9"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel_onevent",
-      "label": ".onEvent()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": ".onevent()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
-      "source_location": "L29"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel_openayah",
-      "label": ".openAyah()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": ".openayah()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
-      "source_location": "L45"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_searchviewmodel_runsearch",
-      "label": ".runSearch()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": ".runsearch()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
-      "source_location": "L52"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_theme_qurantheme",
-      "label": "QuranTheme()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "Theme.kt",
-      "file_type": "code",
-      "norm_label": "qurantheme()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Theme.kt",
-      "source_location": "L12"
     },
     {
       "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_core_data_local_platformlocal_android_createdbdriver",
@@ -2602,18 +2663,6 @@
       "norm_label": "datafilepath()",
       "source_file": "composeApp/src/androidMain/kotlin/com/binarydev/quran/core/data/local/PlatformLocal.android.kt",
       "source_location": "L11"
-    },
-    {
-      "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_mainactivity_mainactivity_oncreate",
-      "label": ".onCreate()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "PlatformLocal.android.kt",
-      "file_type": "code",
-      "norm_label": ".oncreate()",
-      "source_file": "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt",
-      "source_location": "L10"
     },
     {
       "id": "composeapp_src_desktopmain_kotlin_com_binarydev_quran_core_data_local_platformlocal_desktop_appdir",
@@ -2733,7 +2782,7 @@
       "file_type": "code",
       "norm_label": ".loadpage()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L108"
+      "source_location": "L109"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_loadsurah",
@@ -2745,7 +2794,7 @@
       "file_type": "code",
       "norm_label": ".loadsurah()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L91"
+      "source_location": "L92"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_oncleared",
@@ -2757,7 +2806,7 @@
       "file_type": "code",
       "norm_label": ".oncleared()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L226"
+      "source_location": "L227"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_onevent",
@@ -2781,7 +2830,7 @@
       "file_type": "code",
       "norm_label": ".ontrackfinished()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L198"
+      "source_location": "L199"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_openmushafforsurah",
@@ -2793,7 +2842,7 @@
       "file_type": "code",
       "norm_label": ".openmushafforsurah()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L137"
+      "source_location": "L138"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_pauseresume",
@@ -2805,7 +2854,7 @@
       "file_type": "code",
       "norm_label": ".pauseresume()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L206"
+      "source_location": "L207"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_playfromkey",
@@ -2817,7 +2866,7 @@
       "file_type": "code",
       "norm_label": ".playfromkey()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L172"
+      "source_location": "L173"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_playindex",
@@ -2829,7 +2878,7 @@
       "file_type": "code",
       "norm_label": ".playindex()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L189"
+      "source_location": "L190"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_playpage",
@@ -2841,7 +2890,7 @@
       "file_type": "code",
       "norm_label": ".playpage()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L165"
+      "source_location": "L166"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_prefetchwindow",
@@ -2853,7 +2902,7 @@
       "file_type": "code",
       "norm_label": ".prefetchwindow()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L153"
+      "source_location": "L154"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_selectreciter",
@@ -2865,7 +2914,7 @@
       "file_type": "code",
       "norm_label": ".selectreciter()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L219"
+      "source_location": "L220"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_stopaudio",
@@ -2877,50 +2926,14 @@
       "file_type": "code",
       "norm_label": ".stopaudio()",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L214"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_app_quranapp_quranapp",
-      "label": "QuranApp()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "QuranApp",
-      "file_type": "code",
-      "norm_label": "quranapp()",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/app/QuranApp.kt",
-      "source_location": "L36"
-    },
-    {
-      "id": "composeapp_src_desktopmain_kotlin_com_binarydev_quran_main_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "QuranApp",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "composeApp/src/desktopMain/kotlin/com/binarydev/quran/Main.kt",
-      "source_location": "L7"
-    },
-    {
-      "id": "composeapp_src_iosmain_kotlin_com_binarydev_quran_mainviewcontroller_mainviewcontroller",
-      "label": "MainViewController()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "QuranApp",
-      "file_type": "code",
-      "norm_label": "mainviewcontroller()",
-      "source_file": "composeApp/src/iosMain/kotlin/com/binarydev/quran/MainViewController.kt",
-      "source_location": "L4"
+      "source_location": "L215"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_common_mvicontract",
       "label": "MviContract.kt",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "mvicontract.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/common/MviContract.kt",
@@ -2931,7 +2944,7 @@
       "label": "StateFlow",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "stateflow",
       "source_file": "",
@@ -2942,7 +2955,7 @@
       "label": "BookmarkViewModel.kt",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "bookmarkviewmodel.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/bookmark/presentation/BookmarkViewModel.kt",
@@ -2953,7 +2966,7 @@
       "label": "StateFlow",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "stateflow",
       "source_file": "",
@@ -2964,7 +2977,7 @@
       "label": "ViewModel",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "viewmodel",
       "source_file": "",
@@ -2975,7 +2988,7 @@
       "label": "HomeContract.kt",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "homecontract.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeContract.kt",
@@ -2986,7 +2999,7 @@
       "label": "HomeViewModel.kt",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "homeviewmodel.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeViewModel.kt",
@@ -2997,7 +3010,7 @@
       "label": "StateFlow",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "stateflow",
       "source_file": "",
@@ -3008,7 +3021,62 @@
       "label": "ViewModel",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "viewmodel",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract",
+      "label": "SearchContract.kt",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "searchcontract.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel",
+      "label": "SearchViewModel.kt",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "searchviewmodel.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_kt_job",
+      "label": "Job",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "job",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_kt_stateflow",
+      "label": "StateFlow",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "file_type": "code",
+      "norm_label": "stateflow",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_kt_viewmodel",
+      "label": "ViewModel",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "viewmodel",
       "source_file": "",
@@ -3019,7 +3087,7 @@
       "label": "SettingsViewModel.kt",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "settingsviewmodel.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsViewModel.kt",
@@ -3030,7 +3098,7 @@
       "label": "StateFlow",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "stateflow",
       "source_file": "",
@@ -3041,7 +3109,7 @@
       "label": "ViewModel",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "viewmodel",
       "source_file": "",
@@ -3052,7 +3120,7 @@
       "label": "AudioPlayer.desktop.kt",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "audioplayer.desktop.kt",
       "source_file": "composeApp/src/desktopMain/kotlin/com/binarydev/quran/core/data/audio/AudioPlayer.desktop.kt",
@@ -3063,7 +3131,7 @@
       "label": "Event",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "event",
       "source_file": "",
@@ -3074,11 +3142,44 @@
       "label": "State",
       "_origin": "ast",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "file_type": "code",
       "norm_label": "state",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "bundle",
+      "label": "Bundle",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "bundle",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "componentactivity",
+      "label": "ComponentActivity",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "componentactivity",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_mainactivity",
+      "label": "MainActivity.kt",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "mainactivity.kt",
+      "source_file": "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt",
+      "source_location": "L1"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_app_quranapp",
@@ -3125,7 +3226,18 @@
       "source_location": ""
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_home_presentation_homescreen_kt_composable",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_theme",
+      "label": "Theme.kt",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "theme.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Theme.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_theme_kt_composable",
       "label": "Composable",
       "_origin": "ast",
       "community": 1,
@@ -3136,7 +3248,7 @@
       "source_location": ""
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchscreen_kt_composable",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_home_presentation_homescreen_kt_composable",
       "label": "Composable",
       "_origin": "ast",
       "community": 1,
@@ -3156,6 +3268,28 @@
       "norm_label": "composable",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "composeapp_src_desktopmain_kotlin_com_binarydev_quran_main",
+      "label": "Main.kt",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "main.kt",
+      "source_file": "composeApp/src/desktopMain/kotlin/com/binarydev/quran/Main.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "composeapp_src_iosmain_kotlin_com_binarydev_quran_mainviewcontroller",
+      "label": "MainViewController.kt",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "file_type": "code",
+      "norm_label": "mainviewcontroller.kt",
+      "source_file": "composeApp/src/iosMain/kotlin/com/binarydev/quran/MainViewController.kt",
+      "source_location": "L1"
     },
     {
       "id": "navhostcontroller",
@@ -3190,7 +3324,7 @@
       "node_kind": "heading",
       "norm_label": "arsitektur (mvvm + udf \u2014 wajib)",
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L42"
+      "source_location": "L44"
     },
     {
       "id": "openspec_specs_quran_mvp_spec_fungsional",
@@ -3214,7 +3348,7 @@
       "node_kind": "heading",
       "norm_label": "kriteria terima",
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L61"
+      "source_location": "L63"
     },
     {
       "id": "openspec_specs_quran_mvp_spec_non_fungsional_ringan_responsif",
@@ -3226,7 +3360,7 @@
       "node_kind": "heading",
       "norm_label": "non-fungsional (ringan & responsif)",
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L34"
+      "source_location": "L36"
     },
     {
       "id": "openspec_specs_quran_mvp_spec_non_tujuan_mvp",
@@ -3829,83 +3963,92 @@
       "source_location": "L1"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive",
-      "label": "Responsive.kt",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_data_local_surahdata",
+      "label": "SurahData.kt",
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "file_type": "code",
-      "norm_label": "responsive.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
+      "norm_label": "surahdata.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/SurahData.kt",
       "source_location": "L1"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_kt_composable",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext",
+      "label": "MushafText.kt",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "mushaftext.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt",
+      "source_location": "L1"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_kt_composable",
       "label": "Composable",
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "file_type": "code",
       "norm_label": "composable",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass_compact",
-      "label": "COMPACT",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_kt_modifier",
+      "label": "Modifier",
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "file_type": "code",
-      "norm_label": "compact",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
-      "source_location": "L13"
+      "norm_label": "modifier",
+      "source_file": "",
+      "source_location": ""
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass_expanded",
-      "label": "EXPANDED",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview",
+      "label": "MushafPageView.kt",
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "file_type": "code",
-      "norm_label": "expanded",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
-      "source_location": "L13"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass_medium",
-      "label": "MEDIUM",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "rememberScreenClass",
-      "file_type": "code",
-      "norm_label": "medium",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
-      "source_location": "L13"
-    },
-    {
-      "id": "serena_memories_quran_architecture",
-      "label": "architecture.md",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "rememberScreenClass",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "architecture.md",
-      "source_file": ".serena/memories/quran/architecture.md",
+      "norm_label": "mushafpageview.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
       "source_location": "L1"
     },
     {
-      "id": "serena_memories_quran_architecture_quran_kmp_arsitektur_mvvm_udf",
-      "label": "Quran KMP \u2014 arsitektur MVVM+UDF",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_kt_composable",
+      "label": "Composable",
       "_origin": "ast",
       "community": 2,
-      "community_name": "rememberScreenClass",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "quran kmp \u2014 arsitektur mvvm+udf",
-      "source_file": ".serena/memories/quran/architecture.md",
-      "source_location": "L1"
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "composable",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_kt_modifier",
+      "label": "Modifier",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "modifier",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "suppress",
+      "label": "Suppress",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "file_type": "code",
+      "norm_label": "suppress",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "composeapp_build_gradle",
@@ -4616,17 +4759,6 @@
       "source_location": ""
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_repository_repositories",
-      "label": "Repositories.kt",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "Di.kt",
-      "file_type": "code",
-      "norm_label": "repositories.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/repository/Repositories.kt",
-      "source_location": "L1"
-    },
-    {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_repository_repositories_kt_flow",
       "label": "Flow",
       "_origin": "ast",
@@ -4671,55 +4803,66 @@
       "source_location": ""
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_data_local_surahdata",
-      "label": "SurahData.kt",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive",
+      "label": "Responsive.kt",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
-      "norm_label": "surahdata.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/data/local/SurahData.kt",
+      "norm_label": "responsive.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
       "source_location": "L1"
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext",
-      "label": "MushafText.kt",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "mushaftext.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/MushafText.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_kt_composable",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_kt_composable",
       "label": "Composable",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "composable",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_mushaftext_kt_modifier",
-      "label": "Modifier",
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass_compact",
+      "label": "COMPACT",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
-      "norm_label": "modifier",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "compact",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
+      "source_location": "L13"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass_expanded",
+      "label": "EXPANDED",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "file_type": "code",
+      "norm_label": "expanded",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
+      "source_location": "L13"
+    },
+    {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_responsive_screenclass_medium",
+      "label": "MEDIUM",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "file_type": "code",
+      "norm_label": "medium",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Responsive.kt",
+      "source_location": "L13"
     },
     {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_home_presentation_homescreen",
       "label": "HomeScreen.kt",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "homescreen.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/home/presentation/HomeScreen.kt",
@@ -4730,7 +4873,7 @@
       "label": "AudioBar.kt",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "audiobar.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/AudioBar.kt",
@@ -4741,7 +4884,7 @@
       "label": "Composable",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "composable",
       "source_file": "",
@@ -4752,40 +4895,7 @@
       "label": "Modifier",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "modifier",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview",
-      "label": "MushafPageView.kt",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "mushafpageview.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_kt_composable",
-      "label": "Composable",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "composable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_kt_modifier",
-      "label": "Modifier",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "modifier",
       "source_file": "",
@@ -4796,7 +4906,7 @@
       "label": "ReaderScreen.kt",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "readerscreen.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
@@ -4807,7 +4917,7 @@
       "label": "Composable",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "composable",
       "source_file": "",
@@ -4818,40 +4928,40 @@
       "label": "SearchScreen.kt",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "searchscreen.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchScreen.kt",
       "source_location": "L1"
     },
     {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchscreen_kt_composable",
+      "label": "Composable",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "file_type": "code",
+      "norm_label": "composable",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_settings_presentation_settingsscreen",
       "label": "SettingsScreen.kt",
       "_origin": "ast",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "file_type": "code",
       "norm_label": "settingsscreen.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/settings/presentation/SettingsScreen.kt",
       "source_location": "L1"
     },
     {
-      "id": "suppress",
-      "label": "Suppress",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "file_type": "code",
-      "norm_label": "suppress",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "agents",
       "label": "AGENTS.md",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "AGENTS.md \u2014 cara kerja AI di repo ini",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "agents.md",
@@ -4862,8 +4972,8 @@
       "id": "agents_agents_md_cara_kerja_ai_di_repo_ini",
       "label": "AGENTS.md \u2014 cara kerja AI di repo ini",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "AGENTS.md \u2014 cara kerja AI di repo ini",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "agents.md \u2014 cara kerja ai di repo ini",
@@ -4874,8 +4984,8 @@
       "id": "agents_alur_spec_openspec",
       "label": "Alur spec (OpenSpec)",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "AGENTS.md \u2014 cara kerja AI di repo ini",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "alur spec (openspec)",
@@ -4886,8 +4996,8 @@
       "id": "agents_aturan_arsitektur_wajib",
       "label": "Aturan arsitektur (wajib)",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "AGENTS.md \u2014 cara kerja AI di repo ini",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "aturan arsitektur (wajib)",
@@ -4898,8 +5008,8 @@
       "id": "agents_mcp",
       "label": "MCP",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "AGENTS.md \u2014 cara kerja AI di repo ini",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "mcp",
@@ -4910,13 +5020,37 @@
       "id": "agents_perintah_cepat",
       "label": "Perintah cepat",
       "_origin": "ast",
-      "community": 47,
-      "community_name": "AGENTS.md \u2014 cara kerja AI di repo ini",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "perintah cepat",
       "source_file": "AGENTS.md",
       "source_location": "L3"
+    },
+    {
+      "id": "serena_memories_quran_architecture",
+      "label": "architecture.md",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "architecture.md",
+      "source_file": ".serena/memories/quran/architecture.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "serena_memories_quran_architecture_quran_kmp_arsitektur_mvvm_udf",
+      "label": "Quran KMP \u2014 arsitektur MVVM+UDF",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "quran kmp \u2014 arsitektur mvvm+udf",
+      "source_file": ".serena/memories/quran/architecture.md",
+      "source_location": "L1"
     },
     {
       "id": "composeapp_src_iosmain_kotlin_com_binarydev_quran_core_data_local_platformlocal_ios",
@@ -5062,6 +5196,17 @@
       "source_location": "L16"
     },
     {
+      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_repository_repositories",
+      "label": "Repositories.kt",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "AppResult",
+      "file_type": "code",
+      "norm_label": "repositories.kt",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/repository/Repositories.kt",
+      "source_location": "L1"
+    },
+    {
       "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_domain_usecase_usecases",
       "label": "UseCases.kt",
       "_origin": "ast",
@@ -5071,61 +5216,6 @@
       "norm_label": "usecases.kt",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/domain/usecase/UseCases.kt",
       "source_location": "L1"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchcontract",
-      "label": "SearchContract.kt",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "searchcontract.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchContract.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel",
-      "label": "SearchViewModel.kt",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "searchviewmodel.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchViewModel.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_kt_job",
-      "label": "Job",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "job",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_kt_stateflow",
-      "label": "StateFlow",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "stateflow",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchviewmodel_kt_viewmodel",
-      "label": "ViewModel",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "AppResult",
-      "file_type": "code",
-      "norm_label": "viewmodel",
-      "source_file": "",
-      "source_location": ""
     },
     {
       "id": "r",
@@ -5219,51 +5309,7 @@
       "node_kind": "heading",
       "norm_label": "data (madinah)",
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L47"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_theme",
-      "label": "Theme.kt",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "Theme.kt",
-      "file_type": "code",
-      "norm_label": "theme.kt",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/core/designsystem/Theme.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "composeapp_src_commonmain_kotlin_com_binarydev_quran_core_designsystem_theme_kt_composable",
-      "label": "Composable",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "Theme.kt",
-      "file_type": "code",
-      "norm_label": "composable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "bundle",
-      "label": "Bundle",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "PlatformLocal.android.kt",
-      "file_type": "code",
-      "norm_label": "bundle",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "componentactivity",
-      "label": "ComponentActivity",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "PlatformLocal.android.kt",
-      "file_type": "code",
-      "norm_label": "componentactivity",
-      "source_file": "",
-      "source_location": ""
+      "source_location": "L49"
     },
     {
       "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_core_data_local_platformlocal_android",
@@ -5286,17 +5332,6 @@
       "norm_label": "sqldriver",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_mainactivity",
-      "label": "MainActivity.kt",
-      "_origin": "ast",
-      "community": 51,
-      "community_name": "PlatformLocal.android.kt",
-      "file_type": "code",
-      "norm_label": "mainactivity.kt",
-      "source_file": "composeApp/src/androidMain/kotlin/com/binarydev/quran/MainActivity.kt",
-      "source_location": "L1"
     },
     {
       "id": "composeapp_src_androidmain_kotlin_com_binarydev_quran_platform_appcontext",
@@ -5750,36 +5785,38 @@
       "source_location": ""
     },
     {
-      "id": "composeapp_src_desktopmain_kotlin_com_binarydev_quran_main",
-      "label": "Main.kt",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "QuranApp",
-      "file_type": "code",
-      "norm_label": "main.kt",
-      "source_file": "composeApp/src/desktopMain/kotlin/com/binarydev/quran/Main.kt",
-      "source_location": "L1"
-    },
-    {
-      "id": "composeapp_src_iosmain_kotlin_com_binarydev_quran_mainviewcontroller",
-      "label": "MainViewController.kt",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "QuranApp",
-      "file_type": "code",
-      "norm_label": "mainviewcontroller.kt",
-      "source_file": "composeApp/src/iosMain/kotlin/com/binarydev/quran/MainViewController.kt",
-      "source_location": "L1"
-    },
-    {
       "id": "asstateflow",
       "label": "asstateflow",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "asstateflow",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "channel",
+      "label": "channel",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "channel",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "delay",
+      "label": "delay",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "delay",
       "source_file": "",
       "type": "external"
     },
@@ -5788,7 +5825,7 @@
       "label": "emptyflow",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "emptyflow",
@@ -5800,10 +5837,22 @@
       "label": "mutablestateflow",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "mutablestateflow",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "receiveasflow",
+      "label": "receiveasflow",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "SearchViewModel.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "receiveasflow",
       "source_file": "",
       "type": "external"
     },
@@ -5812,7 +5861,7 @@
       "label": "update",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "update",
@@ -5824,10 +5873,58 @@
       "label": "viewmodelscope",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "MviContract",
+      "community_name": "SearchViewModel.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "viewmodelscope",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "application",
+      "label": "application",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "application",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "composeuiviewcontroller",
+      "label": "composeuiviewcontroller",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "composeuiviewcontroller",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "currentbackstackentryasstate",
+      "label": "currentbackstackentryasstate",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "currentbackstackentryasstate",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "darkcolorscheme",
+      "label": "darkcolorscheme",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "darkcolorscheme",
       "source_file": "",
       "type": "external"
     },
@@ -5840,6 +5937,30 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "koinapplication",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "lightcolorscheme",
+      "label": "lightcolorscheme",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "lightcolorscheme",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "materialtheme",
+      "label": "materialtheme",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "materialtheme",
       "source_file": "",
       "type": "external"
     },
@@ -5916,6 +6037,18 @@
       "type": "external"
     },
     {
+      "id": "setcontent",
+      "label": "setcontent",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "setcontent",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "setvalue",
       "label": "setvalue",
       "_origin": "semantic",
@@ -5936,6 +6069,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "toroute",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "window",
+      "label": "window",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "QuranApp.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "window",
       "source_file": "",
       "type": "external"
     },
@@ -5988,26 +6133,278 @@
       "type": "external"
     },
     {
-      "id": "localdensity",
-      "label": "localdensity",
+      "id": "amiri_quran",
+      "label": "amiri_quran",
       "_origin": "semantic",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "external": true,
       "file_type": "concept",
-      "norm_label": "localdensity",
+      "norm_label": "amiri_quran",
       "source_file": "",
       "type": "external"
     },
     {
-      "id": "localwindowinfo",
-      "label": "localwindowinfo",
+      "id": "border",
+      "label": "border",
       "_origin": "semantic",
       "community": 2,
-      "community_name": "rememberScreenClass",
+      "community_name": "MushafPageView.kt",
       "external": true,
       "file_type": "concept",
-      "norm_label": "localwindowinfo",
+      "norm_label": "border",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "buildannotatedstring",
+      "label": "buildannotatedstring",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "buildannotatedstring",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "circleshape",
+      "label": "circleshape",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "circleshape",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "clickabletext",
+      "label": "clickabletext",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "clickabletext",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "clip",
+      "label": "clip",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "clip",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "fillmaxheight",
+      "label": "fillmaxheight",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "fillmaxheight",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "fillmaxwidth",
+      "label": "fillmaxwidth",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "fillmaxwidth",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "font",
+      "label": "font",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "font",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "fontfamily",
+      "label": "fontfamily",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "fontfamily",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "height",
+      "label": "height",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "height",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "rememberscrollstate",
+      "label": "rememberscrollstate",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "rememberscrollstate",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "res",
+      "label": "res",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "res",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "roundedcornershape",
+      "label": "roundedcornershape",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "roundedcornershape",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "selectioncontainer",
+      "label": "selectioncontainer",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "selectioncontainer",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "sp",
+      "label": "sp",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "sp",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "spanstyle",
+      "label": "spanstyle",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "spanstyle",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "textalign",
+      "label": "textalign",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "textalign",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "textdirection",
+      "label": "textdirection",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "textdirection",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "textoverflow",
+      "label": "textoverflow",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "textoverflow",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "textstyle",
+      "label": "textstyle",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "textstyle",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "verticalscroll",
+      "label": "verticalscroll",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "verticalscroll",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "withstyle",
+      "label": "withstyle",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "MushafPageView.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "withstyle",
       "source_file": "",
       "type": "external"
     },
@@ -6412,22 +6809,10 @@
       "label": "alignment",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "alignment",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "amiri_quran",
-      "label": "amiri_quran",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "amiri_quran",
       "source_file": "",
       "type": "external"
     },
@@ -6436,7 +6821,7 @@
       "label": "arrangement",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "arrangement",
@@ -6448,22 +6833,10 @@
       "label": "background",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "background",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "border",
-      "label": "border",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "border",
       "source_file": "",
       "type": "external"
     },
@@ -6472,22 +6845,10 @@
       "label": "box",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "box",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "buildannotatedstring",
-      "label": "buildannotatedstring",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "buildannotatedstring",
       "source_file": "",
       "type": "external"
     },
@@ -6496,7 +6857,7 @@
       "label": "button",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "button",
@@ -6508,22 +6869,10 @@
       "label": "card",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "card",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "circleshape",
-      "label": "circleshape",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "circleshape",
       "source_file": "",
       "type": "external"
     },
@@ -6532,7 +6881,7 @@
       "label": "circularprogressindicator",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "circularprogressindicator",
@@ -6544,34 +6893,10 @@
       "label": "clickable",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "clickable",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "clickabletext",
-      "label": "clickabletext",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "clickabletext",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "clip",
-      "label": "clip",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "clip",
       "source_file": "",
       "type": "external"
     },
@@ -6580,7 +6905,7 @@
       "label": "collectasstatewithlifecycle",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "collectasstatewithlifecycle",
@@ -6592,7 +6917,7 @@
       "label": "color",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "color",
@@ -6604,7 +6929,7 @@
       "label": "column",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "column",
@@ -6616,22 +6941,10 @@
       "label": "dp",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "dp",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "fillmaxheight",
-      "label": "fillmaxheight",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "fillmaxheight",
       "source_file": "",
       "type": "external"
     },
@@ -6640,46 +6953,10 @@
       "label": "fillmaxsize",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "fillmaxsize",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "fillmaxwidth",
-      "label": "fillmaxwidth",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "fillmaxwidth",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "font",
-      "label": "font",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "font",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "fontfamily",
-      "label": "fontfamily",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "fontfamily",
       "source_file": "",
       "type": "external"
     },
@@ -6688,22 +6965,10 @@
       "label": "getvalue",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "getvalue",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "height",
-      "label": "height",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "height",
       "source_file": "",
       "type": "external"
     },
@@ -6712,7 +6977,7 @@
       "label": "horizontalpager",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "horizontalpager",
@@ -6724,7 +6989,7 @@
       "label": "items",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "items",
@@ -6736,7 +7001,7 @@
       "label": "koinviewmodel",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "koinviewmodel",
@@ -6748,7 +7013,7 @@
       "label": "launchedeffect",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "launchedeffect",
@@ -6760,10 +7025,34 @@
       "label": "lazycolumn",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "lazycolumn",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "localdensity",
+      "label": "localdensity",
+      "_origin": "semantic",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "localdensity",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "localwindowinfo",
+      "label": "localwindowinfo",
+      "_origin": "semantic",
+      "community": 46,
+      "community_name": "ReaderScreen.kt",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "localwindowinfo",
       "source_file": "",
       "type": "external"
     },
@@ -6772,7 +7061,7 @@
       "label": "modifier",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "modifier",
@@ -6784,7 +7073,7 @@
       "label": "outlinedbutton",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "outlinedbutton",
@@ -6796,7 +7085,7 @@
       "label": "padding",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "padding",
@@ -6808,7 +7097,7 @@
       "label": "paddingvalues",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "paddingvalues",
@@ -6820,46 +7109,10 @@
       "label": "rememberpagerstate",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "rememberpagerstate",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "rememberscrollstate",
-      "label": "rememberscrollstate",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "rememberscrollstate",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "res",
-      "label": "res",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "res",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "roundedcornershape",
-      "label": "roundedcornershape",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "roundedcornershape",
       "source_file": "",
       "type": "external"
     },
@@ -6868,7 +7121,7 @@
       "label": "row",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "row",
@@ -6880,22 +7133,10 @@
       "label": "scaffold",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "scaffold",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "selectioncontainer",
-      "label": "selectioncontainer",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "selectioncontainer",
       "source_file": "",
       "type": "external"
     },
@@ -6904,7 +7145,7 @@
       "label": "size",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "size",
@@ -6916,7 +7157,7 @@
       "label": "slider",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "slider",
@@ -6928,7 +7169,7 @@
       "label": "snackbarhost",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "snackbarhost",
@@ -6940,34 +7181,10 @@
       "label": "snackbarhoststate",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "snackbarhoststate",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "sp",
-      "label": "sp",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "sp",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "spanstyle",
-      "label": "spanstyle",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "spanstyle",
       "source_file": "",
       "type": "external"
     },
@@ -6976,7 +7193,7 @@
       "label": "switch",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "switch",
@@ -6988,22 +7205,10 @@
       "label": "text",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "text",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "textalign",
-      "label": "textalign",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "textalign",
       "source_file": "",
       "type": "external"
     },
@@ -7012,22 +7217,10 @@
       "label": "textbutton",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "textbutton",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "textdirection",
-      "label": "textdirection",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "textdirection",
       "source_file": "",
       "type": "external"
     },
@@ -7036,46 +7229,10 @@
       "label": "textfield",
       "_origin": "semantic",
       "community": 46,
-      "community_name": "MushafPageView.kt",
+      "community_name": "ReaderScreen.kt",
       "external": true,
       "file_type": "concept",
       "norm_label": "textfield",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "textstyle",
-      "label": "textstyle",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "textstyle",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "verticalscroll",
-      "label": "verticalscroll",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "verticalscroll",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "withstyle",
-      "label": "withstyle",
-      "_origin": "semantic",
-      "community": 46,
-      "community_name": "MushafPageView.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "withstyle",
       "source_file": "",
       "type": "external"
     },
@@ -7140,62 +7297,14 @@
       "type": "external"
     },
     {
-      "id": "delay",
-      "label": "delay",
+      "id": "listserializer",
+      "label": "listserializer",
       "_origin": "semantic",
       "community": 5,
       "community_name": "AppResult",
       "external": true,
       "file_type": "concept",
-      "norm_label": "delay",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "receiveasflow",
-      "label": "receiveasflow",
-      "_origin": "semantic",
-      "community": 5,
-      "community_name": "AppResult",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "receiveasflow",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "darkcolorscheme",
-      "label": "darkcolorscheme",
-      "_origin": "semantic",
-      "community": 50,
-      "community_name": "Theme.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "darkcolorscheme",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "lightcolorscheme",
-      "label": "lightcolorscheme",
-      "_origin": "semantic",
-      "community": 50,
-      "community_name": "Theme.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "lightcolorscheme",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "materialtheme",
-      "label": "materialtheme",
-      "_origin": "semantic",
-      "community": 50,
-      "community_name": "Theme.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "materialtheme",
+      "norm_label": "listserializer",
       "source_file": "",
       "type": "external"
     },
@@ -7208,18 +7317,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "androidsqlitedriver",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "setcontent",
-      "label": "setcontent",
-      "_origin": "semantic",
-      "community": 51,
-      "community_name": "PlatformLocal.android.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "setcontent",
       "source_file": "",
       "type": "external"
     },
@@ -7368,18 +7465,6 @@
       "type": "external"
     },
     {
-      "id": "channel",
-      "label": "channel",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "ReaderViewModel",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "channel",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "clock",
       "label": "clock",
       "_origin": "semantic",
@@ -7392,71 +7477,13 @@
       "type": "external"
     },
     {
-      "id": "application",
-      "label": "application",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "QuranApp",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "application",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "composeuiviewcontroller",
-      "label": "composeuiviewcontroller",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "QuranApp",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "composeuiviewcontroller",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "window",
-      "label": "window",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "QuranApp",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "window",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "currentbackstackentryasstate",
-      "label": "currentbackstackentryasstate",
-      "community": 1,
-      "community_name": "QuranApp.kt",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "currentbackstackentryasstate",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "textoverflow",
-      "label": "textoverflow",
-      "community": 46,
+      "id": "mutableinteractionsource",
+      "label": "mutableinteractionsource",
+      "community": 2,
       "community_name": "MushafPageView.kt",
       "external": true,
       "file_type": "concept",
-      "norm_label": "textoverflow",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "listserializer",
-      "label": "listserializer",
-      "community": 5,
-      "community_name": "AppResult",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "listserializer",
+      "norm_label": "mutableinteractionsource",
       "source_file": "",
       "type": "external"
     }
@@ -7795,7 +7822,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L98",
+      "source_location": "L107",
       "weight": 1.0
     },
     {
@@ -7807,7 +7834,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L129",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -7819,7 +7846,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L129",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -7831,7 +7858,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -7843,7 +7870,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -7855,7 +7882,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L239",
+      "source_location": "L248",
       "weight": 1.0
     },
     {
@@ -7867,7 +7894,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L239",
+      "source_location": "L248",
       "weight": 1.0
     },
     {
@@ -7879,7 +7906,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L230",
+      "source_location": "L239",
       "weight": 1.0
     },
     {
@@ -7891,7 +7918,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L165",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -7903,7 +7930,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L165",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -7915,7 +7942,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L196",
+      "source_location": "L205",
       "weight": 1.0
     },
     {
@@ -7927,7 +7954,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L167",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
@@ -7939,7 +7966,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L172",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -7951,7 +7978,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L133",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -7975,7 +8002,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L203",
+      "source_location": "L209",
       "weight": 1.0
     },
     {
@@ -8467,7 +8494,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L112",
+      "source_location": "L121",
       "weight": 1.0
     },
     {
@@ -8479,7 +8506,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L114",
+      "source_location": "L123",
       "weight": 1.0
     },
     {
@@ -8491,7 +8518,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L117",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -8503,19 +8530,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L150",
-      "weight": 1.0
-    },
-    {
-      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_mushafpageview",
-      "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_exactlinespage",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L90",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -8527,7 +8542,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L92",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_mushafpageview",
+      "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_exactlinespage",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -8539,7 +8566,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L253",
+      "source_location": "L262",
       "weight": 1.0
     },
     {
@@ -8551,7 +8578,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L259",
+      "source_location": "L268",
       "weight": 1.0
     },
     {
@@ -8563,7 +8590,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L179",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
@@ -8575,7 +8602,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L184",
+      "source_location": "L193",
       "weight": 1.0
     },
     {
@@ -8587,7 +8614,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L187",
+      "source_location": "L196",
       "weight": 1.0
     },
     {
@@ -8599,7 +8626,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L203",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -8611,7 +8638,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L213",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
@@ -8623,7 +8650,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L169",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -8635,7 +8662,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L169",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -8647,7 +8674,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L120",
+      "source_location": "L123",
       "weight": 1.0
     },
     {
@@ -8659,7 +8686,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L125",
+      "source_location": "L128",
       "weight": 1.0
     },
     {
@@ -8671,7 +8698,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L125",
+      "source_location": "L128",
       "weight": 1.0
     },
     {
@@ -8683,7 +8710,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L125",
+      "source_location": "L128",
       "weight": 1.0
     },
     {
@@ -8695,7 +8722,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L78",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -8707,7 +8734,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L88",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -8719,7 +8746,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L109",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -8731,19 +8758,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L127",
-      "weight": 1.0
-    },
-    {
-      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_loadsurah",
-      "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_stopaudio",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L92",
+      "source_location": "L128",
       "weight": 1.0
     },
     {
@@ -8755,7 +8770,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L99",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_loadsurah",
+      "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readerviewmodel_readerviewmodel_stopaudio",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -8803,7 +8830,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L83",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -8815,7 +8842,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L84",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -8827,7 +8854,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L85",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -8839,7 +8866,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L86",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -8851,7 +8878,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L87",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -8863,7 +8890,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L200",
+      "source_location": "L201",
       "weight": 1.0
     },
     {
@@ -8875,7 +8902,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L202",
+      "source_location": "L203",
       "weight": 1.0
     },
     {
@@ -8887,7 +8914,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L177",
+      "source_location": "L178",
       "weight": 1.0
     },
     {
@@ -8899,7 +8926,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L195",
+      "source_location": "L196",
       "weight": 1.0
     },
     {
@@ -8911,7 +8938,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L169",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -8923,7 +8950,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L223",
+      "source_location": "L224",
       "weight": 1.0
     },
     {
@@ -9403,7 +9430,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -9415,7 +9442,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L42",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -10015,7 +10042,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L98",
+      "source_location": "L107",
       "weight": 1.0
     },
     {
@@ -10027,7 +10054,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L129",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -10039,7 +10066,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -10051,7 +10078,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -10063,7 +10090,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L239",
+      "source_location": "L248",
       "weight": 1.0
     },
     {
@@ -10075,7 +10102,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L165",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -10374,6 +10401,21 @@
       "weight": 1.0
     },
     {
+      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview",
+      "target": "clickable",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "target_fqn": "androidx.compose.foundation.clickable"
+      },
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_search_presentation_searchscreen",
       "target": "clickable",
       "relation": "imports",
@@ -10386,6 +10428,21 @@
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/search/presentation/SearchScreen.kt",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview",
+      "target": "mutableinteractionsource",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "target_fqn": "androidx.compose.foundation.interaction.MutableInteractionSource"
+      },
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -10445,7 +10502,7 @@
         "target_fqn": "androidx.compose.foundation.layout.Box"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -10490,7 +10547,7 @@
         "target_fqn": "androidx.compose.foundation.layout.Column"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -10595,7 +10652,7 @@
         "target_fqn": "androidx.compose.foundation.layout.Row"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L7",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -10640,7 +10697,7 @@
         "target_fqn": "androidx.compose.foundation.layout.fillMaxHeight"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L8",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -10685,7 +10742,7 @@
         "target_fqn": "androidx.compose.foundation.layout.fillMaxSize"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L9",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -10790,7 +10847,7 @@
         "target_fqn": "androidx.compose.foundation.layout.fillMaxWidth"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L10",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -10835,7 +10892,7 @@
         "target_fqn": "androidx.compose.foundation.layout.height"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L11",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -10895,7 +10952,7 @@
         "target_fqn": "androidx.compose.foundation.layout.padding"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L12",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -10970,7 +11027,7 @@
         "target_fqn": "androidx.compose.foundation.layout.size"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -11105,7 +11162,7 @@
         "target_fqn": "androidx.compose.foundation.rememberScrollState"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -11120,7 +11177,7 @@
         "target_fqn": "androidx.compose.foundation.shape.CircleShape"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L15",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -11135,7 +11192,7 @@
         "target_fqn": "androidx.compose.foundation.shape.RoundedCornerShape"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L16",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -11150,7 +11207,7 @@
         "target_fqn": "androidx.compose.foundation.text.ClickableText"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -11180,7 +11237,7 @@
         "target_fqn": "androidx.compose.foundation.verticalScroll"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -11360,7 +11417,7 @@
         "target_fqn": "androidx.compose.material3.MaterialTheme"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -11555,7 +11612,7 @@
         "target_fqn": "androidx.compose.material3.Text"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L20",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -11810,7 +11867,7 @@
         "target_fqn": "androidx.compose.runtime.Composable"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -11945,7 +12002,7 @@
         "target_fqn": "androidx.compose.runtime.getValue"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -12020,7 +12077,7 @@
         "target_fqn": "androidx.compose.runtime.mutableStateOf"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -12050,7 +12107,7 @@
         "target_fqn": "androidx.compose.runtime.remember"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -12095,7 +12152,7 @@
         "target_fqn": "androidx.compose.runtime.setValue"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -12125,7 +12182,7 @@
         "target_fqn": "androidx.compose.ui.Alignment"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -12215,7 +12272,7 @@
         "target_fqn": "androidx.compose.ui.Modifier"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L27",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -12275,7 +12332,7 @@
         "target_fqn": "androidx.compose.ui.draw.clip"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L28",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -12290,7 +12347,7 @@
         "target_fqn": "androidx.compose.ui.graphics.Color"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -12350,7 +12407,7 @@
         "target_fqn": "androidx.compose.ui.text.SpanStyle"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L30",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -12380,7 +12437,7 @@
         "target_fqn": "androidx.compose.ui.text.buildAnnotatedString"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -12425,7 +12482,7 @@
         "target_fqn": "androidx.compose.ui.text.style.TextAlign"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -12455,7 +12512,7 @@
         "target_fqn": "androidx.compose.ui.text.style.TextOverflow"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L33",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -12470,7 +12527,7 @@
         "target_fqn": "androidx.compose.ui.text.withStyle"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L34",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -12545,7 +12602,7 @@
         "target_fqn": "androidx.compose.ui.unit.dp"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L36",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -12620,7 +12677,7 @@
         "target_fqn": "androidx.compose.ui.unit.sp"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L35",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -13700,7 +13757,7 @@
         "target_fqn": "com.binarydev.quran.core.data.local.SurahData"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -14060,7 +14117,7 @@
         "target_fqn": "com.binarydev.quran.core.designsystem.uthmaniStyle"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L38",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -14105,7 +14162,7 @@
         "target_fqn": "com.binarydev.quran.core.domain.model.Ayah"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -14270,7 +14327,7 @@
         "target_fqn": "com.binarydev.quran.core.domain.model.LineSeg"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -14315,7 +14372,7 @@
         "target_fqn": "com.binarydev.quran.core.domain.model.MushafLine"
       },
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -17091,7 +17148,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -17103,7 +17160,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L230",
+      "source_location": "L239",
       "weight": 1.0
     },
     {
@@ -17115,7 +17172,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L172",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -17151,7 +17208,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L203",
+      "source_location": "L209",
       "weight": 1.0
     },
     {
@@ -17175,7 +17232,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L219",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
@@ -18768,13 +18825,24 @@
     },
     {
       "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview",
+      "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_exactlinespage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview",
       "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_fitline",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L129",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -18785,7 +18853,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L165",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -18796,7 +18864,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L196",
+      "source_location": "L205",
       "weight": 1.0
     },
     {
@@ -18807,7 +18875,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L230",
+      "source_location": "L239",
       "weight": 1.0
     },
     {
@@ -18818,7 +18886,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L239",
+      "source_location": "L248",
       "weight": 1.0
     },
     {
@@ -18829,7 +18897,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L55",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -18840,18 +18908,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L63",
-      "weight": 1.0
-    },
-    {
-      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview",
-      "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_mushafpageview_exactlinespage",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt",
-      "source_location": "L98",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -18884,7 +18941,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L30",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -18895,7 +18952,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L45",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -18906,7 +18963,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L47",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -18917,7 +18974,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L48",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -18928,7 +18985,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L49",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -18939,7 +18996,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -18950,7 +19007,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -18961,7 +19018,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L33",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -18972,7 +19029,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L34",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -18983,7 +19040,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L38",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -18994,7 +19051,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L39",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -19005,7 +19062,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L40",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -19016,7 +19073,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L133",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -19027,7 +19084,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L167",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
@@ -19038,7 +19095,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L172",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -19049,7 +19106,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L203",
+      "source_location": "L209",
       "weight": 1.0
     },
     {
@@ -20116,7 +20173,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L42",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -20127,7 +20184,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L47",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -20138,7 +20195,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L61",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -20171,7 +20228,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L34",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -20512,7 +20569,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L45",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -20523,7 +20580,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L36",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -20534,7 +20591,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L46",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -20545,7 +20602,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L42",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -20556,7 +20613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L35",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -20567,7 +20624,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
-      "source_location": "L41",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_togglefocus",
+      "target": "composeapp_src_commonmain_kotlin_com_binarydev_quran_feature_reader_presentation_readercontract_readerevent",
+      "relation": "implements",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderContract.kt",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -21304,7 +21372,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L108",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -21315,7 +21383,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L137",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -21326,7 +21394,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L153",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -21337,7 +21405,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L165",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -21348,7 +21416,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L172",
+      "source_location": "L173",
       "weight": 1.0
     },
     {
@@ -21359,7 +21427,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L189",
+      "source_location": "L190",
       "weight": 1.0
     },
     {
@@ -21370,7 +21438,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L198",
+      "source_location": "L199",
       "weight": 1.0
     },
     {
@@ -21381,7 +21449,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L206",
+      "source_location": "L207",
       "weight": 1.0
     },
     {
@@ -21392,7 +21460,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L214",
+      "source_location": "L215",
       "weight": 1.0
     },
     {
@@ -21403,7 +21471,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L219",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
@@ -21414,7 +21482,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L226",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
@@ -21436,7 +21504,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderViewModel.kt",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -21695,7 +21763,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L181",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -21707,7 +21775,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L185",
+      "source_location": "L190",
       "weight": 1.0
     },
     {
@@ -21719,7 +21787,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L120",
+      "source_location": "L123",
       "weight": 1.0
     },
     {
@@ -21731,7 +21799,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L124",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -21743,7 +21811,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L212",
+      "source_location": "L218",
       "weight": 1.0
     },
     {
@@ -21755,7 +21823,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/ReaderScreen.kt",
-      "source_location": "L218",
+      "source_location": "L224",
       "weight": 1.0
     },
     {
@@ -21815,7 +21883,7 @@
       "confidence_score": 0.95,
       "context": "SurahMetadata",
       "source_file": "openspec/specs/quran-mvp/spec.md",
-      "source_location": "L58",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -21856,5 +21924,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f693d868aa4bd56421e2f76ea12c694c4d976eda"
+  "built_at_commit": "0f22f51958b2c2bb5375cc309882cb5a72bf5166"
 }

@@ -39,7 +39,7 @@ Aplikasi Quran Kotlin Multiplatform yang **ringan, responsif, mudah digunakan** 
   (batalkan saat pindah halaman, hanya tandai yang sukses).
 - Ktor Logging **mati** di rilis; timeout 15 dtk; pesan error Indonesia ringkas.
 - Adaptif: `NavigationSuiteScaffold` — bottom-bar (compact) / rail (expanded).
-- Arab selalu RTL, `text_uthmani`, font Amiri Quran, hormati `fontScale`.
+- Arab selalu RTL, `text_uthmani`, font KFGQPC Uthman Taha Naskh, hormati `fontScale`.
 
 ## Arsitektur (MVVM + UDF — wajib)
 - Tiap fitur: `*Contract.kt` (UiState/Event/Effect) + `*ViewModel.kt` (satu StateFlow + `onEvent`) + `*Screen.kt` (stateless).

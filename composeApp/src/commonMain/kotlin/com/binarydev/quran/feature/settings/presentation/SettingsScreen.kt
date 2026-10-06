@@ -22,6 +22,6 @@ fun SettingsScreen(vm: SettingsViewModel = koinViewModel()) {
         Text("Ukuran huruf Arab: ${(s.arabScale * 100).toInt()}%")
         Slider(s.arabScale, { vm.onEvent(SettingsEvent.ArabScale(it)) }, valueRange = 0.8f..2f)
         Row { Text("Tampilkan latin/arti", Modifier.weight(1f)); Switch(s.latinShown, { vm.onEvent(SettingsEvent.Latin(it)) }) }
-        Text("Teks Arab: font Amiri Quran (OFL, The Amiri Project). Audio: everyayah.com.", Modifier.padding(top = 16.dp))
+        Text("Teks Arab: KFGQPC Uthman Taha Naskh (King Fahd Quran Complex). Audio: everyayah.com.", Modifier.padding(top = 16.dp))
     }
 }

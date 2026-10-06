@@ -39,8 +39,9 @@ fun VersesResponse.toPageLines(page: Int): PageLines {
     for (v in verses) {
         for (w in v.words) {
             if (w.textUthmani.isBlank() || w.lineNumber <= 0) continue
-            // Kata penutup ayat (char_type=end, digit ١٢٣): awali medali ۝ ala cetakan.
-            val text = if (w.charType == "end") "۝${w.textUthmani}" else w.textUthmani
+            // Kata penutup ayat (char_type=end, digit ١٢٣): bungkus kurung
+            // ornamen ﴿﴾ — gaya KFGQPC/Tanzil yang benar untuk font ini.
+            val text = if (w.charType == "end") "﴿${w.textUthmani}﴾" else w.textUthmani
             byLine.getOrPut(w.lineNumber) { mutableListOf() }
                 .add(LineSeg(text, v.verseKey))
         }

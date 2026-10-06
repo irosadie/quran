@@ -1,14 +1,13 @@
 {
-  "0": "MviContract",
+  "0": "SearchViewModel.kt",
   "1": "QuranApp.kt",
-  "2": "rememberScreenClass",
+  "2": "MushafPageView.kt",
   "3": "AudioPlayer.ios.kt",
   "4": "Quran Madinah — Kotlin Multiplatform (ringan, responsif, mudah digunakan)",
   "5": "AppResult",
   "6": "QuranApi.kt",
   "7": "mcp",
   "8": "ReaderViewModel",
-  "9": "QuranApp",
   "10": "Quran MVP — KMP ringan, Mushaf Utsmani Madinah",
   "11": "openspec-explore/SKILL.md",
   "12": "opsx-explore.md",
@@ -45,10 +44,8 @@
   "43": "AudioPlayer",
   "44": "Proposal: Mushaf mirip buku + audio tilawah + font Utsmani",
   "45": "Di.kt",
-  "46": "MushafPageView.kt",
-  "47": "AGENTS.md — cara kerja AI di repo ini",
+  "46": "ReaderScreen.kt",
   "49": "PlatformLocal.ios.kt",
-  "50": "Theme.kt",
   "51": "PlatformLocal.android.kt",
   "52": "PlatformLocal.desktop.kt"
 }

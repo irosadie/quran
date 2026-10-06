@@ -13,13 +13,13 @@ import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import quran.composeapp.generated.resources.Res
-import quran.composeapp.generated.resources.amiri_quran
+import quran.composeapp.generated.resources.uthman_taha
 import org.jetbrains.compose.resources.Font
 
-/** Font Utsmani Madinah: Amiri Quran (OFL) dari composeResources/font. */
+/** Font Utsmani Madinah: KFGQPC Uthman Taha Naskh (King Fahd Complex). */
 val UthmaniFont
     @Composable
-    get() = FontFamily(Font(Res.font.amiri_quran))
+    get() = FontFamily(Font(Res.font.uthman_taha))
 
 /** Gaya dasar teks Utsmani: RTL + spasi baris lega khas mushaf. */
 @Composable
