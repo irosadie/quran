@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "composeApp/src/commonMain/kotlin/com/binarydev/quran/feature/reader/presentation/MushafPageView.kt": {
-    "mtime": 1791229691.9625144,
-    "seen": 1791229977.192207,
-    "ast_hash": "b7c50479c0b3d7880de2f2176063ef10",
+    "mtime": 1791260358.0414245,
+    "seen": 1791260577.433235,
+    "ast_hash": "664233dab6d9d49fb3180cd2d663e6ef",
     "semantic_hash": ""
   },
   "composeApp/src/desktopMain/kotlin/com/binarydev/quran/core/data/audio/AudioPlayer.desktop.kt": {
