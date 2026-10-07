@@ -34,9 +34,13 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.unit.Constraints
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.dp
 import com.binarydev.quran.core.data.local.SurahData
@@ -145,10 +149,12 @@ private fun ExactLinesPage(
         } else {
             Modifier.fillMaxSize().verticalScroll(rememberScrollState())
         }
+        // Lebar konten untuk justify penuh (padding + bingkai dikurangi).
+        val contentWidth = (maxWidth - 36.dp).coerceAtLeast(0.dp)
         Column(colMod, verticalArrangement = androidx.compose.foundation.layout.Arrangement.SpaceBetween) {
             if (hasHeader) SurahHeader(firstSurah)
             for (line in lines) {
-                FitLine(line.segs, size, playingKey, onAyahTap) { if (size > 11f) size -= 0.5f }
+                FitLine(line.segs, size, contentWidth, playingKey, onAyahTap) { if (size > 11f) size -= 0.5f }
             }
             Text(
                 text = toArabicDigits(pageNumber),
@@ -163,12 +169,14 @@ private fun ExactLinesPage(
 /**
  * Satu baris: tidak wrap; ukuran DIWARISI seragam dari halaman (lapor meluber
  * agar seluruh halaman susut bersama — seperti satu ukuran khat cetakan).
+ * Rata kanan-KIRI penuh via letter-spacing selebar sisa ruang (maks 0.3em).
  */
 @Suppress("DEPRECATION")
 @Composable
 private fun FitLine(
     segs: List<LineSeg>,
     size: Float,
+    contentWidth: Dp,
     playingKey: String?,
     onAyahTap: (String) -> Unit,
     onOverflow: () -> Unit,
@@ -191,9 +199,20 @@ private fun FitLine(
             }
         }
     }
+    val density = LocalDensity.current
+    val measurer = rememberTextMeasurer()
+    val base = uthmaniStyle(1f).copy(fontSize = size.sp, lineHeight = (size * 2.0f).sp, color = MushafInk)
+    // Ukur sekali, sebar sisa lebar merata ke semua karakter.
+    val maxPx = with(density) { contentWidth.toPx() }.toInt().coerceAtLeast(1)
+    val measured = measurer.measure(annotated, base, constraints = Constraints(maxWidth = maxPx))
+    val needPx = maxPx - measured.size.width
+    val sizePx = with(density) { size.sp.toPx() }.coerceAtLeast(1f)
+    val spreadEm = if (needPx > 0 && annotated.isNotEmpty()) {
+        (needPx / annotated.length / sizePx).coerceIn(0f, 0.3f)
+    } else 0f
     ClickableText(
         text = annotated,
-        style = uthmaniStyle(1f).copy(fontSize = size.sp, lineHeight = (size * 2.0f).sp, color = MushafInk),
+        style = base.copy(letterSpacing = spreadEm.em),
         maxLines = 1,
         softWrap = false,
         overflow = TextOverflow.Clip,
