@@ -67,8 +67,8 @@ fun AnnotatedString.Builder.appendUthmani(text: String, bg: Color = Color.Transp
 }
 
 /**
- * Teks Mushaf Utsmani daftar surah: RATA KANAN (bukan justify) — tiap ayat
- * satu blok berakhir penanda, gap antarbaris seragam, seperti mushaf.
+ * Teks Mushaf Utsmani daftar surah: JUSTIFY penuh (rata kanan-kiri),
+ * tiap ayat satu blok berakhir penanda, gap antarbaris seragam.
  */
 @Composable
 fun MushafText(arab: String, fontScale: Float = 1f, modifier: Modifier = Modifier) {
@@ -79,7 +79,7 @@ fun MushafText(arab: String, fontScale: Float = 1f, modifier: Modifier = Modifie
     SelectionContainer {
         Text(
             text = annotated,
-            style = uthmaniStyle(fontScale).copy(textAlign = TextAlign.Right),
+            style = uthmaniStyle(fontScale),
             modifier = modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 10.dp),
         )
     }
